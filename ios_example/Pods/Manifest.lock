@@ -1,0 +1,16 @@
+PODS:
+  - KG_SDK (3.13.500)
+
+DEPENDENCIES:
+  - KG_SDK (from `../kg_sdk/ios_sdk/Flutter/Debug/KG_SDK.podspec`)
+
+EXTERNAL SOURCES:
+  KG_SDK:
+    :podspec: "../kg_sdk/ios_sdk/Flutter/Debug/KG_SDK.podspec"
+
+SPEC CHECKSUMS:
+  KG_SDK: 1bc0401d3f430ab0558ed6d88d03803187df6546
+
+PODFILE CHECKSUM: 4eecfe96a20027697bee416d99b701a16e5c90dc
+
+COCOAPODS: 1.15.0

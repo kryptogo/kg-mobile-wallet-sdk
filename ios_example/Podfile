@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+build_mode = ENV['BUILD_MODE'] || 'Debug'
+
+pod 'KG_SDK', :podspec => "../kg_sdk/ios_sdk/Flutter/#{build_mode}/KG_SDK.podspec"
+
+target 'ios_example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ios_example
+
+  target 'ios_exampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ios_exampleUITests' do
+    # Pods for testing
+  end
+
+end

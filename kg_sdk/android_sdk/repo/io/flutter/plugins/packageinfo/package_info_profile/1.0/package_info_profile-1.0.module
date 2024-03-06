@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.flutter.plugins.packageinfo",
+    "module": "package_info_profile",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "package_info_profile-1.0.aar",
+          "url": "package_info_profile-1.0.aar",
+          "size": 5134,
+          "sha512": "385f01aae6a06a7dee1ce6640537e6e05db9e11dafff206158b04001b1e51e6d20869808da1a1f4b7873621909e29eccdeb5c692d9f2548280d40d315c1f9f49",
+          "sha256": "cc697b67950fbc17159d9571048250b90b857cca3686e810b209e20656b6bdb1",
+          "sha1": "6c7e34f6f4b8af81248a141a656aad2c97478b2f",
+          "md5": "eb833949fdf1e3e71aa8534155f9af97"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "package_info_profile-1.0.aar",
+          "url": "package_info_profile-1.0.aar",
+          "size": 5134,
+          "sha512": "385f01aae6a06a7dee1ce6640537e6e05db9e11dafff206158b04001b1e51e6d20869808da1a1f4b7873621909e29eccdeb5c692d9f2548280d40d315c1f9f49",
+          "sha256": "cc697b67950fbc17159d9571048250b90b857cca3686e810b209e20656b6bdb1",
+          "sha1": "6c7e34f6f4b8af81248a141a656aad2c97478b2f",
+          "md5": "eb833949fdf1e3e71aa8534155f9af97"
+        }
+      ]
+    }
+  ]
+}
