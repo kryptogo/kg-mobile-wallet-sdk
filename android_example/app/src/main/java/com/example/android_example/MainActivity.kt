@@ -142,7 +142,8 @@ class CustomFlutterActivity : FlutterActivity() {
 
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
-        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, channelName).setMethodCallHandler { call, result ->
+        val channel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, channelName)
+        channel.setMethodCallHandler { call, result ->
             if (call.method == "closeFlutterView") {
                 closeFlutterView()
                 result.success(null)
@@ -150,6 +151,11 @@ class CustomFlutterActivity : FlutterActivity() {
                 result.notImplemented()
             }
         }
+
+
+        // Android 端主动調用 KG_SDK 並傳送 initialParams
+        val initialParams = mapOf("flavor" to "prod")
+        channel.invokeMethod("getInitialParam", initialParams)
     }
 
     private fun closeFlutterView() {
