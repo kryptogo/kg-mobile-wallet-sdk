@@ -111,17 +111,16 @@ fun Greeting(name: String) {
 fun FlutterViewButton() {
     val context = LocalContext.current
     Box(
-        contentAlignment = Alignment.Center, // 设置内容居中
-        modifier = Modifier.fillMaxSize() // 确保 Box 填充父容器
+        contentAlignment = Alignment.Center,
+        modifier = Modifier.fillMaxSize()
     ) {
         Button(onClick = {
             println("Button Clicked")
-            context.startActivity(
-                CustomFlutterActivity.withCachedEngine("flutter_engine").build(context)
-            )
+            KgSDKService.getInstance(context).showKgSDK()
         }, modifier = Modifier.padding(16.dp)) {
             Text("Show KG_SDK")
         }
+
     }
 }
 
@@ -133,44 +132,7 @@ fun FlutterViewButton2() {
         modifier = Modifier.fillMaxSize() // 确保 Box 填充父容器
     ) {
         Button(onClick = {
-            // 确保 Flutter 引擎已经初始化
-            try {
-
-                var flutterEngine = FlutterEngineCache.getInstance()["flutter_engine"]
-                if (flutterEngine == null) {
-                    flutterEngine = FlutterEngine(context)
-                    flutterEngine.dartExecutor.executeDartEntrypoint(
-                        DartExecutor.DartEntrypoint.createDefault()
-                    )
-                    FlutterEngineCache.getInstance().put("flutter_engine", flutterEngine)
-                }
-
-                MethodChannel(flutterEngine.dartExecutor, "com.kryptogo.sdk/channel")
-                    .invokeMethod("testFuture", null, object : MethodChannel.Result {
-                        override fun success(@Nullable result: Any?) {
-                            print(result)
-                        }
-
-                        override fun error(
-                            errorCode: String,
-                            @Nullable errorMessage: String?,
-                            @Nullable errorDetails: Any?
-                        ) {
-                            // 方法调用错误处理
-                            print("error")
-
-                        }
-
-                        override fun notImplemented() {
-                            // 方法未实现处理
-                            print("not implemented")
-                        }
-                    })
-            } catch (e: Exception) {
-                print(e)
-            } finally {
-                print("finally")
-            }
+           KgSDKService.getInstance(context).callKgSDK()
         }, modifier = Modifier.padding(16.dp)) {
             Text("Call KG_SDK")
         }

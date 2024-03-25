@@ -10,14 +10,7 @@ class MainApplication : android.app.Application() {
 
     override fun onCreate() {
         super.onCreate()
-        flutterEngine = FlutterEngine(this)
-        // Start executing Dart code in the FlutterEngine.
-        flutterEngine.dartExecutor.executeDartEntrypoint(
-            DartExecutor.DartEntrypoint.createDefault()
-        )
-        FlutterEngineCache
-            .getInstance()
-            .put("flutter_engine", flutterEngine)
+        var service = KgSDKService.getInstance(this)
     }
 
 }
