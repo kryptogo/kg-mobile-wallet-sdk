@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/KG_SDK/Flutter.framework/Flutter
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework/Flutter

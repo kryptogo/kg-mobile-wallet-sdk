@@ -1,0 +1,97 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SentryPrivate
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import MetricKit
+@_exported import SentryPrivate
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class HTTPHeaderSanitizer : ObjectiveC.NSObject {
+  @objc public static func sanitizeHeaders(_ headers: [Swift.String : Swift.String]) -> [Swift.String : Swift.String]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class SentryMXCallStackTree : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let callStacks: [SentryPrivate.SentryMXCallStack]
+  @objc final public let callStackPerThread: Swift.Bool
+  @objc public init(callStacks: [SentryPrivate.SentryMXCallStack], callStackPerThread: Swift.Bool)
+  @objc public static func from(data: Foundation.Data) throws -> SentryPrivate.SentryMXCallStackTree
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers public class SentryMXCallStack : ObjectiveC.NSObject, Swift.Codable {
+  public var threadAttributed: Swift.Bool?
+  @objc public var callStackRootFrames: [SentryPrivate.SentryMXFrame]
+  @objc public var flattenedRootFrames: [SentryPrivate.SentryMXFrame] {
+    @objc get
+  }
+  @objc public init(threadAttributed: Swift.Bool, rootFrames: [SentryPrivate.SentryMXFrame])
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers public class SentryMXFrame : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var binaryUUID: Foundation.UUID
+  @objc public var offsetIntoBinaryTextSegment: Swift.Int
+  @objc public var binaryName: Swift.String?
+  @objc public var address: Swift.UInt64
+  @objc public var subFrames: [SentryPrivate.SentryMXFrame]?
+  public var sampleCount: Swift.Int?
+  public init(binaryUUID: Foundation.UUID, offsetIntoBinaryTextSegment: Swift.Int, sampleCount: Swift.Int? = nil, binaryName: Swift.String? = nil, address: Swift.UInt64, subFrames: [SentryPrivate.SentryMXFrame]?)
+  @objc public var frames: [SentryPrivate.SentryMXFrame] {
+    @objc get
+  }
+  @objc public var framesIncludingSelf: [SentryPrivate.SentryMXFrame] {
+    @objc get
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@available(iOS 15.0, macOS 12.0, macCatalyst 15.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+@objc public protocol SentryMXManagerDelegate {
+  @objc func didReceiveCrashDiagnostic(_ diagnostic: MetricKit.MXCrashDiagnostic, callStackTree: SentryPrivate.SentryMXCallStackTree, timeStampBegin: Foundation.Date, timeStampEnd: Foundation.Date)
+  @objc func didReceiveDiskWriteExceptionDiagnostic(_ diagnostic: MetricKit.MXDiskWriteExceptionDiagnostic, callStackTree: SentryPrivate.SentryMXCallStackTree, timeStampBegin: Foundation.Date, timeStampEnd: Foundation.Date)
+  @objc func didReceiveCpuExceptionDiagnostic(_ diagnostic: MetricKit.MXCPUExceptionDiagnostic, callStackTree: SentryPrivate.SentryMXCallStackTree, timeStampBegin: Foundation.Date, timeStampEnd: Foundation.Date)
+  @objc func didReceiveHangDiagnostic(_ diagnostic: MetricKit.MXHangDiagnostic, callStackTree: SentryPrivate.SentryMXCallStackTree, timeStampBegin: Foundation.Date, timeStampEnd: Foundation.Date)
+}
+@objc @available(iOS 15.0, macOS 12.0, macCatalyst 15.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+@objcMembers public class SentryMXManager : ObjectiveC.NSObject, MetricKit.MXMetricManagerSubscriber {
+  @objc public init(disableCrashDiagnostics: Swift.Bool = true)
+  @objc weak public var delegate: (any SentryPrivate.SentryMXManagerDelegate)?
+  @objc public func receiveReports()
+  @objc public func pauseReports()
+  @objc public func didReceive(_ payloads: [MetricKit.MXDiagnosticPayload])
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class SwiftDescriptor : ObjectiveC.NSObject {
+  @objc public static func getObjectClassName(_ object: Swift.AnyObject) -> Swift.String
+  @objc public static func getSwiftErrorDescription(_ error: any Swift.Error) -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class UrlSanitized : ObjectiveC.NSObject {
+  @objc public static let SENSITIVE_DATA_SUBSTITUTE: Swift.String
+  @objc public var query: Swift.String? {
+    @objc get
+  }
+  @objc public var queryItems: [Foundation.URLQueryItem]? {
+    @objc get
+  }
+  @objc public var fragment: Swift.String? {
+    @objc get
+  }
+  @objc public init(URL url: Foundation.URL)
+  @objc public var sanitizedUrl: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}

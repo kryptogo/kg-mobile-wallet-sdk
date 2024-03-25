@@ -44,7 +44,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 			<key>License</key>
 			<string>BSD</string>
 			<key>Title</key>
-			<string>KG_SDK</string>
+			<string>Flutter</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

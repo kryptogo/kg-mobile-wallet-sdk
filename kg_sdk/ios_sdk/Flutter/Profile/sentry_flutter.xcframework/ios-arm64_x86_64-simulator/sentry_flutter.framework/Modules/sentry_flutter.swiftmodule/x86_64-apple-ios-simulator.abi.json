@@ -1,0 +1,384 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "sentry_flutter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SentryFlutter",
+        "printedName": "SentryFlutter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SentryFlutter",
+                "printedName": "sentry_flutter.SentryFlutter",
+                "usr": "s:14sentry_flutter13SentryFlutterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14sentry_flutter13SentryFlutterCACycfc",
+            "mangledName": "$s14sentry_flutter13SentryFlutterCACycfc",
+            "moduleName": "sentry_flutter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(options:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Options",
+                "printedName": "Sentry.Options",
+                "usr": "c:objc(cs)SentryOptions"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14sentry_flutter13SentryFlutterC6update7options4withySo0C7OptionsC_SDySSypGtF",
+            "mangledName": "$s14sentry_flutter13SentryFlutterC6update7options4withySo0C7OptionsC_SDySSypGtF",
+            "moduleName": "sentry_flutter",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14sentry_flutter13SentryFlutterC",
+        "mangledName": "$s14sentry_flutter13SentryFlutterC",
+        "moduleName": "sentry_flutter",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "sentry_flutter"
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "sentry_flutter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "sentry_flutter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SentryFlutterPluginApple",
+        "printedName": "SentryFlutterPluginApple",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@sentry_flutter@objc(cs)SentryFlutterPluginApple(cm)registerWithRegistrar:",
+            "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8register4withySo0dE9Registrar_p_tFZ",
+            "moduleName": "sentry_flutter",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@sentry_flutter@objc(cs)SentryFlutterPluginApple(im)handleMethodCall:result:",
+            "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC6handle_6resultySo0D10MethodCallC_yypSgctF",
+            "moduleName": "sentry_flutter",
+            "isOpen": true,
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SentryFlutterPluginApple",
+                "printedName": "sentry_flutter.SentryFlutterPluginApple",
+                "usr": "c:@M@sentry_flutter@objc(cs)SentryFlutterPluginApple"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@sentry_flutter@objc(cs)SentryFlutterPluginApple(im)init",
+            "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleCACycfc",
+            "moduleName": "sentry_flutter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@sentry_flutter@objc(cs)SentryFlutterPluginApple",
+        "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC",
+        "moduleName": "sentry_flutter",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 22,
+      "value": "\"sentry.cocoa.flutter\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "BooleanLiteral",
+      "offset": 606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2255,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2322,
+      "length": 5,
+      "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 26,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss'Z'\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2588,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2655,
+      "length": 5,
+      "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "StringLiteral",
+      "offset": 2693,
+      "length": 30,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15343,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15382,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15419,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

@@ -4,7 +4,8 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
         maven(url = "https://storage.googleapis.com/download.flutter.io")
-        maven(url="../kg_sdk/android_sdk/repo")
+        maven(url="../../kg-flutter/packages/kg_sdk/build/host/outputs/repo")
+        // maven(url="../kg_sdk/android_sdk/repo")
     }
 }
 dependencyResolutionManagement {
@@ -13,7 +14,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven(url = "https://storage.googleapis.com/download.flutter.io")
-        maven(url="../kg_sdk/android_sdk/repo")
+        maven(url="../../kg-flutter/packages/kg_sdk/build/host/outputs/repo")
+        // maven(url="../kg_sdk/android_sdk/repo")
     }
 }
 

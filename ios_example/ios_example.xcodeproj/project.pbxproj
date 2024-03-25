@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		46D13EA7478F7BD3196C40F0 /* Pods_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A599D1D19CF0F7D667169924 /* Pods_ios_example.framework */; };
 		48CDDD23EFC2756627777F6D /* Pods_ios_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1C8C4F133247B193E8770 /* Pods_ios_exampleTests.framework */; };
+		867B8C212BAACBE700968628 /* url_launcher_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */; };
+		867B8C222BAACBE700968628 /* url_launcher_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C232BAACBE900968628 /* share_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1D2BAACBDB00968628 /* share_plus.xcframework */; };
+		867B8C242BAACBE900968628 /* share_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1D2BAACBDB00968628 /* share_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C252BAACBEB00968628 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C192BAACBD300968628 /* Sentry.xcframework */; };
+		867B8C262BAACBEB00968628 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C192BAACBD300968628 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C272BAACBEC00968628 /* sentry_flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */; };
+		867B8C282BAACBEC00968628 /* sentry_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C292BAACBED00968628 /* SentryPrivate.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */; };
+		867B8C2A2BAACBEE00968628 /* SentryPrivate.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C2B2BAACBF000968628 /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C152BAACBC800968628 /* package_info_plus.xcframework */; };
+		867B8C2C2BAACBF000968628 /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C152BAACBC800968628 /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		867B8C2E2BABCE8500968628 /* KgSDKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867B8C2D2BABCE8500968628 /* KgSDKService.swift */; };
 		86CDF6C72B95AC1C001895C7 /* ios_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDF6C62B95AC1C001895C7 /* ios_exampleApp.swift */; };
 		86CDF6C92B95AC1C001895C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDF6C82B95AC1C001895C7 /* ContentView.swift */; };
 		86CDF6CB2B95AC1D001895C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */; };
@@ -66,13 +79,19 @@
 			files = (
 				86CDF7062B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Embed Frameworks */,
 				86CDF7082B95AE1F001895C7 /* path_provider_foundation.xcframework in Embed Frameworks */,
+				867B8C262BAACBEB00968628 /* Sentry.xcframework in Embed Frameworks */,
+				867B8C242BAACBE900968628 /* share_plus.xcframework in Embed Frameworks */,
 				86CDF7142B95AE26001895C7 /* App.xcframework in Embed Frameworks */,
+				867B8C282BAACBEC00968628 /* sentry_flutter.xcframework in Embed Frameworks */,
+				867B8C2A2BAACBEE00968628 /* SentryPrivate.xcframework in Embed Frameworks */,
 				86CDF70A2B95AE20001895C7 /* package_info.xcframework in Embed Frameworks */,
 				86CDF7122B95AE25001895C7 /* flutter_inappwebview_ios.xcframework in Embed Frameworks */,
 				86CDF7102B95AE24001895C7 /* flutter_secure_storage.xcframework in Embed Frameworks */,
 				86CDF7032B95AE1C001895C7 /* sqflite.xcframework in Embed Frameworks */,
 				86CDF70E2B95AE23001895C7 /* FlutterPluginRegistrant.xcframework in Embed Frameworks */,
 				86CDF70C2B95AE21001895C7 /* OrderedSet.xcframework in Embed Frameworks */,
+				867B8C222BAACBE700968628 /* url_launcher_ios.xcframework in Embed Frameworks */,
+				867B8C2C2BAACBF000968628 /* package_info_plus.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +105,19 @@
 		83E44D129E170087E19E0F74 /* Pods-ios_example-ios_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_example-ios_exampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84D430B5B6039E520AA467AF /* Pods-ios_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_exampleTests.release.xcconfig"; path = "Target Support Files/Pods-ios_exampleTests/Pods-ios_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		858641F33F58AFE92A7C4448 /* Pods_ios_example_ios_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example_ios_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8664F3CF2BAAC8DA002712C5 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework"; sourceTree = "<group>"; };
+		8664F3D12BAAC8E3002712C5 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework"; sourceTree = "<group>"; };
+		8664F3D32BAAC8E6002712C5 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/Sentry.xcframework"; sourceTree = "<group>"; };
+		8664F3D52BAAC8EA002712C5 /* SentryPrivate.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SentryPrivate.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/SentryPrivate.xcframework"; sourceTree = "<group>"; };
+		8664F3D72BAAC8F0002712C5 /* share_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = share_plus.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/share_plus.xcframework"; sourceTree = "<group>"; };
+		8664F3D92BAAC8FA002712C5 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher_ios.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/url_launcher_ios.xcframework"; sourceTree = "<group>"; };
+		867B8C152BAACBC800968628 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework; sourceTree = "<group>"; };
+		867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework; sourceTree = "<group>"; };
+		867B8C192BAACBD300968628 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/Sentry.xcframework; sourceTree = "<group>"; };
+		867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SentryPrivate.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/SentryPrivate.xcframework; sourceTree = "<group>"; };
+		867B8C1D2BAACBDB00968628 /* share_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = share_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/share_plus.xcframework; sourceTree = "<group>"; };
+		867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher_ios.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/url_launcher_ios.xcframework; sourceTree = "<group>"; };
+		867B8C2D2BABCE8500968628 /* KgSDKService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KgSDKService.swift; sourceTree = "<group>"; };
 		86CDF6C32B95AC1C001895C7 /* ios_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CDF6C62B95AC1C001895C7 /* ios_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_exampleApp.swift; sourceTree = "<group>"; };
 		86CDF6C82B95AC1C001895C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,16 +150,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D13EA7478F7BD3196C40F0 /* Pods_ios_example.framework in Frameworks */,
-				86CDF7052B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Frameworks */,
-				86CDF70B2B95AE21001895C7 /* OrderedSet.xcframework in Frameworks */,
-				86CDF70F2B95AE24001895C7 /* flutter_secure_storage.xcframework in Frameworks */,
-				86CDF7112B95AE25001895C7 /* flutter_inappwebview_ios.xcframework in Frameworks */,
-				86CDF7022B95AE1C001895C7 /* sqflite.xcframework in Frameworks */,
-				86CDF7092B95AE20001895C7 /* package_info.xcframework in Frameworks */,
+				867B8C292BAACBED00968628 /* SentryPrivate.xcframework in Frameworks */,
 				86CDF7132B95AE26001895C7 /* App.xcframework in Frameworks */,
+				867B8C212BAACBE700968628 /* url_launcher_ios.xcframework in Frameworks */,
+				86CDF7112B95AE25001895C7 /* flutter_inappwebview_ios.xcframework in Frameworks */,
+				867B8C232BAACBE900968628 /* share_plus.xcframework in Frameworks */,
+				86CDF70F2B95AE24001895C7 /* flutter_secure_storage.xcframework in Frameworks */,
 				86CDF70D2B95AE23001895C7 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				86CDF70B2B95AE21001895C7 /* OrderedSet.xcframework in Frameworks */,
+				86CDF7092B95AE20001895C7 /* package_info.xcframework in Frameworks */,
 				86CDF7072B95AE1F001895C7 /* path_provider_foundation.xcframework in Frameworks */,
+				867B8C272BAACBEC00968628 /* sentry_flutter.xcframework in Frameworks */,
+				86CDF7052B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Frameworks */,
+				86CDF7022B95AE1C001895C7 /* sqflite.xcframework in Frameworks */,
+				867B8C252BAACBEB00968628 /* Sentry.xcframework in Frameworks */,
+				867B8C2B2BAACBF000968628 /* package_info_plus.xcframework in Frameworks */,
+				46D13EA7478F7BD3196C40F0 /* Pods_ios_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +191,18 @@
 		75F6C6CDCC870D3BF7E514F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */,
+				867B8C1D2BAACBDB00968628 /* share_plus.xcframework */,
+				867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */,
+				867B8C192BAACBD300968628 /* Sentry.xcframework */,
+				867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */,
+				867B8C152BAACBC800968628 /* package_info_plus.xcframework */,
+				8664F3D92BAAC8FA002712C5 /* url_launcher_ios.xcframework */,
+				8664F3D72BAAC8F0002712C5 /* share_plus.xcframework */,
+				8664F3D52BAAC8EA002712C5 /* SentryPrivate.xcframework */,
+				8664F3D32BAAC8E6002712C5 /* Sentry.xcframework */,
+				8664F3D12BAAC8E3002712C5 /* sentry_flutter.xcframework */,
+				8664F3CF2BAAC8DA002712C5 /* package_info_plus.xcframework */,
 				86CDF7002B95ADF1001895C7 /* sqflite.xcframework */,
 				86CDF6FE2B95ADEE001895C7 /* shared_preferences_foundation.xcframework */,
 				86CDF6FC2B95ADED001895C7 /* path_provider_foundation.xcframework */,
@@ -207,6 +257,7 @@
 		86CDF6C52B95AC1C001895C7 /* ios_example */ = {
 			isa = PBXGroup;
 			children = (
+				867B8C2D2BABCE8500968628 /* KgSDKService.swift */,
 				86CDF6C62B95AC1C001895C7 /* ios_exampleApp.swift */,
 				86CDF6C82B95AC1C001895C7 /* ContentView.swift */,
 				86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */,
@@ -254,8 +305,8 @@
 				86CDF6BF2B95AC1C001895C7 /* Sources */,
 				86CDF6C02B95AC1C001895C7 /* Frameworks */,
 				86CDF6C12B95AC1C001895C7 /* Resources */,
-				671E13EAD062958ADE11BCAB /* [CP] Embed Pods Frameworks */,
 				86CDF7042B95AE1C001895C7 /* Embed Frameworks */,
+				E877F3C5B3ED5ED901570A43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,7 +344,7 @@
 				86CDF6D92B95AC1D001895C7 /* Sources */,
 				86CDF6DA2B95AC1D001895C7 /* Frameworks */,
 				86CDF6DB2B95AC1D001895C7 /* Resources */,
-				D021083A5BE2880CDE4A6165 /* [CP] Embed Pods Frameworks */,
+				DD4D1B9E55BFE8C42AA0C439 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,23 +448,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		671E13EAD062958ADE11BCAB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7D0B5F61518E63C2BB54B0FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,7 +492,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D021083A5BE2880CDE4A6165 /* [CP] Embed Pods Frameworks */ = {
+		DD4D1B9E55BFE8C42AA0C439 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,6 +509,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E877F3C5B3ED5ED901570A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -486,6 +537,7 @@
 				86CDF7162B95AE75001895C7 /* WebView.swift in Sources */,
 				86CDF6C92B95AC1C001895C7 /* ContentView.swift in Sources */,
 				86CDF71A2B95AEBB001895C7 /* VerifyPageViewController.swift in Sources */,
+				867B8C2E2BABCE8500968628 /* KgSDKService.swift in Sources */,
 				86CDF6C72B95AC1C001895C7 /* ios_exampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,15 @@
 
 import SwiftUI
 import Flutter
+import FlutterPluginRegistrant
+
 
 struct ContentView: View {
     @State private var showWebView = false
-    private let webUrl = "https://pwa-dev.kryptogo.com/"
+    private let webUrl = "http://localhost:62320/"
     var kgOauthToken = ""
-    var flutterDependencies: FlutterDependencies
-    
+    var kgSDKDependencies: KgSDKDependencies
+
     var body: some View {
             TabView {
                 NavigationView {
@@ -32,9 +34,11 @@ struct ContentView: View {
 
                 // 添加更多的 Tab 项
                 VStack {
-                    Button(action: showFlutter, label: {
-                        Text("Show Flutter")
+                  
+                    Button(action: showKgSDK, label: {
+                        Text("Show KG_SDK")
                     })
+
 
                     Button(action: { self.showWebView.toggle() }, label: {
                                Text("Open Web Page")
@@ -58,6 +62,7 @@ struct ContentView: View {
     
     func openVerifyPage(result: @escaping FlutterResult) {
         // Assuming you have a VerifyPageViewController that handles the verification logic
+        
         let verifyPageVC = VerifyPageViewController()
         verifyPageVC.modalPresentationStyle = .fullScreen
         verifyPageVC.completion = { isSuccess in
@@ -80,51 +85,11 @@ struct ContentView: View {
         
     }
 
-    func setUpMethodChannel(flutterViewController: FlutterViewController) {
-        let channel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterViewController.binaryMessenger)
-        
-        // Send initial parameter to Flutter.
-        channel.invokeMethod("getInitialParam", arguments: ["flavor": "prod"])
-
-        // Set method call handler for future Flutter-to-native calls.
-        channel.setMethodCallHandler { (call: FlutterMethodCall, result: @escaping FlutterResult) in
-          
-            switch call.method {
-                    case "closeFlutterView":
-                        flutterViewController.dismiss(animated: true, completion: nil)
-                    case "openVerifyPage":
-                        self.openVerifyPage(result: result)
-                        result(true)
-                    default:
-                        result(FlutterMethodNotImplemented)
-                    }
+    private func showKgSDK() {
+        if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
+            KgSDKService().showKgSDK(from: rootViewController, flutterEngine: kgSDKDependencies.flutterEngine)
         }
     }
-
-
-
-    func showFlutter() {
-        // Get the RootViewController.
-        guard
-          let windowScene = UIApplication.shared.connectedScenes
-            .first(where: { $0.activationState == .foregroundActive && $0 is UIWindowScene }) as? UIWindowScene,
-          let window = windowScene.windows.first(where: \.isKeyWindow),
-          let rootViewController = window.rootViewController
-        else { return }
-
-        // Create the FlutterViewController.
-        let flutterViewController = FlutterViewController(
-          engine: flutterDependencies.flutterEngine,
-          nibName: nil,
-          bundle: nil)
-        flutterViewController.modalPresentationStyle = .overCurrentContext
-        flutterViewController.isViewOpaque = false
-        
-        rootViewController.present(flutterViewController, animated: true)
-        self.setUpMethodChannel(flutterViewController: flutterViewController)
-      }
-}
-
-#Preview {
-    ContentView(flutterDependencies: FlutterDependencies())
+    
+   
 }

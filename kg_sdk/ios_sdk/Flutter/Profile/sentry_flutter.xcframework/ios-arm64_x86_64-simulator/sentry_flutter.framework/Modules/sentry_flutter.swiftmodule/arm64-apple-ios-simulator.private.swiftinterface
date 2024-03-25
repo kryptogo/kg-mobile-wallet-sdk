@@ -1,0 +1,23 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name sentry_flutter
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Flutter
+import Sentry
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import sentry_flutter
+final public class SentryFlutter {
+  public init()
+  final public func update(options: Sentry.Options, with data: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class SentryFlutterPluginApple : ObjectiveC.NSObject, Flutter.FlutterPlugin {
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  @objc override dynamic public init()
+  @objc deinit
+}

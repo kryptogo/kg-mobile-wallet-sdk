@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## KG_SDK
+## Flutter
 
 Copyright 2014 The Flutter Authors. All rights reserved.
 

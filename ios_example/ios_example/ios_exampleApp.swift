@@ -10,8 +10,7 @@ import SwiftUI
 import Flutter
 import FlutterPluginRegistrant
 
-
-class FlutterDependencies: ObservableObject {
+class KgSDKDependencies: ObservableObject {
     let flutterEngine = FlutterEngine(name: "flutter_engine")
     init(){
         // Runs the default Dart entrypoint with a default Flutter route.
@@ -23,10 +22,10 @@ class FlutterDependencies: ObservableObject {
 
 @main
 struct twm_testApp: App {
-    @StateObject var flutterDependencies = FlutterDependencies()
+    @StateObject var kgSDKDependencies = KgSDKDependencies()
     var body: some Scene {
-        WindowGroup {
-            ContentView(flutterDependencies: flutterDependencies)
+            WindowGroup {
+                ContentView(kgSDKDependencies: kgSDKDependencies)
+            }
         }
-    }
 }

@@ -4,18 +4,17 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.NonNull
+import androidx.annotation.Nullable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Face
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.MoreVert
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -24,10 +23,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.android_example.ui.theme.Android_exampleTheme
-
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.embedding.engine.FlutterEngineCache
+import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.MethodChannel
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +49,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BottomTabExample() {
-    val items = listOf("Greeting", "Flutter")
+    val items = listOf("Greeting", "Flutter", "Good")
     var selectedItem by remember { mutableStateOf(0) }
 
     Scaffold(
@@ -61,6 +62,7 @@ fun BottomTabExample() {
                                 imageVector = when (index) {
                                     0 -> Icons.Filled.Home // 首页图标
                                     1 -> Icons.Filled.Info
+                                    2 -> Icons.Filled.Add
                                     else -> Icons.Filled.Info
                                 },
                                 contentDescription = null
@@ -78,6 +80,7 @@ fun BottomTabExample() {
             when (selectedItem) {
                 0 -> Greeting("Android")
                 1 -> FlutterViewButton()
+                2 -> FlutterViewButton2()
             }
         }
     }
@@ -117,7 +120,59 @@ fun FlutterViewButton() {
                 CustomFlutterActivity.withCachedEngine("flutter_engine").build(context)
             )
         }, modifier = Modifier.padding(16.dp)) {
-            Text("Show Flutter")
+            Text("Show KG_SDK")
+        }
+    }
+}
+
+@Composable
+fun FlutterViewButton2() {
+    val context = LocalContext.current
+    Box(
+        contentAlignment = Alignment.Center, // 设置内容居中
+        modifier = Modifier.fillMaxSize() // 确保 Box 填充父容器
+    ) {
+        Button(onClick = {
+            // 确保 Flutter 引擎已经初始化
+            try {
+
+                var flutterEngine = FlutterEngineCache.getInstance()["flutter_engine"]
+                if (flutterEngine == null) {
+                    flutterEngine = FlutterEngine(context)
+                    flutterEngine.dartExecutor.executeDartEntrypoint(
+                        DartExecutor.DartEntrypoint.createDefault()
+                    )
+                    FlutterEngineCache.getInstance().put("flutter_engine", flutterEngine)
+                }
+
+                MethodChannel(flutterEngine.dartExecutor, "com.kryptogo.sdk/channel")
+                    .invokeMethod("testFuture", null, object : MethodChannel.Result {
+                        override fun success(@Nullable result: Any?) {
+                            print(result)
+                        }
+
+                        override fun error(
+                            errorCode: String,
+                            @Nullable errorMessage: String?,
+                            @Nullable errorDetails: Any?
+                        ) {
+                            // 方法调用错误处理
+                            print("error")
+
+                        }
+
+                        override fun notImplemented() {
+                            // 方法未实现处理
+                            print("not implemented")
+                        }
+                    })
+            } catch (e: Exception) {
+                print(e)
+            } finally {
+                print("finally")
+            }
+        }, modifier = Modifier.padding(16.dp)) {
+            Text("Call KG_SDK")
         }
     }
 }
@@ -151,7 +206,6 @@ class CustomFlutterActivity : FlutterActivity() {
                 result.notImplemented()
             }
         }
-
 
         // Android 端主动調用 KG_SDK 並傳送 initialParams
         val initialParams = mapOf("flavor" to "prod")
