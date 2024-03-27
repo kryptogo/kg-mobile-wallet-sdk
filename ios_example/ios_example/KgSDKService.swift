@@ -2,23 +2,22 @@ import Flutter
 import FlutterPluginRegistrant
 
 
-class KgSDKService {
+class KgSDKService : ObservableObject{
     static let shared = KgSDKService()
-
-    let flutterEngine = FlutterEngine(name: "flutter_engine")
+    private var flutterEngine: FlutterEngine?
     private var flutterViewController: FlutterViewController?
     private var methodChannel: FlutterMethodChannel?
     private var openVerifyPageCallback: ((_ result: @escaping FlutterResult) -> Void)?
     
-    private init(flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
+    private init (flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
         self.flutterViewController = flutterViewController
         self.methodChannel = methodChannel
         self.openVerifyPageCallback = openVerifyPageCallback
+        self.flutterEngine = FlutterEngine(name: "flutter_engine")
+        flutterEngine?.run()
+        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
     }
     
-    func setOpenVerifyPage() {
-        
-    }
     
     private func initializeFlutterViewController(flutterEngine: FlutterEngine) {
         flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
@@ -45,10 +44,10 @@ class KgSDKService {
     }
     
     
-    func showKgSDK(from rootViewController: UIViewController, flutterEngine:FlutterEngine) {
+    func showKgSDK(from rootViewController: UIViewController) {
         // check flutterViewController is initialized
         if flutterViewController == nil {
-            initializeFlutterViewController(flutterEngine:flutterEngine)
+            initializeFlutterViewController(flutterEngine:flutterEngine!)
         }
 
         
@@ -58,20 +57,22 @@ class KgSDKService {
     }
     
     private func createFlutterViewController() -> FlutterViewController{
-        return FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+        return FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
     }
     
 
-    func callKgSDK() {
+    func callKgSDK(funcName: String, completion: @escaping (Any?) -> Void) {
         // Create the FlutterViewController.
         let flutterViewController = FlutterViewController(
-          engine: flutterEngine,
+          engine: flutterEngine!,
           nibName: nil,
           bundle: nil)
         
         let channel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterViewController.binaryMessenger)
-        channel.invokeMethod("testFuture", arguments: nil,result: { (result) in
+        channel.invokeMethod(funcName, arguments: nil,result: { (result) in
             print(result ?? "no-data")
+            completion(result)
+            
         })
       }
 

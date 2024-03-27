@@ -14,7 +14,8 @@ struct ContentView: View {
     @State private var showWebView = false
     private let webUrl = "http://localhost:62320/"
     var kgOauthToken = ""
-    var kgSDKDependencies: KgSDKDependencies
+    @EnvironmentObject var kgSDKService: KgSDKService
+
 
     var body: some View {
             TabView {
@@ -38,6 +39,11 @@ struct ContentView: View {
                     Button(action: showKgSDK, label: {
                         Text("Show KG_SDK")
                     })
+                    
+                    
+                      Button(action: callKgSDK, label: {
+                          Text("Call KG_SDK")
+                      })
 
 
                     Button(action: { self.showWebView.toggle() }, label: {
@@ -87,9 +93,14 @@ struct ContentView: View {
 
     private func showKgSDK() {
         if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
-            KgSDKService().showKgSDK(from: rootViewController, flutterEngine: kgSDKDependencies.flutterEngine)
+            kgSDKService.showKgSDK(from: rootViewController)
         }
     }
     
+    private func callKgSDK() {
+        kgSDKService.callKgSDK(funcName: "testFuture", completion: { result in
+            print(result ?? "no-data")
+        })
+    }
    
 }
