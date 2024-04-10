@@ -28,7 +28,20 @@ class KgSDKService : ObservableObject{
     
     private func setUpMethodChannel() {
         // Send initial parameter to Flutter.
-        methodChannel?.invokeMethod("getInitialParam", arguments: ["flavor": "prod"])
+        let initParam: [String: Any] = [
+            "appName": "TWMTEST",
+            "walletConfig": [
+                "maxWallet": 100
+            ],
+            "themeData": [
+                "primaryValue": "FFFFC211"
+            ],
+            "flavorEnum": "dev",
+            "clientId": "def3b0768f8f95ffa0be37d0f54e2064",
+            "clientToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlbW8ta2V5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJodHRwczovL2tyeXB0b2dvLmNvbSIsImV4cCI6MjAyNzQwOTg2MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmtyeXB0b2dvLmNvbSIsInN1YiI6InRlc3QtdXNlciJ9.Kmbblm_cUJNpoRImSRQmb83ljY35Kn-ZcA5SBy5WOPqqL6T42YVDJFMyOAp05j3aFfUIZxCOqQAFuT23bC53jZM9SOZjz9cmwqHOE6D9wzk6Y2gwdOABSIeEet2nGzXfoHcPR1GLXJYdnOWYdh9ZivE4dtH4wGRO-eiOUoJX_kxSunBk1XanG6T3BcCDduEd-jxHTBSoi2fcMU_KfDVA9ZTc3kwzzYq3qQUMu8lBIBUQYqeV3S4M29AMn1gUAlP5Z1oKuQZzYEM3jLxAkN9hls1fMavsfi2VGYK87UE7THyWmTgMU9BDNzk3DrT7Wcxc1DOhwotyrTtep8BQkjsCJw"
+        ]
+
+        methodChannel?.invokeMethod("getInitialParam", arguments: initParam)
 
         // Set method call handler for future Flutter-to-native calls.
         methodChannel?.setMethodCallHandler { [self] (call: FlutterMethodCall, result: @escaping FlutterResult) in

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		46D13EA7478F7BD3196C40F0 /* Pods_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A599D1D19CF0F7D667169924 /* Pods_ios_example.framework */; };
 		48CDDD23EFC2756627777F6D /* Pods_ios_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1C8C4F133247B193E8770 /* Pods_ios_exampleTests.framework */; };
+		8618738A2BC6856F00A969D6 /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861873882BC6856700A969D6 /* device_info_plus.xcframework */; };
+		8618738B2BC6856F00A969D6 /* device_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 861873882BC6856700A969D6 /* device_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		867B8C212BAACBE700968628 /* url_launcher_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */; };
 		867B8C222BAACBE700968628 /* url_launcher_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		867B8C232BAACBE900968628 /* share_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1D2BAACBDB00968628 /* share_plus.xcframework */; };
@@ -78,6 +80,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				86CDF7062B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Embed Frameworks */,
+				8618738B2BC6856F00A969D6 /* device_info_plus.xcframework in Embed Frameworks */,
 				86CDF7082B95AE1F001895C7 /* path_provider_foundation.xcframework in Embed Frameworks */,
 				867B8C262BAACBEB00968628 /* Sentry.xcframework in Embed Frameworks */,
 				867B8C242BAACBE900968628 /* share_plus.xcframework in Embed Frameworks */,
@@ -105,6 +108,7 @@
 		83E44D129E170087E19E0F74 /* Pods-ios_example-ios_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_example-ios_exampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84D430B5B6039E520AA467AF /* Pods-ios_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_exampleTests.release.xcconfig"; path = "Target Support Files/Pods-ios_exampleTests/Pods-ios_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		858641F33F58AFE92A7C4448 /* Pods_ios_example_ios_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example_ios_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		861873882BC6856700A969D6 /* device_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = device_info_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/device_info_plus.xcframework; sourceTree = "<group>"; };
 		8664F3CF2BAAC8DA002712C5 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework"; sourceTree = "<group>"; };
 		8664F3D12BAAC8E3002712C5 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework"; sourceTree = "<group>"; };
 		8664F3D32BAAC8E6002712C5 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/Sentry.xcframework"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				86CDF7072B95AE1F001895C7 /* path_provider_foundation.xcframework in Frameworks */,
 				867B8C272BAACBEC00968628 /* sentry_flutter.xcframework in Frameworks */,
 				86CDF7052B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Frameworks */,
+				8618738A2BC6856F00A969D6 /* device_info_plus.xcframework in Frameworks */,
 				86CDF7022B95AE1C001895C7 /* sqflite.xcframework in Frameworks */,
 				867B8C252BAACBEB00968628 /* Sentry.xcframework in Frameworks */,
 				867B8C2B2BAACBF000968628 /* package_info_plus.xcframework in Frameworks */,
@@ -191,6 +196,7 @@
 		75F6C6CDCC870D3BF7E514F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				861873882BC6856700A969D6 /* device_info_plus.xcframework */,
 				867B8C1F2BAACBE100968628 /* url_launcher_ios.xcframework */,
 				867B8C1D2BAACBDB00968628 /* share_plus.xcframework */,
 				867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */,
