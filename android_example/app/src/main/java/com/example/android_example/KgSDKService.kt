@@ -102,7 +102,7 @@ class KgSDKService private constructor(private val context: Context) {
         context.startActivity(intent)
     }
 
-    fun callKgSDK(funcName: String): String{
+    fun callKgSDK(funcName: String){
         methodChannel?.invokeMethod(funcName, null, object : MethodChannel.Result {
             override fun success(@Nullable result: Any?) {
                 print(result)
