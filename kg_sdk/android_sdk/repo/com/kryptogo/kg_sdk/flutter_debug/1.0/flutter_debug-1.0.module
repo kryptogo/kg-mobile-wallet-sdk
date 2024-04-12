@@ -59,13 +59,6 @@
           }
         },
         {
-          "group": "com.pichillilorenzo.flutter_inappwebview_android",
-          "module": "flutter_inappwebview_android_debug",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
           "group": "io.flutter.plugins.sharedpreferences",
           "module": "shared_preferences_android_debug",
           "version": {
@@ -73,8 +66,43 @@
           }
         },
         {
+          "group": "com.pichillilorenzo.flutter_inappwebview_android",
+          "module": "flutter_inappwebview_android_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.share",
+          "module": "share_plus_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
           "group": "com.tekartik.sqflite",
           "module": "sqflite_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.packageinfo",
+          "module": "package_info_plus_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.urllauncher",
+          "module": "url_launcher_android_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.device_info",
+          "module": "device_info_plus_debug",
           "version": {
             "requires": "1.0"
           }
@@ -99,17 +127,24 @@
           "version": {
             "requires": "1.0"
           }
+        },
+        {
+          "group": "android_generated",
+          "module": "sentry_flutter_debug",
+          "version": {
+            "requires": "1.0"
+          }
         }
       ],
       "files": [
         {
           "name": "flutter_debug-1.0.aar",
           "url": "flutter_debug-1.0.aar",
-          "size": 29262075,
-          "sha512": "45f03d1edf011da4abe7b4f54c838c8415420445ba629c00c996c072c4752e9636e4839b66a0108a6f69f65ab9fb1e8b70d8bc51307c692c2af318e1406ecac1",
-          "sha256": "548be844b7c6883153d380fb5b0c6c48adadd7b22d6a4edcb5781d6b447b3370",
-          "sha1": "60a223deadb956c1278f30c22f482bab1f1381f3",
-          "md5": "9d0a91886833bf476c41399afccc1532"
+          "size": 33321854,
+          "sha512": "735cfd8a4fb41c04f89110fa9886222298a48e455315054185e25d4322fe34941d606794b648bd828b0a38b07dccb3020af79440582dcd47ef6332d7bda68fc4",
+          "sha256": "4a8c12dedd8df0776d2e5bec0cb8283168360598c5e19376682001c494001952",
+          "sha1": "a4c972912f3e9075488e37e6574a9dae0919573c",
+          "md5": "58a15ee9e62c4c9f0da17a6364303da5"
         }
       ]
     },
@@ -158,13 +193,6 @@
           }
         },
         {
-          "group": "com.pichillilorenzo.flutter_inappwebview_android",
-          "module": "flutter_inappwebview_android_debug",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
           "group": "io.flutter.plugins.sharedpreferences",
           "module": "shared_preferences_android_debug",
           "version": {
@@ -172,8 +200,43 @@
           }
         },
         {
+          "group": "com.pichillilorenzo.flutter_inappwebview_android",
+          "module": "flutter_inappwebview_android_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.share",
+          "module": "share_plus_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
           "group": "com.tekartik.sqflite",
           "module": "sqflite_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.packageinfo",
+          "module": "package_info_plus_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.urllauncher",
+          "module": "url_launcher_android_debug",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.device_info",
+          "module": "device_info_plus_debug",
           "version": {
             "requires": "1.0"
           }
@@ -198,17 +261,24 @@
           "version": {
             "requires": "1.0"
           }
+        },
+        {
+          "group": "android_generated",
+          "module": "sentry_flutter_debug",
+          "version": {
+            "requires": "1.0"
+          }
         }
       ],
       "files": [
         {
           "name": "flutter_debug-1.0.aar",
           "url": "flutter_debug-1.0.aar",
-          "size": 29262075,
-          "sha512": "45f03d1edf011da4abe7b4f54c838c8415420445ba629c00c996c072c4752e9636e4839b66a0108a6f69f65ab9fb1e8b70d8bc51307c692c2af318e1406ecac1",
-          "sha256": "548be844b7c6883153d380fb5b0c6c48adadd7b22d6a4edcb5781d6b447b3370",
-          "sha1": "60a223deadb956c1278f30c22f482bab1f1381f3",
-          "md5": "9d0a91886833bf476c41399afccc1532"
+          "size": 33321854,
+          "sha512": "735cfd8a4fb41c04f89110fa9886222298a48e455315054185e25d4322fe34941d606794b648bd828b0a38b07dccb3020af79440582dcd47ef6332d7bda68fc4",
+          "sha256": "4a8c12dedd8df0776d2e5bec0cb8283168360598c5e19376682001c494001952",
+          "sha1": "a4c972912f3e9075488e37e6574a9dae0919573c",
+          "md5": "58a15ee9e62c4c9f0da17a6364303da5"
         }
       ]
     }

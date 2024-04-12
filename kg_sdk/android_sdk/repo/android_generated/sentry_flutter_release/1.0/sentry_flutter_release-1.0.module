@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "android_generated",
+    "module": "sentry_flutter_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        },
+        {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "7.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sentry_flutter_release-1.0.aar",
+          "url": "sentry_flutter_release-1.0.aar",
+          "size": 41927,
+          "sha512": "cefe3087808d09ba77f52a518d895c7bc89f025dcfb537d08a92b51969b97688867b073502e58cfdd9afde6fb8597299ec58ff80a207578907b17d692599847c",
+          "sha256": "2476c6a9291acad6b7de98f24fded15b79adbd643648dd4de6d92499d8f90c17",
+          "sha1": "904e97edad63667a1e4129a508456f1080ee9b75",
+          "md5": "bbf5681585932a5b16d274b24ce163e3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        },
+        {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "7.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.21"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.packageinfo",
+          "module": "package_info_plus_release",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sentry_flutter_release-1.0.aar",
+          "url": "sentry_flutter_release-1.0.aar",
+          "size": 41927,
+          "sha512": "cefe3087808d09ba77f52a518d895c7bc89f025dcfb537d08a92b51969b97688867b073502e58cfdd9afde6fb8597299ec58ff80a207578907b17d692599847c",
+          "sha256": "2476c6a9291acad6b7de98f24fded15b79adbd643648dd4de6d92499d8f90c17",
+          "sha1": "904e97edad63667a1e4129a508456f1080ee9b75",
+          "md5": "bbf5681585932a5b16d274b24ce163e3"
+        }
+      ]
+    }
+  ]
+}

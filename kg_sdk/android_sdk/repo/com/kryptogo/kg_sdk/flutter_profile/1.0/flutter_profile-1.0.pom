@@ -37,20 +37,44 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.pichillilorenzo.flutter_inappwebview_android</groupId>
-      <artifactId>flutter_inappwebview_android_profile</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>io.flutter.plugins.sharedpreferences</groupId>
       <artifactId>shared_preferences_android_profile</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.pichillilorenzo.flutter_inappwebview_android</groupId>
+      <artifactId>flutter_inappwebview_android_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.fluttercommunity.plus.share</groupId>
+      <artifactId>share_plus_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.tekartik.sqflite</groupId>
       <artifactId>sqflite_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.fluttercommunity.plus.packageinfo</groupId>
+      <artifactId>package_info_plus_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.flutter.plugins.urllauncher</groupId>
+      <artifactId>url_launcher_android_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.fluttercommunity.plus.device_info</groupId>
+      <artifactId>device_info_plus_profile</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
@@ -69,6 +93,12 @@
     <dependency>
       <groupId>io.flutter.plugins.packageinfo</groupId>
       <artifactId>package_info_profile</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>android_generated</groupId>
+      <artifactId>sentry_flutter_profile</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
