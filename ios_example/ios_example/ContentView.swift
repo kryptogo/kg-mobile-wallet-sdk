@@ -33,7 +33,6 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
 
-                // 添加更多的 Tab 项
                 VStack {
                   
                     Button(action: showKgSDK, label: {

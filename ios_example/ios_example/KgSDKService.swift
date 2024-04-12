@@ -8,6 +8,7 @@ class KgSDKService : ObservableObject{
     private var flutterViewController: FlutterViewController?
     private var methodChannel: FlutterMethodChannel?
     private var openVerifyPageCallback: ((_ result: @escaping FlutterResult) -> Void)?
+    private var channelName: String = "com.kryptogo.sdk/channel"
     
     
     private init (flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
@@ -23,7 +24,7 @@ class KgSDKService : ObservableObject{
     private func initializeFlutterViewController(flutterEngine: FlutterEngine) {
         flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         guard let flutterVC = flutterViewController else { return }
-        methodChannel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterVC.binaryMessenger)
+        methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: flutterVC.binaryMessenger)
         setUpMethodChannel()
     }
     
@@ -59,7 +60,6 @@ class KgSDKService : ObservableObject{
             case "openVerifyPage":
                 self.openVerifyPageCallback?(result)
             case "updateSharedSecret":
-                print(call.arguments)
                 let sharedSecret = (call.arguments as? [String: String])?["sharedSecret"]
                 let isSuccess = self.updateSharedSecret(sharedSecret: sharedSecret)
                 result(isSuccess)
@@ -109,7 +109,7 @@ class KgSDKService : ObservableObject{
             nibName: nil,
             bundle: nil)
         
-        let channel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterViewController.binaryMessenger)
+        let channel = FlutterMethodChannel(name: channelName, binaryMessenger: flutterViewController.binaryMessenger)
         channel.invokeMethod(funcName, arguments: nil,result: { (result) in
             print(result ?? "no-data")
             completion(result)

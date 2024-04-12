@@ -44,31 +44,15 @@ class KgSDKService private constructor(private val context: Context) {
         }
     }
 
-    init {
-//        initializeFlutterActivity(flutterEngine!!)
-    }
 
 
 
-
-    fun initializeFlutterActivity(flutterEngine: FlutterEngine) {
+    private fun initializeFlutterActivity(flutterEngine: FlutterEngine) {
         val channel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, channelName)
         flutterActivity  = CustomFlutterActivity()
         this.methodChannel = channel
-        setUpMethodChannel()
     }
 
-    private fun setUpMethodChannel() {
-        methodChannel?.invokeMethod("getInitialParam", mapOf("flavor" to "prod"))
-
-        methodChannel?.setMethodCallHandler { call, result ->
-            when (call.method) {
-                "closeFlutterView" -> flutterActivity?.finish()
-                "openVerifyPage" -> openVerifyPageCallback?.invoke(result)
-                else -> result.notImplemented()
-            }
-        }
-    }
 
     fun setOpenVerifyPageCallback(callback: ((result: MethodChannel.Result) -> Unit)?) {
         openVerifyPageCallback = callback
@@ -96,13 +80,11 @@ class KgSDKService private constructor(private val context: Context) {
                 @Nullable errorMessage: String?,
                 @Nullable errorDetails: Any?
             ) {
-                // 方法调用错误处理
                 print("error")
 
             }
 
             override fun notImplemented() {
-                // 方法未实现处理
                 print("not implemented")
             }
         })
