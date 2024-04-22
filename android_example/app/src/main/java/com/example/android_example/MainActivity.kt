@@ -133,7 +133,7 @@ fun FlutterViewButton2() {
         modifier = Modifier.fillMaxSize() // 确保 Box 填充父容器
     ) {
         Button(onClick = {
-           KgSDKService.getInstance(context).callKgSDK()
+           KgSDKService.getInstance(context).callKgSDK("testFuture")
         }, modifier = Modifier.padding(16.dp)) {
             Text("Call KG_SDK")
         }

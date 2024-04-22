@@ -110,7 +110,6 @@ class KgSDKService : ObservableObject{
         methodChannel?.invokeMethod(funcName, arguments: nil,result: { (result) in
             print(result ?? "no-data")
             completion(result)
-            
         })
     }
     

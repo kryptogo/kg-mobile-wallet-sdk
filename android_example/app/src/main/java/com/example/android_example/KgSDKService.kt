@@ -16,6 +16,7 @@ class KgSDKService private constructor(private val context: Context) {
     private var openVerifyPageCallback: ((result: MethodChannel.Result) -> Unit)? = null
     private var flutterEngine: FlutterEngine? = null
     private val channelName = "com.kryptogo.sdk/channel"
+    private val engineName = "flutter_engine"
 
 
     companion object {
@@ -39,7 +40,7 @@ class KgSDKService private constructor(private val context: Context) {
             // Cache the FlutterEngine to be used by FlutterActivity or FlutterFragment
             FlutterEngineCache
                 .getInstance()
-                .put("flutter_engine", flutterEngine!!)
+                .put(engineName, flutterEngine!!)
             val channel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, channelName)
             this.methodChannel = channel
         }
@@ -97,7 +98,7 @@ class KgSDKService private constructor(private val context: Context) {
         }
 
         initializeFlutterActivity(flutterEngine!!)
-        val intent = CustomFlutterActivity.withCachedEngine("flutter_engine").build(context)
+        val intent = CustomFlutterActivity.withCachedEngine(engineName).build(context)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
     }
