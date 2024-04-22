@@ -9,28 +9,32 @@ class KgSDKService : ObservableObject{
     private var methodChannel: FlutterMethodChannel?
     private var openVerifyPageCallback: ((_ result: @escaping FlutterResult) -> Void)?
     private var channelName: String = "com.kryptogo.sdk/channel"
+    private var engineName: String = "flutter_engine"
     
     
     private init (flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
-        self.flutterViewController = flutterViewController
-        self.methodChannel = methodChannel
+        
         self.openVerifyPageCallback = openVerifyPageCallback
-        self.flutterEngine = FlutterEngine(name: "flutter_engine")
+        self.flutterEngine = FlutterEngine(name: engineName)
         flutterEngine?.run()
+        
+        self.flutterViewController = FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
+        self.methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: self.flutterViewController!.binaryMessenger)
         GeneratedPluginRegistrant.register(with: self.flutterEngine!)
+        setInitParams()
+        
     }
     
     
     private func initializeFlutterViewController(flutterEngine: FlutterEngine) {
-        flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         guard let flutterVC = flutterViewController else { return }
-        methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: flutterVC.binaryMessenger)
         setUpMethodChannel()
     }
     
-    private func setUpMethodChannel() {
+    private func setInitParams() {
         let sharedSecret = fetchSharedSecret()
-        // Send initial parameter to Flutter.
+
+        // Send initial parameter to KG_SDK.
         var initParam: [String: Any] = [
             "appName": "TWMTEST",
             "walletConfig": [
@@ -44,15 +48,18 @@ class KgSDKService : ObservableObject{
             ],
             "flavorEnum": "dev",
             "clientId": "def3b0768f8f95ffa0be37d0f54e2064",
-            "clientToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlbW8ta2V5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJodHRwczovL2tyeXB0b2dvLmNvbSIsImV4cCI6MjAyNzQwOTg2MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmtyeXB0b2dvLmNvbSIsInN1YiI6InRlc3QtdXNlcjIifQ.iLJy5JM9uY0Qqtsngyjvx9coU3e5ILgVyjL2IoFdNnqVvDK6zvF28Oy_Svm_9klLhQT-v0We9IwuNhAHOMQ5hHZ4qKna0iBuAy6K2Ooj9N2_1sn4Wxfj-QIQQc1Sx3rSaVuxES2qGyccVH460-KK-jXLsDde7WZNgyJdXlsTwnOUM62w-VODhhRRpoqsmNr_aTHPhsF5XAYCCZVjZss2L4x1XQWMZff0Cue_cQl3Beh3NU8qHpGdTBhIZHH6YjnTdzBtJSCapzU-YFwNArLlnZRcVG2ZtLK_2iA15918w8GtckwHlEDkvl3f49F5oKiY5CiTuU2_RIKP1AoMkvl-5g"
+            "clientToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlbW8ta2V5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJodHRwczovL2tyeXB0b2dvLmNvbSIsImV4cCI6MjAyNzQwOTg2MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmtyeXB0b2dvLmNvbSIsInN1YiI6InRlc3QtdXNlciJ9.Kmbblm_cUJNpoRImSRQmb83ljY35Kn-ZcA5SBy5WOPqqL6T42YVDJFMyOAp05j3aFfUIZxCOqQAFuT23bC53jZM9SOZjz9cmwqHOE6D9wzk6Y2gwdOABSIeEet2nGzXfoHcPR1GLXJYdnOWYdh9ZivE4dtH4wGRO-eiOUoJX_kxSunBk1XanG6T3BcCDduEd-jxHTBSoi2fcMU_KfDVA9ZTc3kwzzYq3qQUMu8lBIBUQYqeV3S4M29AMn1gUAlP5Z1oKuQZzYEM3jLxAkN9hls1fMavsfi2VGYK87UE7THyWmTgMU9BDNzk3DrT7Wcxc1DOhwotyrTtep8BQkjsCJw"
         ]
         if sharedSecret != nil {
             initParam["sharedSecret"] = sharedSecret
         }
         
         methodChannel?.invokeMethod("getInitialParam", arguments: initParam)
-        
-        // Set method call handler for future Flutter-to-native calls.
+        print("innns")
+
+    }
+    
+    private func setUpMethodChannel() {
         methodChannel?.setMethodCallHandler { [self] (call: FlutterMethodCall, result: @escaping FlutterResult) in
             switch call.method {
             case "closeFlutterView":
@@ -87,10 +94,7 @@ class KgSDKService : ObservableObject{
     
     func showKgSDK(from rootViewController: UIViewController) {
         // check flutterViewController is initialized
-        if flutterViewController == nil {
-            initializeFlutterViewController(flutterEngine:flutterEngine!)
-        }
-        
+        initializeFlutterViewController(flutterEngine:flutterEngine!)
         
         flutterViewController?.modalPresentationStyle = .overCurrentContext
         flutterViewController?.isViewOpaque = false
@@ -103,14 +107,7 @@ class KgSDKService : ObservableObject{
     
     
     func callKgSDK(funcName: String, completion: @escaping (Any?) -> Void) {
-        // Create the FlutterViewController.
-        let flutterViewController = FlutterViewController(
-            engine: flutterEngine!,
-            nibName: nil,
-            bundle: nil)
-        
-        let channel = FlutterMethodChannel(name: channelName, binaryMessenger: flutterViewController.binaryMessenger)
-        channel.invokeMethod(funcName, arguments: nil,result: { (result) in
+        methodChannel?.invokeMethod(funcName, arguments: nil,result: { (result) in
             print(result ?? "no-data")
             completion(result)
             
