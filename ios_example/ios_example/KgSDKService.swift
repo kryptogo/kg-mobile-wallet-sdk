@@ -54,7 +54,7 @@ class KgSDKService : ObservableObject{
             initParam["sharedSecret"] = sharedSecret
         }
         
-        methodChannel?.invokeMethod("getInitialParam", arguments: initParam)
+        methodChannel?.invokeMethod("init", arguments: initParam)
         print("innns")
 
     }
@@ -108,6 +108,20 @@ class KgSDKService : ObservableObject{
     
     func callKgSDK(funcName: String, completion: @escaping (Any?) -> Void) {
         methodChannel?.invokeMethod(funcName, arguments: nil,result: { (result) in
+            print(result ?? "no-data")
+            completion(result)
+        })
+    }
+    
+    func isReady(completion: @escaping (Any?) -> Void) {
+        methodChannel?.invokeMethod("isReady", arguments: nil,result: { (result) in
+            print(result ?? "no-data")
+            completion(result)
+        })
+    }
+    
+    func getAccessToken(completion: @escaping (Any?) -> Void) {
+        methodChannel?.invokeMethod("getAccessToken", arguments: nil,result: { (result) in
             print(result ?? "no-data")
             completion(result)
         })

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		X2k4OwSG75CZ+m9YakdcS76IyAA=
+		XiMtlgE+BgAEi/PG2AeHuKdxHBU=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		UktCVG/4NpGdbu8K4ypqruB1Lz0=
+		vPqES+XRwWobK00tc7rh4nR4xUw=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		M+5FaaNU82C9Tvmp+KyvsEk6RTo=
+		20sqtOf89KD6dl4Bj+HnvBLHiU8=
 		</data>
 		<key>flutter_assets/assets/icon_all.svg</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		Yu7ulYAAJcBYOMu7Rc5qqS5hn9Q=
+		P4zzugwiWOWnFBAG4WTQvxq/BnM=
 		</data>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
 		<data>
@@ -1532,14 +1532,6 @@
 		<data>
 		BNiyy1vjW/CX6WJdZoYdGzPV58w=
 		</data>
-		<key>flutter_assets/packages/kg_kit/assets/wallet/evm_wallet.svg</key>
-		<data>
-		lKvBYZXn23TbTLORQ6xyx6art8Y=
-		</data>
-		<key>flutter_assets/packages/kg_kit/assets/wallet/wallet_group.svg</key>
-		<data>
-		dnyMkzSRiiaN4aBLxSt6esAOg2s=
-		</data>
 		<key>flutter_assets/packages/kg_platform_interface/assets/.DS_Store</key>
 		<data>
 		XiguSizxqfaLFDSezJFDtg+CF0g=
@@ -1888,6 +1880,18 @@
 		<data>
 		5whXLCTGIQj1Cep0ofpbyOim7H4=
 		</data>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/download-cloud.svg</key>
+		<data>
+		eP7l8s7LFCayMWI/CYx1HoFoUxE=
+		</data>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/keyboard.svg</key>
+		<data>
+		9dWNzCt7thVTK0w0LYV5D6cWMO8=
+		</data>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/scan.svg</key>
+		<data>
+		CBfyiEHry11f3wsEf8HVrO9EAWI=
+		</data>
 		<key>flutter_assets/packages/kg_service_core/assets/onboard/welcome_aboard.svg</key>
 		<data>
 		W7kjm2m3aaDdpqb04ujj+HqiSag=
@@ -2067,14 +2071,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zERMfQ3APvfboueu1r3jA44EuVZT3e+ThiPuAxYk6gI=
+			kVDHlPVbAb0tR3VFRldCgYeDrJqVaCtDITr4B9pBgAU=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XO2dCOJsnruqTShhFqibK6EzYUoo3ta24vhMedbJZFw=
+			X6unujBwKTNOVk5r3FKc3WZU7LM036Nzd/sK4tAUKuA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2088,7 +2092,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RyJV+vkledJuwRUedF35i21qxTz8vKn7L1Qoc9bPzY0=
+			IzbkOdHaXUJ14O/ENUzxeRCD2ZDIysT9hy35KEA2Kb4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon_all.svg</key>
@@ -2158,7 +2162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fYg07mIm6MMdvOv++RJtVX34DfmDj/BUhpj/DbH9aFg=
+			6cfFFosbUda751Kbg0p3QA+BgN8wCnfZaNHZ3eCN8aM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
@@ -4723,20 +4727,6 @@
 			YcHs7uCL6wel+6+tf/zjNY/VijXiWkq19RPTknt0HXk=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/kg_kit/assets/wallet/evm_wallet.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			U5lPC5aE/S0PG4IQIfNEkCNwPojZSUexUkEQRZQAOEY=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/kg_kit/assets/wallet/wallet_group.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bC+KBoP65g/A0j52Aoqp4x3CG9lG3fE5qwF8DxsYHz4=
-			</data>
-		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/assets/images/gas_options/gas_fee_advanced.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -5337,6 +5327,27 @@
 			<key>hash2</key>
 			<data>
 			eWOnB7WHVZ9CPSUvckGXuNa9SQtOsTT4/wGHZnU0c6U=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/download-cloud.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KuOaNMnS2Poxp475XLHMJtDoGaft3eKPUIRhrYGKPDU=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/keyboard.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WyDmArbSjtU3TLWBkjiKzMML0TeG58RYyQAFz/jW9xA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_service_core/assets/onboard/scan.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			68IoKEaECdR69NwnNSgtmJVwu0YQcj4TENkErcJXBeo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_service_core/assets/onboard/welcome_aboard.svg</key>

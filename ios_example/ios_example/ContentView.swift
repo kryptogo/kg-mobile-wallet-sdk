@@ -15,55 +15,63 @@ struct ContentView: View {
     private let webUrl = "http://localhost:62320/"
     var kgOauthToken = ""
     @EnvironmentObject var kgSDKService: KgSDKService
-
-
+    
+    
     var body: some View {
-            TabView {
-                NavigationView {
-                    VStack {
-                        Image(systemName: "globe")
-                            .imageScale(.large)
-                            .foregroundStyle(.tint)
-                        Text("Hello, iOS!")
-                    }
-                    .padding()
-                    .navigationBarTitle("Home", displayMode: .inline)
-                }
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-
+        TabView {
+            NavigationView {
                 VStack {
-                  
-                    Button(action: showKgSDK, label: {
-                        Text("Show KG_SDK")
-                    })
-                    
-                    
-                      Button(action: callKgSDK, label: {
-                          Text("Call KG_SDK")
-                      })
-
-
-                    Button(action: { self.showWebView.toggle() }, label: {
-                               Text("Open Web Page")
-                           })
-                           .fullScreenCover(isPresented: $showWebView) {
-                               VStack {
-                                   Button("Close") {
-                                       self.showWebView = false
-                                   }
-                                   WebView(url: URL(string: webUrl)!, token: kgOauthToken, isPresented: $showWebView)
-                               }
-                           }
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                    Text("Hello, iOS!")
                 }
-                .tabItem {
-                    Label("Other", systemImage: "ellipsis.circle")
+                .padding()
+                .navigationBarTitle("Home", displayMode: .inline)
+            }
+            .tabItem {
+                Label("Home", systemImage: "house")
+            }
+            
+            VStack {
+                
+                Button(action: showKgSDK, label: {
+                    Text("Show KG_SDK")
+                })
+                
+                
+                Button(action: callKgSDK, label: {
+                    Text("Call KG_SDK")
+                })
+                
+                Button(action: getAccessToken, label: {
+                    Text("Call acc")
+                })
+                
+                Button(action: isReady, label: {
+                    Text("Call r")
+                })
+                
+                
+                Button(action: { self.showWebView.toggle() }, label: {
+                    Text("Open Web Page")
+                })
+                .fullScreenCover(isPresented: $showWebView) {
+                    VStack {
+                        Button("Close") {
+                            self.showWebView = false
+                        }
+                        WebView(url: URL(string: webUrl)!, token: kgOauthToken, isPresented: $showWebView)
+                    }
                 }
             }
+            .tabItem {
+                Label("Other", systemImage: "ellipsis.circle")
+            }
         }
+    }
     
-
+    
     
     func openVerifyPage(result: @escaping FlutterResult) {
         // Assuming you have a VerifyPageViewController that handles the verification logic
@@ -89,7 +97,7 @@ struct ContentView: View {
         }
         
     }
-
+    
     private func showKgSDK() {
         if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
             kgSDKService.showKgSDK(from: rootViewController)
@@ -97,9 +105,22 @@ struct ContentView: View {
     }
     
     private func callKgSDK() {
-        kgSDKService.callKgSDK(funcName: "testFuture", completion: { result in
+        kgSDKService.callKgSDK(funcName: "checkDevice", completion: { result in
             print(result ?? "no-data")
         })
     }
-   
+    
+    private func getAccessToken() {
+        kgSDKService.getAccessToken( completion: { result in
+            print(result ?? "no-data")
+        })
+    }
+    
+    private func isReady() {
+        kgSDKService.isReady( completion: { result in
+            print(result ?? "no-data")
+        })
+    }
+    
+    
 }

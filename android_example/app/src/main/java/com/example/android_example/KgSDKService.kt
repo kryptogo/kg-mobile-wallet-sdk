@@ -222,7 +222,7 @@ class CustomFlutterActivity : FlutterActivity() {
             }
         }
 
-        channel.invokeMethod("getInitialParam", initParam)
+        channel.invokeMethod("init", initParam)
     }
 
     private fun closeFlutterView() {
