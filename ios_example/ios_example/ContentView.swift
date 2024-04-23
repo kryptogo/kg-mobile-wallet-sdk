@@ -45,13 +45,16 @@ struct ContentView: View {
                 })
                 
                 Button(action: getAccessToken, label: {
-                    Text("Call acc")
+                    Text("Call accessToken")
                 })
                 
                 Button(action: isReady, label: {
-                    Text("Call r")
+                    Text("Call ready")
                 })
                 
+                Button(action: getBalance, label: {
+                    Text("Call getBalance")
+                })
                 
                 Button(action: { self.showWebView.toggle() }, label: {
                     Text("Open Web Page")
@@ -118,6 +121,12 @@ struct ContentView: View {
     
     private func isReady() {
         kgSDKService.isReady( completion: { result in
+            print(result ?? "no-data")
+        })
+    }
+    
+    private func getBalance() {
+        kgSDKService.getBalance( completion: { result in
             print(result ?? "no-data")
         })
     }

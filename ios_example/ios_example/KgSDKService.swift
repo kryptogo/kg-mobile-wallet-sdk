@@ -127,4 +127,11 @@ class KgSDKService : ObservableObject{
         })
     }
     
+    func getBalance(completion: @escaping (Any?) -> Void) {
+        methodChannel?.invokeMethod("getBalance", arguments: nil,result: { (result) in
+            print(result ?? "no-data")
+            completion(result)
+        })
+    }
+    
 }
