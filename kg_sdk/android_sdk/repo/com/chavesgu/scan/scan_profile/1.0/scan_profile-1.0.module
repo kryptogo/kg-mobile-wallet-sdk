@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.chavesgu.scan",
+    "module": "scan_profile",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "scan_profile-1.0.aar",
+          "url": "scan_profile-1.0.aar",
+          "size": 36141,
+          "sha512": "671d22a4acc956183955abbdaaaf55ca12da6bd65947dc8ff80bc242e892c9f95e1278e367203181fba33962ffa6c1fd8387163fb049563608d7af68a5457a0b",
+          "sha256": "15a85ce0d3b131baf91d5eedfe3c1f103217f5ace7d47df71b6700a39566ac1f",
+          "sha1": "05159adcf297982d2415be0ad78deab35d3c2af5",
+          "md5": "f54e945b39b2c318e786df1209c047ab"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        },
+        {
+          "group": "com.journeyapps",
+          "module": "zxing-android-embedded",
+          "version": {
+            "requires": "4.3.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.google.zxing",
+          "module": "core",
+          "version": {
+            "requires": "3.3.0"
+          }
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "scanplus",
+          "version": {
+            "requires": "2.1.0.300"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "scan_profile-1.0.aar",
+          "url": "scan_profile-1.0.aar",
+          "size": 36141,
+          "sha512": "671d22a4acc956183955abbdaaaf55ca12da6bd65947dc8ff80bc242e892c9f95e1278e367203181fba33962ffa6c1fd8387163fb049563608d7af68a5457a0b",
+          "sha256": "15a85ce0d3b131baf91d5eedfe3c1f103217f5ace7d47df71b6700a39566ac1f",
+          "sha1": "05159adcf297982d2415be0ad78deab35d3c2af5",
+          "md5": "f54e945b39b2c318e786df1209c047ab"
+        }
+      ]
+    }
+  ]
+}

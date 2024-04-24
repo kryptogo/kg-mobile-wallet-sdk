@@ -238,15 +238,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TvuWEeimyuK28msMbF6mESb7DmI=
+		9fygUlKSLsweg6up2qnsnVxTRr4=
 		</data>
 		<key>Modules/Sentry.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gB4peJFIf9MZaRnO7tBRy474USY=
+		D8lFcep6an3s5K6kAWO0HQsuwU8=
 		</data>
 		<key>Modules/Sentry.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		czvlIMQ+AdrVmOnPcqCDiGBHWFc=
+		i5yfUK8/tOeXXHsyV0N/KLpah6Q=
 		</data>
 		<key>Modules/Sentry.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -266,7 +266,7 @@
 		</data>
 		<key>Modules/Sentry.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I5djXlyQKro4jvNF8Jy20Ttl1Tc=
+		SHb1RfE+6csCPGqBEJ64h9rIdTI=
 		</data>
 		<key>Modules/Sentry.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -286,7 +286,7 @@
 		</data>
 		<key>Modules/Sentry.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PMEf40JZdGGZIDV4hN0VCXR6cG8=
+		AxGOp6tY0wo0i+gEPeIDVgah+KA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Sentry.bundle/Info.plist</key>
 		<data>
-		fXJrTuTwQ+I5EvP7o/egdcXxULk=
+		8fj9YJjGmZZX6IfqmzZVQKDS31s=
 		</data>
 		<key>Sentry.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -713,14 +713,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MijqfAoJXuJ198Yry+SQ+pKQT6b/TefTyTaZwfmaCeM=
+			utldp/Zi5EDXSr0iG2Gx5zpETQ/vwF3p7EFMGgnDRv4=
 			</data>
 		</dict>
 		<key>Modules/Sentry.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIf96ml2qWFe6r8UqYjgiCKimf+mYs2OTELnbwpsyXw=
+			WNme1m6qbJvFfng0LMuUcCpuz+y9uoUG3oTSkBIYH64=
 			</data>
 		</dict>
 		<key>Modules/Sentry.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -755,7 +755,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ACvgJa2ddXBslDd/a8v0g06Gd2GIjv2byPACkuxISs0=
+			7nsbDeFOjExZogNmX1voBxyFpxeSYP7GxB1AlqHOJr4=
 			</data>
 		</dict>
 		<key>Modules/Sentry.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -790,7 +790,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5w+YIYngNiTni21YlHVUGhxg2Ke1A83dwNrKZnAEgYQ=
+			5iC7LNZRKLjDvwF9+yy+92/Y81uwgoOS5byEf0MVa8Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -804,7 +804,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSqW8cLNVeMrO2YBVdQ0IG2MpLmnCCINd9K2ar1KqOY=
+			qGZZMYCKd/W8bEkn32VTlj0nfcRNSkcWsBjkvOZYznY=
 			</data>
 		</dict>
 		<key>Sentry.bundle/PrivacyInfo.xcprivacy</key>

@@ -304,77 +304,77 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 22,
       "value": "\"sentry.cocoa.flutter\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "BooleanLiteral",
       "offset": 606,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2255,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2322,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2360,
       "length": 26,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss'Z'\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2588,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2655,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
       "offset": 2693,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
       "offset": 15343,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
       "offset": 15382,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.18.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
       "offset": 15419,
       "length": 1,

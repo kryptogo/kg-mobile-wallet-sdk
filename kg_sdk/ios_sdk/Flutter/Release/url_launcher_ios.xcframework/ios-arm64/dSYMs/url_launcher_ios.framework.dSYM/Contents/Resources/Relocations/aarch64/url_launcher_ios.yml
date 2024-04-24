@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Release/iphoneos/Release-iphoneos/url_launcher_ios/url_launcher_ios.framework/url_launcher_ios'
+binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/url_launcher_ios/url_launcher_ios.framework/url_launcher_ios'
 relocations:
   - { offsetInCU: 0x34, offset: 0x578B0, size: 0x8, addend: 0x0, symName: _url_launcher_iosVersionString, symObjAddr: 0x0, symBinAddr: 0xA270, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x578E5, size: 0x8, addend: 0x0, symName: _url_launcher_iosVersionNumber, symObjAddr: 0x30, symBinAddr: 0xA2A0, symSize: 0x0 }

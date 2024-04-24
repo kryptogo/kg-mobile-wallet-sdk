@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7ribilPec9kHdwL+lnQVsmvXzR4=
+		x1f2iYGxUQSENZayXXSl5LdIu5I=
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ffDryneHQRJKN+/VDLvMGFM4rRw=
+		DVMZoFO9AxkWOteTDLzbpTU9Iuo=
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xRvbZNQIiYEmh1iiAxaYjFLYTwY=
+		mOO199OfeB58CKmZIP+ARI4rLks=
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iUVyxifPV16NpQ/AIEZttAz8LX8=
+		AU2kMkXgDKPYHzQv0FB4Z0diUNE=
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/flutter_udid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lCr9kVJqbG+FXwzSwtY0MNKIw0A=
+		QKjF9ixm/2iUXgEYlDdTHG5VJhk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2fTQU35sa7ujQ5CY1UBlXARF0TyhDOvNe56bWBTjo4=
+			l3sp6JSltdAfNGwnhB7JGZ7QumZI9zlZBf0NU9QmR9g=
 			</data>
 		</dict>
 		<key>Modules/flutter_udid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s6Ge0eXsbqUXTDodMUyEVVKfp3zyvutr8fWKwW2D5/A=
+			JStdRDZdxOM4OABs+aCyB1LZuzpeSyevP0YhXUYjHcY=
 			</data>
 		</dict>
 		<key>Modules/flutter_udid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOSR5S2NTbl/4mBaRE95kShir9nu9K/rmQHYhc9WHjY=
+			c6YQgVbZbjK4A7QTcITSIR0SKHk555GZtmhew/aFhHg=
 			</data>
 		</dict>
 		<key>Modules/flutter_udid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAw/IGs8oSOmqLPAEZyP1ShP/UAiRSd1cvp7h5mKKyc=
+			sSGpMPvXSeXHk2LXNoh2CQqvs0dznkHdhbPyrABfcY0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

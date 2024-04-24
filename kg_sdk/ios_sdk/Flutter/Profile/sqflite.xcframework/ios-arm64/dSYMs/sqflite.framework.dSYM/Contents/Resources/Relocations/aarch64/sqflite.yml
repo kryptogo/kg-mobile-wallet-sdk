@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/sqflite/sqflite.framework/sqflite'
+binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/sqflite/sqflite.framework/sqflite'
 relocations:
   - { offsetInCU: 0x33, offset: 0x7260, size: 0x8, addend: 0x0, symName: _sqfliteVersionString, symObjAddr: 0x0, symBinAddr: 0x125F8, symSize: 0x0 }
   - { offsetInCU: 0x67, offset: 0x7294, size: 0x8, addend: 0x0, symName: _sqfliteVersionNumber, symObjAddr: 0x28, symBinAddr: 0x12620, symSize: 0x0 }
@@ -14,10 +14,10 @@ relocations:
   - { offsetInCU: 0x442, offset: 0x76EB, size: 0x8, addend: 0x0, symName: '-[SqfliteCursor .cxx_destruct]', symObjAddr: 0x3C, symBinAddr: 0x403C, symSize: 0x3C }
   - { offsetInCU: 0x27, offset: 0x775F, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabase databaseWithPath:]', symObjAddr: 0x0, symBinAddr: 0x4078, symSize: 0x48 }
   - { offsetInCU: 0x47, offset: 0x777F, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabase SqfliteDarwinDBVersion]', symObjAddr: 0x224, symBinAddr: 0x429C, symSize: 0x74 }
-  - { offsetInCU: 0x70, offset: 0x77A8, size: 0x8, addend: 0x0, symName: _SqfliteDarwinDBVersion.once, symObjAddr: 0x17A08, symBinAddr: 0x1E860, symSize: 0x0 }
-  - { offsetInCU: 0x85, offset: 0x77BD, size: 0x8, addend: 0x0, symName: _SqfliteDarwinDBVersion.SqfliteDarwinDBVersionVal, symObjAddr: 0x17A10, symBinAddr: 0x1E868, symSize: 0x0 }
+  - { offsetInCU: 0x70, offset: 0x77A8, size: 0x8, addend: 0x0, symName: _SqfliteDarwinDBVersion.once, symObjAddr: 0x17A30, symBinAddr: 0x1E860, symSize: 0x0 }
+  - { offsetInCU: 0x85, offset: 0x77BD, size: 0x8, addend: 0x0, symName: _SqfliteDarwinDBVersion.SqfliteDarwinDBVersionVal, symObjAddr: 0x17A38, symBinAddr: 0x1E868, symSize: 0x0 }
   - { offsetInCU: 0x1A2, offset: 0x78DA, size: 0x8, addend: 0x0, symName: '-[SqfliteDarwinDatabase inSavePoint:]', symObjAddr: 0x2B1C, symBinAddr: 0x6B94, symSize: 0x138 }
-  - { offsetInCU: 0x1CD, offset: 0x7905, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x17A18, symBinAddr: 0x1E870, symSize: 0x0 }
+  - { offsetInCU: 0x1CD, offset: 0x7905, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x17A40, symBinAddr: 0x1E870, symSize: 0x0 }
   - { offsetInCU: 0x621, offset: 0x7D59, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabase databaseWithPath:]', symObjAddr: 0x0, symBinAddr: 0x4078, symSize: 0x48 }
   - { offsetInCU: 0x664, offset: 0x7D9C, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabase databaseWithURL:]', symObjAddr: 0x48, symBinAddr: 0x40C0, symSize: 0x48 }
   - { offsetInCU: 0x6A7, offset: 0x7DDF, size: 0x8, addend: 0x0, symName: '-[SqfliteDarwinDatabase init]', symObjAddr: 0x90, symBinAddr: 0x4108, symSize: 0x8 }
@@ -177,7 +177,7 @@ relocations:
   - { offsetInCU: 0x27, offset: 0xC032, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabaseQueue databaseQueueWithPath:]', symObjAddr: 0x0, symBinAddr: 0x7CB0, symSize: 0x48 }
   - { offsetInCU: 0x40, offset: 0xC04B, size: 0x8, addend: 0x0, symName: _kDispatchQueueSpecificKey, symObjAddr: 0x13F8, symBinAddr: 0x183B8, symSize: 0x0 }
   - { offsetInCU: 0x67, offset: 0xC072, size: 0x8, addend: 0x0, symName: '-[SqfliteDarwinDatabaseQueue inSavePoint:]', symObjAddr: 0x924, symBinAddr: 0x85D4, symSize: 0xDC }
-  - { offsetInCU: 0x92, offset: 0xC09D, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x8380, symBinAddr: 0x1E878, symSize: 0x0 }
+  - { offsetInCU: 0x92, offset: 0xC09D, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x83A8, symBinAddr: 0x1E878, symSize: 0x0 }
   - { offsetInCU: 0x348, offset: 0xC353, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabaseQueue databaseQueueWithPath:]', symObjAddr: 0x0, symBinAddr: 0x7CB0, symSize: 0x48 }
   - { offsetInCU: 0x39A, offset: 0xC3A5, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabaseQueue databaseQueueWithURL:]', symObjAddr: 0x48, symBinAddr: 0x7CF8, symSize: 0x54 }
   - { offsetInCU: 0x3DD, offset: 0xC3E8, size: 0x8, addend: 0x0, symName: '+[SqfliteDarwinDatabaseQueue databaseQueueWithPath:flags:]', symObjAddr: 0x9C, symBinAddr: 0x7D4C, symSize: 0x58 }
@@ -409,9 +409,9 @@ relocations:
   - { offsetInCU: 0x224, offset: 0x11A5D, size: 0x8, addend: 0x0, symName: _SqfliteParamErrorMessage, symObjAddr: 0x4400, symBinAddr: 0x18560, symSize: 0x0 }
   - { offsetInCU: 0x239, offset: 0x11A72, size: 0x8, addend: 0x0, symName: _SqfliteParamErrorData, symObjAddr: 0x4408, symBinAddr: 0x18568, symSize: 0x0 }
   - { offsetInCU: 0x24E, offset: 0x11A87, size: 0x8, addend: 0x0, symName: _SqfliteSqlPragmaSqliteDefensiveOff, symObjAddr: 0x4410, symBinAddr: 0x18570, symSize: 0x0 }
-  - { offsetInCU: 0x29D, offset: 0x11AD6, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x12570, symBinAddr: 0x1E880, symSize: 0x0 }
-  - { offsetInCU: 0x2B2, offset: 0x11AEB, size: 0x8, addend: 0x0, symName: __lastDatabaseId, symObjAddr: 0x12578, symBinAddr: 0x1E888, symSize: 0x0 }
-  - { offsetInCU: 0x2CE, offset: 0x11B07, size: 0x8, addend: 0x0, symName: __databaseOpenCount, symObjAddr: 0x12580, symBinAddr: 0x1E890, symSize: 0x0 }
+  - { offsetInCU: 0x29D, offset: 0x11AD6, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x125A0, symBinAddr: 0x1E880, symSize: 0x0 }
+  - { offsetInCU: 0x2B2, offset: 0x11AEB, size: 0x8, addend: 0x0, symName: __lastDatabaseId, symObjAddr: 0x125A8, symBinAddr: 0x1E888, symSize: 0x0 }
+  - { offsetInCU: 0x2CE, offset: 0x11B07, size: 0x8, addend: 0x0, symName: __databaseOpenCount, symObjAddr: 0x125B0, symBinAddr: 0x1E890, symSize: 0x0 }
   - { offsetInCU: 0x38A, offset: 0x11BC3, size: 0x8, addend: 0x0, symName: _sqfliteHasSqlLogLevel, symObjAddr: 0x0, symBinAddr: 0xBE84, symSize: 0xC }
   - { offsetInCU: 0x3B4, offset: 0x11BED, size: 0x8, addend: 0x0, symName: _sqfliteHasVerboseLogLevel, symObjAddr: 0xC, symBinAddr: 0xBE90, symSize: 0xC }
   - { offsetInCU: 0x3DE, offset: 0x11C17, size: 0x8, addend: 0x0, symName: '+[SqflitePlugin registerWithRegistrar:]', symObjAddr: 0x18, symBinAddr: 0xBE9C, symSize: 0x110 }

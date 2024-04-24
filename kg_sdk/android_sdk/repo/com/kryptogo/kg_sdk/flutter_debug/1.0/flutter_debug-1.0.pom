@@ -43,6 +43,54 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>de.gigadroid.flutterudid</groupId>
+      <artifactId>flutter_udid_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.tekartik.sqflite</groupId>
+      <artifactId>sqflite_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.chavesgu.scan</groupId>
+      <artifactId>scan_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.flutter.plugins.urllauncher</groupId>
+      <artifactId>url_launcher_android_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.flutter.plugins.pathprovider</groupId>
+      <artifactId>path_provider_android_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.touchcapture.qr.flutterqr</groupId>
+      <artifactId>qr_code_scanner_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.it_nomads.fluttersecurestorage</groupId>
+      <artifactId>flutter_secure_storage_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>android_generated</groupId>
+      <artifactId>sentry_flutter_debug</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>io.flutter.plugins.sharedpreferences</groupId>
       <artifactId>shared_preferences_android_debug</artifactId>
       <version>1.0</version>
@@ -55,14 +103,14 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>dev.fluttercommunity.plus.share</groupId>
-      <artifactId>share_plus_debug</artifactId>
+      <groupId>com.fluttercandies.photo_manager</groupId>
+      <artifactId>photo_manager_debug</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.tekartik.sqflite</groupId>
-      <artifactId>sqflite_debug</artifactId>
+      <groupId>dev.fluttercommunity.plus.share</groupId>
+      <artifactId>share_plus_debug</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
@@ -73,38 +121,20 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.flutter.plugins.urllauncher</groupId>
-      <artifactId>url_launcher_android_debug</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>dev.fluttercommunity.plus.device_info</groupId>
       <artifactId>device_info_plus_debug</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.flutter.plugins.pathprovider</groupId>
-      <artifactId>path_provider_android_debug</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.it_nomads.fluttersecurestorage</groupId>
-      <artifactId>flutter_secure_storage_debug</artifactId>
+      <groupId>io.flutter.plugins.videoplayer</groupId>
+      <artifactId>video_player_android_debug</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.flutter.plugins.packageinfo</groupId>
       <artifactId>package_info_debug</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>android_generated</groupId>
-      <artifactId>sentry_flutter_debug</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>

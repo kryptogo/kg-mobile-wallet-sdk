@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		85iaADE5tc/NukRC+KGdiZaZ0ZA=
+		h5OB7aKzS5WR9SemvZAyN6FEkJs=
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		XiMtlgE+BgAEi/PG2AeHuKdxHBU=
+		crDy9wAODNkf0AVTG2T/yO+xAYQ=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		vPqES+XRwWobK00tc7rh4nR4xUw=
+		lB+VT6KbWMxE0dKscVt16yRAn1U=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		20sqtOf89KD6dl4Bj+HnvBLHiU8=
+		iwb51GnLJMUyiMqwKkghScSwfyA=
 		</data>
 		<key>flutter_assets/assets/icon_all.svg</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		AJBIde1bKL2ZNn6zVzQjEW9Pc8g=
+		BVReWpRftZ747YnajsPR3I7pXws=
 		</data>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
 		<data>
@@ -1380,10 +1380,6 @@
 		<data>
 		+Boin1DXnB61JcE1yuCXqZRkWsc=
 		</data>
-		<key>flutter_assets/packages/kg_kit/assets/.DS_Store</key>
-		<data>
-		x2M/3ZAp4GaFl0U+P34bApB8y4I=
-		</data>
 		<key>flutter_assets/packages/kg_kit/assets/fonts/anton/Anton-Regular.ttf</key>
 		<data>
 		SSQ3EmM3Eds7Zz0LA1NuAYDNfds=
@@ -1523,10 +1519,6 @@
 		<key>flutter_assets/packages/kg_kit/assets/token/up.svg</key>
 		<data>
 		BNiyy1vjW/CX6WJdZoYdGzPV58w=
-		</data>
-		<key>flutter_assets/packages/kg_platform_interface/assets/.DS_Store</key>
-		<data>
-		XiguSizxqfaLFDSezJFDtg+CF0g=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/assets/images/gas_options/gas_fee_advanced.svg</key>
 		<data>
@@ -2059,14 +2051,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVDHlPVbAb0tR3VFRldCgYeDrJqVaCtDITr4B9pBgAU=
+			KpK6cLkO/sJ6YRsKpfoNpG4BbXjTk17qf6mNd1j7vFM=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6unujBwKTNOVk5r3FKc3WZU7LM036Nzd/sK4tAUKuA=
+			yfTnbrBP3zdRBbd8QjwlGwi2Audh96rCe7je9z7ljUA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2080,7 +2072,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzbkOdHaXUJ14O/ENUzxeRCD2ZDIysT9hy35KEA2Kb4=
+			BVPeAGi5MDmmXooa8IrT99CuiK6h8attGXslHLyLtns=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon_all.svg</key>
@@ -2136,7 +2128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CLwZhzuENvfmzpwVDZBm5lyRKTLxi50/1CRYoS5iULo=
+			321eln7a7Jtu0FgcvVwlTnKY95PIsMOFgEp3R2bhlr0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>

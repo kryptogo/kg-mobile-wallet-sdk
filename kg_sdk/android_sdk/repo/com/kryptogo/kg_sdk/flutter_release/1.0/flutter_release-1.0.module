@@ -52,6 +52,62 @@
           }
         },
         {
+          "group": "de.gigadroid.flutterudid",
+          "module": "flutter_udid_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.tekartik.sqflite",
+          "module": "sqflite_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.chavesgu.scan",
+          "module": "scan_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.urllauncher",
+          "module": "url_launcher_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.pathprovider",
+          "module": "path_provider_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "net.touchcapture.qr.flutterqr",
+          "module": "qr_code_scanner_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.it_nomads.fluttersecurestorage",
+          "module": "flutter_secure_storage_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "android_generated",
+          "module": "sentry_flutter_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
           "group": "io.flutter.plugins.sharedpreferences",
           "module": "shared_preferences_android_release",
           "version": {
@@ -66,15 +122,15 @@
           }
         },
         {
-          "group": "dev.fluttercommunity.plus.share",
-          "module": "share_plus_release",
+          "group": "com.fluttercandies.photo_manager",
+          "module": "photo_manager_release",
           "version": {
             "requires": "1.0"
           }
         },
         {
-          "group": "com.tekartik.sqflite",
-          "module": "sqflite_release",
+          "group": "dev.fluttercommunity.plus.share",
+          "module": "share_plus_release",
           "version": {
             "requires": "1.0"
           }
@@ -87,13 +143,6 @@
           }
         },
         {
-          "group": "io.flutter.plugins.urllauncher",
-          "module": "url_launcher_android_release",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
           "group": "dev.fluttercommunity.plus.device_info",
           "module": "device_info_plus_release",
           "version": {
@@ -101,15 +150,8 @@
           }
         },
         {
-          "group": "io.flutter.plugins.pathprovider",
-          "module": "path_provider_android_release",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
-          "group": "com.it_nomads.fluttersecurestorage",
-          "module": "flutter_secure_storage_release",
+          "group": "io.flutter.plugins.videoplayer",
+          "module": "video_player_android_release",
           "version": {
             "requires": "1.0"
           }
@@ -120,24 +162,17 @@
           "version": {
             "requires": "1.0"
           }
-        },
-        {
-          "group": "android_generated",
-          "module": "sentry_flutter_release",
-          "version": {
-            "requires": "1.0"
-          }
         }
       ],
       "files": [
         {
           "name": "flutter_release-1.0.aar",
           "url": "flutter_release-1.0.aar",
-          "size": 19125372,
-          "sha512": "3a903e4448252b12d6687a628eb9874992b2e3bfb466db4d14f6568b88328054ead21e671c3c86271cdfc174ef2a744dc26e23d991ce55225af411dfdd5fd6e5",
-          "sha256": "ec7e1cc6695fd13d369ca0f94d4bc40cd81020416ef5d7b9b90e8bf24272a596",
-          "sha1": "18cd069b62b05f0a87c374fd65392be87f69bc71",
-          "md5": "f3b3e52123655922caf2e7eee97992dc"
+          "size": 19925564,
+          "sha512": "9f8768fe6d0ed1ce1237b64af26fb3d27fb1c9407a252f6383abd9af7b993ad6d637511a677edd4b1dfb09e80e35f10324fab31686ee8707a720d299dfcfc698",
+          "sha256": "66dca295c694b3c7e534997008191a1c728424a6bf0408b12f1366f6fcc1770e",
+          "sha1": "ade4f2f2ab1fbca57b23dd2d6a9d634fdf35cb7c",
+          "md5": "414cc592493973acdb981f77b61ed54c"
         }
       ]
     },
@@ -179,6 +214,62 @@
           }
         },
         {
+          "group": "de.gigadroid.flutterudid",
+          "module": "flutter_udid_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.tekartik.sqflite",
+          "module": "sqflite_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.chavesgu.scan",
+          "module": "scan_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.urllauncher",
+          "module": "url_launcher_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.pathprovider",
+          "module": "path_provider_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "net.touchcapture.qr.flutterqr",
+          "module": "qr_code_scanner_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.it_nomads.fluttersecurestorage",
+          "module": "flutter_secure_storage_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "android_generated",
+          "module": "sentry_flutter_release",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
           "group": "io.flutter.plugins.sharedpreferences",
           "module": "shared_preferences_android_release",
           "version": {
@@ -193,15 +284,15 @@
           }
         },
         {
-          "group": "dev.fluttercommunity.plus.share",
-          "module": "share_plus_release",
+          "group": "com.fluttercandies.photo_manager",
+          "module": "photo_manager_release",
           "version": {
             "requires": "1.0"
           }
         },
         {
-          "group": "com.tekartik.sqflite",
-          "module": "sqflite_release",
+          "group": "dev.fluttercommunity.plus.share",
+          "module": "share_plus_release",
           "version": {
             "requires": "1.0"
           }
@@ -214,13 +305,6 @@
           }
         },
         {
-          "group": "io.flutter.plugins.urllauncher",
-          "module": "url_launcher_android_release",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
           "group": "dev.fluttercommunity.plus.device_info",
           "module": "device_info_plus_release",
           "version": {
@@ -228,15 +312,8 @@
           }
         },
         {
-          "group": "io.flutter.plugins.pathprovider",
-          "module": "path_provider_android_release",
-          "version": {
-            "requires": "1.0"
-          }
-        },
-        {
-          "group": "com.it_nomads.fluttersecurestorage",
-          "module": "flutter_secure_storage_release",
+          "group": "io.flutter.plugins.videoplayer",
+          "module": "video_player_android_release",
           "version": {
             "requires": "1.0"
           }
@@ -247,24 +324,17 @@
           "version": {
             "requires": "1.0"
           }
-        },
-        {
-          "group": "android_generated",
-          "module": "sentry_flutter_release",
-          "version": {
-            "requires": "1.0"
-          }
         }
       ],
       "files": [
         {
           "name": "flutter_release-1.0.aar",
           "url": "flutter_release-1.0.aar",
-          "size": 19125372,
-          "sha512": "3a903e4448252b12d6687a628eb9874992b2e3bfb466db4d14f6568b88328054ead21e671c3c86271cdfc174ef2a744dc26e23d991ce55225af411dfdd5fd6e5",
-          "sha256": "ec7e1cc6695fd13d369ca0f94d4bc40cd81020416ef5d7b9b90e8bf24272a596",
-          "sha1": "18cd069b62b05f0a87c374fd65392be87f69bc71",
-          "md5": "f3b3e52123655922caf2e7eee97992dc"
+          "size": 19925564,
+          "sha512": "9f8768fe6d0ed1ce1237b64af26fb3d27fb1c9407a252f6383abd9af7b993ad6d637511a677edd4b1dfb09e80e35f10324fab31686ee8707a720d299dfcfc698",
+          "sha256": "66dca295c694b3c7e534997008191a1c728424a6bf0408b12f1366f6fcc1770e",
+          "sha1": "ade4f2f2ab1fbca57b23dd2d6a9d634fdf35cb7c",
+          "md5": "414cc592493973acdb981f77b61ed54c"
         }
       ]
     }

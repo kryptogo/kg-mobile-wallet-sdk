@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uJN/C4Qj1rDF3pKpI35aM7G23Ls=
+		AqCXI97ENkOkMIiGVwftBHqn2L4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/PUfutp+4dyJR2tC4rRJT/XxIaA=
+		XX3bzt66A8thGZRYuT4iv66RFx8=
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		glUaeO8EFuro27JLrFtxXHs6yyM=
+		fkkF3lqNPr70eAg/JCArhxKD8Ds=
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		CJf9LHnJGAhbfPQxeXvNUBzbtgs=
+		/gR4shgQZn5cQqjltU6cg+glyZg=
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+8TSBXRdYsTxgfeUoNR2EVA73iM=
+		uPStN8gCU8MQf8m5vXlGuZ5Dn2o=
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CJf9LHnJGAhbfPQxeXvNUBzbtgs=
+		/gR4shgQZn5cQqjltU6cg+glyZg=
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/sentry_flutter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O8LQc5/D9Wz5krXpvmr/D1XrCrM=
+		feN/yhjG+4cNiMY2xPNOw4FBInE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -107,21 +107,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j+hERFVCB/zz7ZYV7Pc7xmxGWseXabXJtpl2EJxLxlY=
+			MbmV4RNCDR9IoIqkes0h3qCRP0WquFbTROQZfM1h24M=
 			</data>
 		</dict>
 		<key>Modules/sentry_flutter.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yJSrOBwxRg8a7Ftw4p+sB8VMpyG6TXm1aaH3jPfmBg8=
+			5ABHtPy8Q1N0E9Sq1GL68YGz8PC81B0vBR1CZu/e3tA=
 			</data>
 		</dict>
 		<key>Modules/sentry_flutter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7U3TdR6/V2VsnGCzHmUGegvsnL54vmQEUx6Y+x3cn6U=
+			SebpZXYtTTFSRVn+z/Sv4DLMs8RZ25uaIB2mQscEWkI=
 			</data>
 		</dict>
 		<key>Modules/sentry_flutter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qAgbem5YCTtCIKlMv87j4nJVmhBAfBpiP0x5LGq7R5Q=
+			PTJzJzR9NSssNJqfRrGdSicG9DbyEpzH12C5sx1+GAI=
 			</data>
 		</dict>
 		<key>Modules/sentry_flutter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7U3TdR6/V2VsnGCzHmUGegvsnL54vmQEUx6Y+x3cn6U=
+			SebpZXYtTTFSRVn+z/Sv4DLMs8RZ25uaIB2mQscEWkI=
 			</data>
 		</dict>
 		<key>Modules/sentry_flutter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -184,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eSyMwLm2GiXdPyZzgljroO9zGXgDGoJ//RyVxbOJqSw=
+			a62VjEkSzJeBKzWVO/ICPF92s4r+RYjNUb8O7uXoNqI=
 			</data>
 		</dict>
 	</dict>

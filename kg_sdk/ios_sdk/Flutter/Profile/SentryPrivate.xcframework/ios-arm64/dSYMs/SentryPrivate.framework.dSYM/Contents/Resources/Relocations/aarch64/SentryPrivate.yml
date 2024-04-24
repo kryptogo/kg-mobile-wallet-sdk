@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/SentryPrivate/SentryPrivate.framework/SentryPrivate'
+binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/SentryPrivate/SentryPrivate.framework/SentryPrivate'
 relocations:
   - { offsetInCU: 0x34, offset: 0x5709A, size: 0x8, addend: 0x0, symName: _SentryPrivateVersionString, symObjAddr: 0x0, symBinAddr: 0x148E0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x570CF, size: 0x8, addend: 0x0, symName: _SentryPrivateVersionNumber, symObjAddr: 0x30, symBinAddr: 0x14910, symSize: 0x0 }

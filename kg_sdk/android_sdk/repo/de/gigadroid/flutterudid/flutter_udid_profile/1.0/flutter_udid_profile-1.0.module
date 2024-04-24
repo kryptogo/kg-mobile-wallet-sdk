@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "de.gigadroid.flutterudid",
+    "module": "flutter_udid_profile",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_udid_profile-1.0.aar",
+          "url": "flutter_udid_profile-1.0.aar",
+          "size": 5140,
+          "sha512": "47187d15e3b38d2c0c47dbdb269de36e57df6ae1d8b8ed17fe17520759982375e41bfb60116027abd3a7d6fe66225e9712ce914accd383f89768c2c06b2e7540",
+          "sha256": "3ae2c62b1798262bcbcc48288dca373b54711e086bfa6a007424370d3560ac96",
+          "sha1": "eef9084ea9c60c12984e327b335b944f57a744a5",
+          "md5": "0567f2b443dd5d31f8db40f3ecf2901d"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-bd986c5ed20a62dc34b7718c50abc782beae4c33"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_udid_profile-1.0.aar",
+          "url": "flutter_udid_profile-1.0.aar",
+          "size": 5140,
+          "sha512": "47187d15e3b38d2c0c47dbdb269de36e57df6ae1d8b8ed17fe17520759982375e41bfb60116027abd3a7d6fe66225e9712ce914accd383f89768c2c06b2e7540",
+          "sha256": "3ae2c62b1798262bcbcc48288dca373b54711e086bfa6a007424370d3560ac96",
+          "sha1": "eef9084ea9c60c12984e327b335b944f57a744a5",
+          "md5": "0567f2b443dd5d31f8db40f3ecf2901d"
+        }
+      ]
+    }
+  ]
+}

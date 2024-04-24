@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Release/iphoneos/Release-iphoneos/share_plus/share_plus.framework/share_plus'
+binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/share_plus/share_plus.framework/share_plus'
 relocations:
   - { offsetInCU: 0x34, offset: 0x56EDD, size: 0x8, addend: 0x0, symName: _share_plusVersionString, symObjAddr: 0x0, symBinAddr: 0xA5B8, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x56F12, size: 0x8, addend: 0x0, symName: _share_plusVersionNumber, symObjAddr: 0x28, symBinAddr: 0xA5E0, symSize: 0x0 }

@@ -1,0 +1,1630 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "scan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScanPlatformView",
+        "printedName": "ScanPlatformView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "view",
+            "printedName": "view()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanPlatformView(im)view",
+            "mangledName": "$s4scan16ScanPlatformViewC4viewSo6UIViewCyF",
+            "moduleName": "scan",
+            "objc_name": "view",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanPlatformView",
+                "printedName": "scan.ScanPlatformView",
+                "usr": "c:@M@scan@objc(cs)ScanPlatformView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@scan@objc(cs)ScanPlatformView(im)init",
+            "mangledName": "$s4scan16ScanPlatformViewCACycfc",
+            "moduleName": "scan",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@scan@objc(cs)ScanPlatformView",
+        "mangledName": "$s4scan16ScanPlatformViewC",
+        "moduleName": "scan",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "scan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScanView",
+        "printedName": "ScanView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanView(cm)registerWithRegistrar:",
+            "mangledName": "$s4scan8ScanViewC8register4withySo22FlutterPluginRegistrar_p_tFZ",
+            "moduleName": "scan",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanView(im)layoutSubviews",
+            "mangledName": "$s4scan8ScanViewC14layoutSubviewsyyF",
+            "moduleName": "scan",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFromSuperview",
+            "printedName": "removeFromSuperview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanView(im)removeFromSuperview",
+            "mangledName": "$s4scan8ScanViewC19removeFromSuperviewyyF",
+            "moduleName": "scan",
+            "overriding": true,
+            "objc_name": "removeFromSuperview",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "metadataOutput",
+            "printedName": "metadataOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureMetadataOutput",
+                "printedName": "AVFoundation.AVCaptureMetadataOutput",
+                "usr": "c:objc(cs)AVCaptureMetadataOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AVFoundation.AVMetadataObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVMetadataObject",
+                    "printedName": "AVFoundation.AVMetadataObject",
+                    "usr": "c:objc(cs)AVMetadataObject"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanView(im)captureOutput:didOutputMetadataObjects:fromConnection:",
+            "mangledName": "$s4scan8ScanViewC14metadataOutput_03didE04fromySo017AVCaptureMetadataE0C_SaySo16AVMetadataObjectCGSo0H10ConnectionCtF",
+            "moduleName": "scan",
+            "objc_name": "captureOutput:didOutputMetadataObjects:fromConnection:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanView(im)handleMethodCall:result:",
+            "mangledName": "$s4scan8ScanViewC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "scan",
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanView",
+                "printedName": "scan.ScanView",
+                "usr": "c:@M@scan@objc(cs)ScanView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@scan@objc(cs)ScanView(im)initWithFrame:",
+            "mangledName": "$s4scan8ScanViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "scan",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@scan@objc(cs)ScanView",
+        "mangledName": "$s4scan8ScanViewC",
+        "moduleName": "scan",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "scan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScanViewFactory",
+        "printedName": "ScanViewFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(registrar:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanViewFactory",
+                "printedName": "scan.ScanViewFactory",
+                "usr": "c:@M@scan@objc(cs)ScanViewFactory"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Flutter.FlutterPluginRegistrar?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterPluginRegistrar",
+                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "usr": "c:objc(pl)FlutterPluginRegistrar"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@scan@objc(cs)ScanViewFactory(im)initWithRegistrar:",
+            "mangledName": "$s4scan15ScanViewFactoryC9registrarACSo22FlutterPluginRegistrar_pSg_tcfc",
+            "moduleName": "scan",
+            "objc_name": "initWithRegistrar:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(withFrame:viewIdentifier:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPlatformView",
+                "printedName": "Flutter.FlutterPlatformView",
+                "usr": "c:objc(pl)FlutterPlatformView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanViewFactory(im)createWithFrame:viewIdentifier:arguments:",
+            "mangledName": "$s4scan15ScanViewFactoryC6create9withFrame14viewIdentifier9argumentsSo015FlutterPlatformC0_pSo6CGRectV_s5Int64VypSgtF",
+            "moduleName": "scan",
+            "objc_name": "createWithFrame:viewIdentifier:arguments:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createArgsCodec",
+            "printedName": "createArgsCodec()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)ScanViewFactory(im)createArgsCodec",
+            "mangledName": "$s4scan15ScanViewFactoryC15createArgsCodecSo014FlutterMessageG0_So8NSObjectpyF",
+            "moduleName": "scan",
+            "objc_name": "createArgsCodec",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanViewFactory",
+                "printedName": "scan.ScanViewFactory",
+                "usr": "c:@M@scan@objc(cs)ScanViewFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@scan@objc(cs)ScanViewFactory(im)init",
+            "mangledName": "$s4scan15ScanViewFactoryCACycfc",
+            "moduleName": "scan",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@scan@objc(cs)ScanViewFactory",
+        "mangledName": "$s4scan15ScanViewFactoryC",
+        "moduleName": "scan",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "scan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftScanPlugin",
+        "printedName": "SwiftScanPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)SwiftScanPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s4scan15SwiftScanPluginC8register4withySo07FlutterD9Registrar_p_tFZ",
+            "moduleName": "scan",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@scan@objc(cs)SwiftScanPlugin(im)handleMethodCall:result:",
+            "mangledName": "$s4scan15SwiftScanPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "scan",
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftScanPlugin",
+                "printedName": "scan.SwiftScanPlugin",
+                "usr": "c:@M@scan@objc(cs)SwiftScanPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@scan@objc(cs)SwiftScanPlugin(im)init",
+            "mangledName": "$s4scan15SwiftScanPluginCACycfc",
+            "moduleName": "scan",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@scan@objc(cs)SwiftScanPlugin",
+        "mangledName": "$s4scan15SwiftScanPluginC",
+        "moduleName": "scan",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "StringLiteral",
+      "offset": 124,
+      "length": 16,
+      "value": "\"scan.ScanPlatformView\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 705,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 720,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 754,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 761,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 779,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "FloatLiteral",
+      "offset": 784,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 820,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 827,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 838,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 845,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "FloatLiteral",
+      "offset": 850,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 886,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 893,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 904,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 911,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "FloatLiteral",
+      "offset": 916,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1059,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 414,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 612,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 754,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 776,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 801,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 967,
+      "length": 19,
+      "value": "\"com.chavesgu.scan\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1099,
+      "length": 32,
+      "value": "\"chavesgu\/scan\/method_\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1130,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1356,
+      "length": 7,
+      "value": "\"scale\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 3,
+      "value": "\"r\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1434,
+      "length": 3,
+      "value": "\"g\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1471,
+      "length": 3,
+      "value": "\"b\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1562,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1605,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1623,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1640,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 1779,
+      "length": 9,
+      "value": "\"capture\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2259,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 2761,
+      "length": 38,
+      "value": "\"Default video device is unavailable.\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 3508,
+      "length": 43,
+      "value": "\"Could not add photo output to the session\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 3862,
+      "length": 46,
+      "value": "\"Couldn't create video device input: \""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 3907,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4101,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4140,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4494,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4515,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4678,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4754,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4840,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 5083,
+      "length": 9,
+      "value": "\"capture\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5278,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5317,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5361,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5394,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5419,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5495,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5501,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5645,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5676,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5751,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5930,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5942,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5953,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5965,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7523,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7898,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7951,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8002,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8336,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8381,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 8547,
+      "length": 25,
+      "value": "\"transform.translation.y\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8687,
+      "length": 3,
+      "value": "175"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8691,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 8788,
+      "length": 9,
+      "value": "\"opacity\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8836,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8874,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8938,
+      "length": 3,
+      "value": "175"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8942,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9010,
+      "length": 3,
+      "value": "175"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9014,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9200,
+      "length": 3,
+      "value": "175"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9204,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9253,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 10039,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 10662,
+      "length": 12,
+      "value": "\"onCaptured\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 10817,
+      "length": 8,
+      "value": "\"resume\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 10876,
+      "length": 7,
+      "value": "\"pause\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 10933,
+      "length": 17,
+      "value": "\"toggleTorchMode\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "FloatLiteral",
+      "offset": 11600,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "kind": "StringLiteral",
+      "offset": 138,
+      "length": 8,
+      "value": "\"scan.ScanView\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 123,
+      "length": 15,
+      "value": "\"scan.ScanViewFactory\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 15,
+      "value": "\"chavesgu\/scan\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 20,
+      "value": "\"chavesgu\/scan_view\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 580,
+      "length": 20,
+      "value": "\"getPlatformVersion\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 616,
+      "length": 6,
+      "value": "\"iOS \""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 7,
+      "value": "\"parse\""
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1599,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1665,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 2317,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 2429,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

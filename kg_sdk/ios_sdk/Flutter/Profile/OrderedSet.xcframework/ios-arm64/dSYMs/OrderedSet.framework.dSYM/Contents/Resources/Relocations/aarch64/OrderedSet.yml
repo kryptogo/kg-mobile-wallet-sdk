@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/OrderedSet/OrderedSet.framework/OrderedSet'
+binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/OrderedSet/OrderedSet.framework/OrderedSet'
 relocations:
   - { offsetInCU: 0x34, offset: 0x53FCD, size: 0x8, addend: 0x0, symName: _OrderedSetVersionString, symObjAddr: 0x0, symBinAddr: 0xF260, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x54002, size: 0x8, addend: 0x0, symName: _OrderedSetVersionNumber, symObjAddr: 0x28, symBinAddr: 0xF288, symSize: 0x0 }

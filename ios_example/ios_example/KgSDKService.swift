@@ -16,7 +16,7 @@ class KgSDKService : ObservableObject{
         
         self.openVerifyPageCallback = openVerifyPageCallback
         self.flutterEngine = FlutterEngine(name: engineName)
-        flutterEngine?.run()
+        flutterEngine!.run()
         
         self.flutterViewController = FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
         self.methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: self.flutterViewController!.binaryMessenger)
