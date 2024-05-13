@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		h5OB7aKzS5WR9SemvZAyN6FEkJs=
+		85iaADE5tc/NukRC+KGdiZaZ0ZA=
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		crDy9wAODNkf0AVTG2T/yO+xAYQ=
+		dDXVfHMdVONfhDtYtnueyfobOqU=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		lB+VT6KbWMxE0dKscVt16yRAn1U=
+		bVmiLf8OmoQB3mvfRvuXgJGHzZ4=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		iwb51GnLJMUyiMqwKkghScSwfyA=
+		/CZyPL3lGUH+fZURfaQmcftvAgQ=
 		</data>
 		<key>flutter_assets/assets/icon_all.svg</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		l6OUFiYGt5VlWCySepEXq4OlvzA=
+		e74E+IBmVI4K//8DGMk1oZmPodc=
 		</data>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
 		<data>
@@ -1432,6 +1432,106 @@
 		<data>
 		oLudOGp52G0q5m0rCwUTTCha7gY=
 		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-alert-circle.svg</key>
+		<data>
+		oH0zs+BhbBrxJximgRN3c5uNCiY=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-alert.svg</key>
+		<data>
+		mwMp3NK7Dbg0ryr3Gl3rPVOeBzE=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-down-left.svg</key>
+		<data>
+		PiS6Tm9+nWZM8EC7JSi3cf5OzuM=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-left.svg</key>
+		<data>
+		hqarKlgCk8tNoUiu9IY/lSzWmcU=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-right.svg</key>
+		<data>
+		QsXYlv7PLABcllTVbMx3W7PKvhA=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-up-right.svg</key>
+		<data>
+		aY5GPSv9afNBsSw4VB193F/lQ5g=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-bell.svg</key>
+		<data>
+		fnRpHZKOjSZCMiTBh3NLRdd66Qg=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-chevron-right.svg</key>
+		<data>
+		FM/niAaGuLj54Urw5O4nZC3V/4I=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-currency-dollar-add.svg</key>
+		<data>
+		jwGZSypmx2lPud03jgmZpq3ymJQ=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-currency-dollar-circle-add.svg</key>
+		<data>
+		JC1aCOklWevKZDbLhoY42OdEwlg=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-dots-vertical.svg</key>
+		<data>
+		M7MRnVxcLohhxrA0b5bTbAoDRmk=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-eye-off.svg</key>
+		<data>
+		66OtuYI5XlFRTyRV5bEx4u8oOSI=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-eye.svg</key>
+		<data>
+		rCHm6GReq67xnSpSkUDGjAsQWyY=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-file-history.svg</key>
+		<data>
+		7mRWqiqoSXVJh6bJdIgj2X8nWuE=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-filter-lines.svg</key>
+		<data>
+		4pLDTLVYlcnnBqn6vTv50AooFGc=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-lightning.svg</key>
+		<data>
+		C2x0gjM+YQtDE0qf8DeOQgzokks=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-message-smile-circle.svg</key>
+		<data>
+		o1XGcuNCZq4W+tbj1DKhBxccSl4=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-pie-chart.svg</key>
+		<data>
+		nZIz9xXfnTQSxRjPMQmsbsVUGX0=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-plus.svg</key>
+		<data>
+		H3UElj0thlvyyBp+/XwyNHW8GHU=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-qr-code.svg</key>
+		<data>
+		HB5G0XGveOVNx3w1I6U+Aft4iuk=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-scan.svg</key>
+		<data>
+		aQxlVfe/nnnc0Vlq34ExIPi8mwU=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-switch-horizontal.svg</key>
+		<data>
+		kgqbPc9PSE40baArNEX7zjsh8Pw=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-wallet-add.svg</key>
+		<data>
+		UiebLmNG1gEfeFvU2CSdzPvoCgc=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-solid-eye.svg</key>
+		<data>
+		Ypp9GBrsRYgu8+btwLPiDmFtzI8=
+		</data>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-solid-lightning.svg</key>
+		<data>
+		Z4vWUYrofaklqM/qEb0ETtWjgl0=
+		</data>
 		<key>flutter_assets/packages/kg_kit/assets/line_chart/line_chart_empty.svg</key>
 		<data>
 		f04h4eNnRGSOoUQw2L3T5ff0SAs=
@@ -1750,31 +1850,43 @@
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/flavor_dev.json</key>
 		<data>
-		aNUkggVwJxmuA45Dxm/UByUS5HU=
+		HzTKZCEinRTRuYDafBXHUO006Rc=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/flavor_prod.json</key>
 		<data>
-		Dajdc72yr2YNJquGduBiYfHmMNA=
+		R+NSbMsWOUMyVYzcJAw+v0wNo9s=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/flavor_staging.json</key>
 		<data>
-		aNUkggVwJxmuA45Dxm/UByUS5HU=
+		HzTKZCEinRTRuYDafBXHUO006Rc=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme.json</key>
 		<data>
-		+90DaiCmuxdl7FtfQzXIkJHAyk4=
+		iecvfDbGSDBX4qrFPxxhL2gHlfc=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_dev.json</key>
+		<data>
+		CcVvawBmvLdC6KqbI3LclFQbKBU=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_prod.json</key>
+		<data>
+		KmvrSOwTt2+/fTBaLPZNB7Z+hTk=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_staging.json</key>
+		<data>
+		KmvrSOwTt2+/fTBaLPZNB7Z+hTk=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_dev.json</key>
 		<data>
-		L4s2R97vfdY8uqCG6INANI2JAVE=
+		lBkZQlhsDqef3488fFPB/2WDFJ4=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_prod.json</key>
 		<data>
-		FJNygzjxS3/JZLOVuyLrHwgdqco=
+		qqz22MRF5jWXdiwbtifPNIOuUz8=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_staging.json</key>
 		<data>
-		AnwDwD5YY24RpJIuY30jETQ680g=
+		fg0X2M7YIAjmtC8Vj7e/dCxJshU=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/flavor_dev.json</key>
 		<data>
@@ -1792,6 +1904,18 @@
 		<data>
 		SXcTog0zU2YLI0jYpB46gGqwCtY=
 		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_dev.json</key>
+		<data>
+		2RCwKHEHXTFW7IZ138lbfV1kCqY=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_prod.json</key>
+		<data>
+		2RCwKHEHXTFW7IZ138lbfV1kCqY=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_staging.json</key>
+		<data>
+		2RCwKHEHXTFW7IZ138lbfV1kCqY=
+		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/wallet_config_dev.json</key>
 		<data>
 		moQj3d/uwKthPT7vGG99TK54S9I=
@@ -1806,59 +1930,83 @@
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/flavor_dev.json</key>
 		<data>
-		+9CsmaIhMJ726575v3UtMDbNDJ0=
+		mhwr5gkhoaxJCKV8JbpX4VwO2kM=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/flavor_prod.json</key>
 		<data>
-		+9CsmaIhMJ726575v3UtMDbNDJ0=
+		mhwr5gkhoaxJCKV8JbpX4VwO2kM=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/flavor_staging.json</key>
 		<data>
-		+9CsmaIhMJ726575v3UtMDbNDJ0=
+		mhwr5gkhoaxJCKV8JbpX4VwO2kM=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme.json</key>
 		<data>
 		UcDT8NtXOh4qxKvpSrRLspnGkv0=
 		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_dev.json</key>
+		<data>
+		RJHo5OL/R+srnHMwYBS7mZ2E5F0=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_prod.json</key>
+		<data>
+		J9pnN9zxFjAAtvltvIg3ynvs52Y=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_staging.json</key>
+		<data>
+		J9pnN9zxFjAAtvltvIg3ynvs52Y=
+		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_dev.json</key>
 		<data>
-		hRbcwVYfYwDv/io9VmS/+BPrkkg=
+		Sngw2Mske+Milzv+xLJoVna/m+U=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_prod.json</key>
 		<data>
-		tquboAoZjEAkvZRpOzpXQ9sJCjA=
+		F8Jv3f4H1Hc3NiztNhEvUJ/qf7g=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_staging.json</key>
 		<data>
-		Uz7stWs8WScEUGI8NMLGh5il6Ao=
+		rWtLvnUNSLLEDy8Bg+qb6+cy/Zs=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_dev.json</key>
 		<data>
-		aNUkggVwJxmuA45Dxm/UByUS5HU=
+		v3wlFVphBquS63QpyGMwh9KKLnE=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_prod.json</key>
 		<data>
-		Dajdc72yr2YNJquGduBiYfHmMNA=
+		phVmeB2ankRknSKDfFhsFW9BLeE=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_staging.json</key>
 		<data>
-		aNUkggVwJxmuA45Dxm/UByUS5HU=
+		v3wlFVphBquS63QpyGMwh9KKLnE=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme.json</key>
 		<data>
 		6eDbAMP+ZcxMCJ5JYzlEHuNux3s=
 		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_dev.json</key>
+		<data>
+		wEBvtxe8bOQQNLcUSDg/Zd+zGWo=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_prod.json</key>
+		<data>
+		qxsDKy9zYPUS1HMLu51by9Tkiw0=
+		</data>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_staging.json</key>
+		<data>
+		2RCwKHEHXTFW7IZ138lbfV1kCqY=
+		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_dev.json</key>
 		<data>
-		R6ebmdp5ZDLAlSOhCwWkQr2lxvU=
+		jVkAdSCGjUcT0DTSxmspXq82pE8=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_prod.json</key>
 		<data>
-		WGJDnHM90P0EFqdSQ5M2xL3zvWU=
+		QLCyXpI/V5/ozo4rHA34U7wEfcY=
 		</data>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_staging.json</key>
 		<data>
-		WGJDnHM90P0EFqdSQ5M2xL3zvWU=
+		rGjjZS8HLl6GMzINGOUhHAlloSA=
 		</data>
 		<key>flutter_assets/packages/kg_service_core/assets/ens.svg</key>
 		<data>
@@ -2063,14 +2211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KpK6cLkO/sJ6YRsKpfoNpG4BbXjTk17qf6mNd1j7vFM=
+			NRgs3QP1GDn4FDDg7+V5mjbXQQWuwAv3FHyZ2D3Jtu4=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yfTnbrBP3zdRBbd8QjwlGwi2Audh96rCe7je9z7ljUA=
+			/FAthxQUG4lDbyen7PvkZzjvQCL/MkvlSWq+Ty/kQhY=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2084,7 +2232,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVPeAGi5MDmmXooa8IrT99CuiK6h8attGXslHLyLtns=
+			4CQihhtU7sITeE/0NZCpu1p0ururM8k2rCvtLEoy0lg=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon_all.svg</key>
@@ -2154,7 +2302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ih05eVz/Q3dDFjAuA2+DOBg61gAGzhmRoq4hAkY5ZoU=
+			761PX47QysR3hcRWqFE+quA/UrZbnPkiLvnLqGieGS4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
@@ -4551,6 +4699,181 @@
 			9E7es/6eBkUuaNeQPjrgJEcpkrQMsHMcKAwF1WnC55A=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-alert-circle.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/UQFK9y88svXwEbSTyZKAzOdn8VZ25ouyFLCv/oK9ls=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-alert.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jyKojtYGiX+72DpM58uoRNzANcTOQx1BQbuAsDfNY8E=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-down-left.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FrRKo2UMrUhbLg8fm3PgVDj07DmdBXMvI7ZrdZzY2TA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-left.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I/3Fle5FPXLF11Kt7hgPsAwGjSb483+9JngCUj4Ap2w=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-right.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wj4z+ej6wRoBoZaCIaW/Qxmqu1+XcVu3IyifoBG3+ZI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-arrow-up-right.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gwCxrv2sdZV1J5gcadrl+2HKPRAW/qZKTxN3Bz7YeXw=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-bell.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N4pqaIWm1EA1iFDerERCAWi1jSxLa6m46+zLoiSKTkY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-chevron-right.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CRwxpAc0GvLO7LbaEyQpp+5qJMPOK+q90kBEXY1obA0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-currency-dollar-add.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zW9BlHGTYuRgMGl1VdNq/cJPwzFZK6+aKmqKk1tSWVk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-currency-dollar-circle-add.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7wCRKK/NICpcL77Oseid5apAETLk+vyLiA6vN0kCl0w=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-dots-vertical.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5yaEdY9PvfbtHhnUW7axjU5qQqJ0lizCg/gzxon+lVI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-eye-off.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mvMKGkK1DvCkOqPs0/GUUeqNb9Clc89TedGiDfmSpAc=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-eye.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rx9hIIIDKj27Fisj5kUsLJmvwU0yKJz/ebxxGu/RdpM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-file-history.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mG0SsdrdjBJqsCyntNjRUN15woKAFn4urKoHlao5DC0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-filter-lines.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QgD5sGGsbdDvv735mN3NikWPgjcpim+G2dJX+bF2ndM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-lightning.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5qW38hHa3cS0nqjPYH2I32/So2j6tHNcJ0rqoBVzCxo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-message-smile-circle.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kSpqZrFIL/+LJmLdWmvoX787esg1dv/LL/4PFCksQn8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-pie-chart.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xPSSLkV2K0wlos14S8pa52HLir+UxF3HfQlRJsgCIXo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-plus.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/Bg5488jqe+0YqjC87xIrTjH0/V88t9B4wsJvz93Lyk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-qr-code.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LSGMju/wne/ZgzSFTuZPk89CCZ83aZFkp8duaIoZJWM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-scan.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vFSrVf8OXTQvs1ua+i4WpxOoeds1jXa1Bv9AEZzC6eg=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-switch-horizontal.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SNZ3IUf8dJ0wpfqJuEa2uk+P9JPuIiUugOAGdQS1mPo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-line-wallet-add.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zp2jL+vpEXzN0Yxcca3uUzGyYleIghmjZka8fdv4BXk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-solid-eye.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2o1qqL84OD53JhZFqZD5JsMl8aGRocM8V+b2eWD/Gfs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_kit/assets/kg_icon/ic-solid-lightning.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RX+HO5GcFOZqsL9Xu0KNn64FlMnqs9ncDOrv24xILkQ=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/kg_kit/assets/line_chart/line_chart_empty.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -5108,49 +5431,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2nM0qAN3qUhDyCDeo8EbAmB7dWRokH5QYSWiu5XHWo4=
+			0jmQGcfJXDRnR9X9i15Z+DpnvVMC1qulrb7/eGosHi0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/flavor_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lWBp6IcHoF6mQDWI+sunuhoAQUPZWfOTNT63AG5GPX8=
+			s+oxR/SWYM4l7lZ5R4ew6BU6O3OhN5V3gtR5DkTfGRM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/flavor_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2nM0qAN3qUhDyCDeo8EbAmB7dWRokH5QYSWiu5XHWo4=
+			0jmQGcfJXDRnR9X9i15Z+DpnvVMC1qulrb7/eGosHi0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4+PwF3H+uz1LR0pFBpcEoBXn1BqJFQECGbd6yIApls=
+			S5eZYLjn2T+Xbe+TCheFRokbP5LqYQH3kb1Xksm1gh4=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_dev.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a+Xosp5FGdtxECkzhvHFz61NKNHQ2Iip5e5JRLPO7uk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_prod.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n3ubjfvqa0hbJw3JP8dBrQVmW7JexjNDOfxEMA/EUtQ=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/theme_staging.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n3ubjfvqa0hbJw3JP8dBrQVmW7JexjNDOfxEMA/EUtQ=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_dev.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ggy6xCKi7r9WYkyIc2LiAh5TXkz7cWWDQ198gdDd2DE=
+			xlOuZqxxJzKZhiMBDj/zbX3KnFB4cv8Ew6eQahtKyyY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f2GNSJvu8Z5fPHWbnlDff3lSNx6B/+WgTN9srGWrKys=
+			3rAh8Tzi2rtMUVZGBTYj1CV6CaVeJdmK51owsa1tXW4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/kryptogo/wallet_config_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mOixk1h4ZJXlfPv0iLvnErGZvktwUE7UiJa5Ec2fXzg=
+			GFdLlFjQnX2BBm8dEKteZXrJc/GyJ6CZQPRNDU1puAM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/flavor_dev.json</key>
@@ -5181,6 +5525,27 @@
 			wiAKyptX+88ktkcX2vekyU/l64wwkAHY+rReoKAGMc0=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_dev.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OOC53oF/ZFxL7DfA1KPli67MywQPVxjcBppyxzhaC+0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_prod.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OOC53oF/ZFxL7DfA1KPli67MywQPVxjcBppyxzhaC+0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/theme_staging.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OOC53oF/ZFxL7DfA1KPli67MywQPVxjcBppyxzhaC+0=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/stickey/wallet_config_dev.json</key>
 		<dict>
 			<key>hash2</key>
@@ -5206,21 +5571,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iV9mj2T0AktFB0XGH64od2++yIFNyZ+ZpN9wuq7cMKI=
+			Rk7D2TvZGlalAa9BLctQh2kKp0+UXB6JxXtv+c/qyoo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/flavor_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iV9mj2T0AktFB0XGH64od2++yIFNyZ+ZpN9wuq7cMKI=
+			Rk7D2TvZGlalAa9BLctQh2kKp0+UXB6JxXtv+c/qyoo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/flavor_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iV9mj2T0AktFB0XGH64od2++yIFNyZ+ZpN9wuq7cMKI=
+			Rk7D2TvZGlalAa9BLctQh2kKp0+UXB6JxXtv+c/qyoo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme.json</key>
@@ -5230,46 +5595,67 @@
 			f0fB8cdgmnS1woxuevF7eGhz4Q+bkygRysQxX7emPG8=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_dev.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			COM5nvsBzr+4WU+GyLQao0Qj1x+r9EQ5rO69iKFyDHs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_prod.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2yZSXF/S/TejvBL+U/YbtQKSbaw5M3lo7+DHEm+kzdI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/theme_staging.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2yZSXF/S/TejvBL+U/YbtQKSbaw5M3lo7+DHEm+kzdI=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_dev.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6AlwcPFDo8Kf8mAtC7I/UFFVfEFKstllt5x0hVbEmk=
+			eZ05Qe+f/OYCtXgrkMgDMMFCGAzJyoCGYjinkL7syKE=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jsdsMGTxvzqGLelr9QsyAZh6EyJyIAobnHq4WI6O4Ew=
+			HiEf0C2vyG0eoxqCARw9wQnr9HEzG3U/RPZZcQ+xz8U=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tag/wallet_config_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QgNh+ClRr7U5RgeR82vrI7gWPGLX9nAxtxaaK9VQibc=
+			Mi/bW0oBTGq0cjgEoo8scpw+UKs+Hj/IlJpZoYnCRrw=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_dev.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2nM0qAN3qUhDyCDeo8EbAmB7dWRokH5QYSWiu5XHWo4=
+			WeV0agkXyezmqLrDp6HnMgIO54mJhdPh6ic8Alx8lLY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lWBp6IcHoF6mQDWI+sunuhoAQUPZWfOTNT63AG5GPX8=
+			BLJfnMussgFLubHp5xENfXxDsVdFRtohh+Hyn3uX2p0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/flavor_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2nM0qAN3qUhDyCDeo8EbAmB7dWRokH5QYSWiu5XHWo4=
+			WeV0agkXyezmqLrDp6HnMgIO54mJhdPh6ic8Alx8lLY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme.json</key>
@@ -5279,25 +5665,46 @@
 			YQj7JQzcWB/k28rohYfkctHN5v5vgGoCBuZs2hUq9Yw=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_dev.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			egKlEyZiH85k0nDSDJ3YPpHYd7uBpAQfyrPfltDvEFI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_prod.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Iqb7NvB1K8dOT1/pJLP6w3F2uzURJO+J6fLN2HZzUDk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/theme_staging.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OOC53oF/ZFxL7DfA1KPli67MywQPVxjcBppyxzhaC+0=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_dev.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RAF0eQU6gGvy4W28bWsmt1bhE0q2L9c2nDuNF/GMzKQ=
+			EHJTd0ciHvL+5Q4ORvEnChYqIvA33URImRzfXd8SGZk=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_prod.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7GwHOqN6FLFjdi3Ufmz+K3KFUaYXojbxo7VP6rtU+Yc=
+			xjdTT22SYI2PdLlbfgzhKB1/Py1aAiW1Dr+T+TYrvJw=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_platform_interface/environment/projects/tongbao/wallet_config_staging.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7GwHOqN6FLFjdi3Ufmz+K3KFUaYXojbxo7VP6rtU+Yc=
+			/g5yg6c/DFOQrAGlCwK8rp7Fq8zoq+qfTs/aZ6iKPts=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/kg_service_core/assets/ens.svg</key>

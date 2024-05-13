@@ -12,7 +12,7 @@
     "Flutter Dev Team": "flutter-dev@googlegroups.com"
   },
   "source": {
-    "http": "https://storage.googleapis.com/flutter_infra_release/flutter/bd986c5ed20a62dc34b7718c50abc782beae4c33/ios-release/artifacts.zip"
+    "http": "https://storage.googleapis.com/flutter_infra_release/flutter/bd986c5ed20a62dc34b7718c50abc782beae4c33/ios/artifacts.zip"
   },
   "documentation_url": "https://flutter.dev/docs",
   "platforms": {

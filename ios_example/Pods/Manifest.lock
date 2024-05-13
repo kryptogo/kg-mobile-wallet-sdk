@@ -2,15 +2,15 @@ PODS:
   - Flutter (3.13.500)
 
 DEPENDENCIES:
-  - Flutter (from `../../kg-flutter/packages/kg_sdk/ios_sdk/Release/Flutter.podspec`)
+  - Flutter (from `../kg_sdk/ios_sdk/Flutter/Debug/Flutter.podspec`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :podspec: "../../kg-flutter/packages/kg_sdk/ios_sdk/Release/Flutter.podspec"
+    :podspec: "../kg_sdk/ios_sdk/Flutter/Debug/Flutter.podspec"
 
 SPEC CHECKSUMS:
-  Flutter: 7d74140b3b86cf96f3ac1876f32a22fcf5a4aa7b
+  Flutter: 3fff648db247f5400a440385131794e8ba72fd18
 
-PODFILE CHECKSUM: 154247facfb5f9138fb890c69bd0a32f07b1688b
+PODFILE CHECKSUM: e9ec8f73d1c88ce3efab54785e049063cdf7e3c7
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.15.2

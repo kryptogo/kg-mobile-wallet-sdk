@@ -1,9 +1,17 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+# The enviroment variable
+# It can be specified using the command to set the value and install the pod: 'BUILD_MODE=... FLUTTER_PATH=... pod install'."
+
+# The build mode
 build_mode = ENV['BUILD_MODE'] || 'Release'
 
-pod 'Flutter', :podspec => "../../kg-flutter/packages/kg_sdk/ios_sdk/#{build_mode}/Flutter.podspec"
+# The path of where the Flutter module is located
+flutter_path = ENV['FLUTTER_PATH'] || '../kg_sdk/ios_sdk/Flutter'
+
+# Configure the path of Flutter.podspec
+pod 'Flutter', :podspec => '#{flutter_path}/#{build_mode}/Flutter.podspec'
 # pod 'KG_SDK', :podspec => "../kg_sdk/ios_sdk/Flutter/#{build_mode}/KG_SDK.podspec"
 
 target 'ios_example' do
