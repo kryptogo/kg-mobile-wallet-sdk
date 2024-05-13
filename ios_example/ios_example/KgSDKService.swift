@@ -96,7 +96,6 @@ class KgSDKService : ObservableObject{
         // check flutterViewController is initialized
         initializeFlutterViewController(flutterEngine:flutterEngine!)
         
-        flutterViewController?.modalPresentationStyle = .overCurrentContext
         flutterViewController?.isViewOpaque = false
         rootViewController.present(flutterViewController ?? createFlutterViewController(), animated: true)
     }
