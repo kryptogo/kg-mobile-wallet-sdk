@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		dDXVfHMdVONfhDtYtnueyfobOqU=
+		RUkNVVf63HtcpZwQHZHR1es8bNI=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		bVmiLf8OmoQB3mvfRvuXgJGHzZ4=
+		bUAUPA+9f8oItRLboY0/fiO/jcc=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
 		/CZyPL3lGUH+fZURfaQmcftvAgQ=
+		</data>
+		<key>flutter_assets/assets/failed_oops.svg</key>
+		<data>
+		3IzIwBu6QUyGazyb8egd/+jVi2A=
 		</data>
 		<key>flutter_assets/assets/icon_all.svg</key>
 		<data>
@@ -2199,14 +2203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NRgs3QP1GDn4FDDg7+V5mjbXQQWuwAv3FHyZ2D3Jtu4=
+			6kXVGWpNJVpp8Xv+EzdCgh8M6c5XFgBHhFnpvI+DlM4=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/FAthxQUG4lDbyen7PvkZzjvQCL/MkvlSWq+Ty/kQhY=
+			IyRjNnbBQ6Yk2JdOV8pvIkprSQr1xpllv5jybdlTw1M=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2221,6 +2225,13 @@
 			<key>hash2</key>
 			<data>
 			4CQihhtU7sITeE/0NZCpu1p0ururM8k2rCvtLEoy0lg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/failed_oops.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eBchJKzQvTGc4sYCELWb4Xpjs41jTz0BDb4xGEzfxIw=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon_all.svg</key>

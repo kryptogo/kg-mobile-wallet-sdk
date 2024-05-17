@@ -16,7 +16,6 @@ struct ContentView: View {
     var kgOauthToken = ""
     @EnvironmentObject var kgSDKService: KgSDKService
     
-    
     var body: some View {
         TabView {
             NavigationView {
@@ -56,6 +55,18 @@ struct ContentView: View {
                     Text("Call getBalance")
                 })
                 
+                Button(action: checkDevice, label: {
+                    Text("Call checkDevice")
+                })
+                
+                Button(action: {
+                    kgSDKService.openVerifyPage { isVerified in
+                        print("isVerified: \(isVerified)")
+                    }
+                }, label: {
+                    Text("Call openVerifyPage")
+                })
+                
                 Button(action: { self.showWebView.toggle() }, label: {
                     Text("Open Web Page")
                 })
@@ -71,35 +82,11 @@ struct ContentView: View {
             .tabItem {
                 Label("Other", systemImage: "ellipsis.circle")
             }
+
         }
+
     }
-    
-    
-    
-    func openVerifyPage(result: @escaping FlutterResult) {
-        // Assuming you have a VerifyPageViewController that handles the verification logic
-        
-        let verifyPageVC = VerifyPageViewController()
-        verifyPageVC.modalPresentationStyle = .fullScreen
-        verifyPageVC.completion = { isSuccess in
-            print(isSuccess)
-            result(isSuccess)
-            DispatchQueue.main.async {
-                verifyPageVC.dismiss(animated: true, completion: nil)
-            }
-        }
-        // Present your verifyPageVC here, e.g., using the top most view controller or another method.
-        // Find the top most view controller to present the verifyPageVC
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            
-            // Present your verifyPageVC here
-            topController.present(verifyPageVC, animated: true, completion: nil)
-        }
-        
-    }
+
     
     private func showKgSDK() {
         if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
@@ -108,7 +95,7 @@ struct ContentView: View {
     }
     
     private func callKgSDK() {
-        kgSDKService.callKgSDK(funcName: "checkDevice", completion: { result in
+        kgSDKService.callKgSDK(funcName: "callKgSDK", completion: { result in
             print(result ?? "no-data")
         })
     }
@@ -121,7 +108,11 @@ struct ContentView: View {
     
     private func isReady() {
         kgSDKService.isReady( completion: { result in
-            print(result ?? "no-data")
+            guard let isReady = result as? Bool else {
+                print("no-data")
+                return
+            }
+            print(isReady)
         })
     }
     
@@ -131,5 +122,54 @@ struct ContentView: View {
         })
     }
     
+    private func checkDevice() {
+        kgSDKService.checkDevice( completion: { result in
+            
+            guard let isSame = result as? Bool else {
+                print("no-data")
+                return
+            }
+            print(isSame)
+        })
+    }
     
+    
+
+    
+    
+}
+
+
+struct ModalView: View {
+    @State private var inputText: String = ""
+    @State private var showAlert = false
+    var completion: (Bool) -> Void
+    let verificationCode = "111111"
+
+    var body: some View {
+        VStack {
+            Text("Enter something")
+            TextField("Enter text", text: $inputText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            Button("Submit") {
+                if inputText != verificationCode {
+                    showAlert = true
+                } else {
+                    completion(true)
+                }
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Error"), message: Text("Input cannot be empty"), dismissButton: .default(Text("OK")))
+            }
+
+            Button("Cancel") {
+                completion(false)
+            }
+        }
+        .padding()
+        .interactiveDismissDisabled()
+
+    }
 }
