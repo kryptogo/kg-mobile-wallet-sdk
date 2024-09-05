@@ -183,7 +183,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -509,12 +509,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Flutter.FlutterPluginRegistrar?",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -540,7 +540,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPlatformView",
-                "printedName": "Flutter.FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
                 "usr": "c:objc(pl)FlutterPlatformView"
               },
               {
@@ -588,7 +588,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
               }
             ],
             "declKind": "Func",
@@ -732,7 +732,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -899,732 +899,74 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
       "kind": "StringLiteral",
       "offset": 124,
       "length": 16,
       "value": "\"scan.ScanPlatformView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "StringLiteral",
-      "offset": 689,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 705,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 720,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 772,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 779,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "FloatLiteral",
-      "offset": 784,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 820,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 827,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 838,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 845,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "FloatLiteral",
-      "offset": 850,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 886,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 893,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 904,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 911,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "FloatLiteral",
-      "offset": 916,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1059,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 317,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 414,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 612,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 653,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "IntegerLiteral",
       "offset": 776,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "FloatLiteral",
       "offset": 801,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 967,
-      "length": 19,
-      "value": "\"com.chavesgu.scan\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1099,
-      "length": 32,
-      "value": "\"chavesgu\/scan\/method_\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1130,
-      "length": 43,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1356,
-      "length": 7,
-      "value": "\"scale\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1397,
-      "length": 3,
-      "value": "\"r\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1434,
-      "length": 3,
-      "value": "\"g\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1471,
-      "length": 3,
-      "value": "\"b\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1508,
-      "length": 3,
-      "value": "\"a\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1562,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1605,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1623,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1640,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 1779,
-      "length": 9,
-      "value": "\"capture\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2259,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 2761,
-      "length": 38,
-      "value": "\"Default video device is unavailable.\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 3508,
-      "length": 43,
-      "value": "\"Could not add photo output to the session\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 3862,
-      "length": 46,
-      "value": "\"Couldn't create video device input: \""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 3907,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4101,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4140,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4494,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4515,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4678,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4754,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4840,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 5083,
-      "length": 9,
-      "value": "\"capture\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5278,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5317,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5361,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5394,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5419,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5495,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5501,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5645,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5676,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5751,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5930,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5942,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5953,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5965,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7523,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7898,
-      "length": 3,
-      "value": "0.8"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7951,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8002,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8336,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8381,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 8547,
-      "length": 25,
-      "value": "\"transform.translation.y\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8687,
-      "length": 3,
-      "value": "175"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8691,
-      "length": 3,
-      "value": "1.5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 8788,
-      "length": 9,
-      "value": "\"opacity\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8836,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8874,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8938,
-      "length": 3,
-      "value": "175"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8942,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9010,
-      "length": 3,
-      "value": "175"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9014,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9200,
-      "length": 3,
-      "value": "175"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9204,
-      "length": 3,
-      "value": "1.5"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9253,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9896,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 10039,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 10662,
-      "length": 12,
-      "value": "\"onCaptured\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 10817,
-      "length": 8,
-      "value": "\"resume\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 10876,
-      "length": 7,
-      "value": "\"pause\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 10933,
-      "length": 17,
-      "value": "\"toggleTorchMode\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11600,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "StringLiteral",
       "offset": 138,
       "length": 8,
       "value": "\"scan.ScanView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 15,
       "value": "\"scan.ScanViewFactory\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 216,
-      "length": 15,
-      "value": "\"chavesgu\/scan\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 449,
-      "length": 20,
-      "value": "\"chavesgu\/scan_view\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 580,
-      "length": 20,
-      "value": "\"getPlatformVersion\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
-      "length": 6,
-      "value": "\"iOS \""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 684,
-      "length": 7,
-      "value": "\"parse\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1599,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1665,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "Dictionary",
-      "offset": 2317,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/SwiftScanPlugin.swift",
-      "kind": "Dictionary",
-      "offset": 2429,
-      "length": 3,
-      "value": "[]"
     }
   ]
 }

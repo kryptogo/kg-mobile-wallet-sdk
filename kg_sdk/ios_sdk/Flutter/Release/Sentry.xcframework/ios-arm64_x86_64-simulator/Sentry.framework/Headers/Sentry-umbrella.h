@@ -27,8 +27,6 @@
 #import "SentryGeo.h"
 #import "SentryHttpStatusCodeRange.h"
 #import "SentryHub.h"
-#import "SentryId.h"
-#import "SentryIntegrationProtocol.h"
 #import "SentryMeasurementUnit.h"
 #import "SentryMechanism.h"
 #import "SentryMechanismMeta.h"

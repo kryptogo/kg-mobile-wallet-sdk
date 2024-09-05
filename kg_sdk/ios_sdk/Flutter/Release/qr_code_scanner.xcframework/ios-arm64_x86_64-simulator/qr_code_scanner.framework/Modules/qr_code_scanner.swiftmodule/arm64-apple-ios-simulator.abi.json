@@ -268,7 +268,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -290,7 +290,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -315,7 +315,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -676,7 +676,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               },
               {
@@ -1327,12 +1327,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Flutter.FlutterPluginRegistrar?",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -1358,12 +1358,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Flutter.FlutterPluginRegistrar?",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "FlutterPluginRegistrar",
-                        "printedName": "Flutter.FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
                         "usr": "c:objc(pl)FlutterPluginRegistrar"
                       }
                     ],
@@ -1391,12 +1391,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Flutter.FlutterPluginRegistrar?",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "FlutterPluginRegistrar",
-                        "printedName": "Flutter.FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
                         "usr": "c:objc(pl)FlutterPluginRegistrar"
                       }
                     ],
@@ -1446,7 +1446,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -1467,7 +1467,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPlatformView",
-                "printedName": "Flutter.FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
                 "usr": "c:objc(pl)FlutterPlatformView"
               },
               {
@@ -1516,7 +1516,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
               }
             ],
             "declKind": "Func",
@@ -1744,7 +1744,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -1770,7 +1770,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -1942,133 +1942,133 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 608,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 657,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 706,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 809,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 904,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 962,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1007,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1057,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1103,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1195,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1244,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"qr_code_scanner.QRView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRViewFactory.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRViewFactory.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 13,
       "value": "\"qr_code_scanner.QRViewFactory\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
       "kind": "StringLiteral",
       "offset": 42,
       "length": 20,

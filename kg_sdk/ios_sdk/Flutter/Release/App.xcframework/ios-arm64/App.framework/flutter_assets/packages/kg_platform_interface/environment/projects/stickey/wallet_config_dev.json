@@ -1,1 +1,56 @@
-{"maxWallet":20,"localizelySDKToken":"85f3a0f4142841f5aef1c7d0a1791837305db684","localizelyDistributionId":"66f222a258d749cf8e8adc15e1250dac","allRpcs":["ethereum","polygon","arb","solana","btc","bsc","tron","kcc","ronin"],"evmRpcs":["ethereum","polygon","arb","bsc","kcc","ronin"],"dappSupportedRpcs":["ethereum","polygon","arb","bsc","kcc","ronin"],"supportedAssetTypes":["token","nft"],"headerNameDevUid":"ST-DEV-UID","headerNameWalletToken":"ST-WALLET-TOKEN","wcUrl":"https://stickey.app/","wcIconUrl":"https://wallet-static.kryptogo.com/public/assets/stickey/stickey.png","wcProjectId":"decb85be440d668a144661ffae6ce9de","zendeskApiBaseUrl":"https://fornhelp.zendesk.com/api/v2","openseaApiBaseUrl":"https://api.opensea.io","coingeckoApiBaseUrl":"https://api.coingecko.com/api/v3","supportedLocales":[{"languageCode":"en","countryCode":"US"},{"languageCode":"ja","countryCode":"JP"}],"showExploreTab":true,"showCommunityTab":true}
+{
+  "maxWallet": 20,
+  "localizelySDKToken": "85f3a0f4142841f5aef1c7d0a1791837305db684",
+  "localizelyDistributionId": "66f222a258d749cf8e8adc15e1250dac",
+  "allRpcs": [
+    "ethereum",
+    "polygon",
+    "arb",
+    "solana",
+    "btc",
+    "bsc",
+    "tron",
+    "kcc",
+    "ronin"
+  ],
+  "evmRpcs": [
+    "ethereum",
+    "polygon",
+    "arb",
+    "bsc",
+    "kcc",
+    "ronin"
+  ],
+  "dappSupportedRpcs": [
+    "ethereum",
+    "polygon",
+    "arb",
+    "bsc",
+    "kcc",
+    "ronin"
+  ],
+  "supportedAssetTypes": [
+    "token",
+    "nft"
+  ],
+  "headerNameDevUid": "ST-DEV-UID",
+  "headerNameWalletToken": "ST-WALLET-TOKEN",
+  "wcUrl": "https://stickey.app/",
+  "wcIconUrl": "https://wallet-static.kryptogo.com/public/assets/stickey/stickey.png",
+  "wcProjectId": "decb85be440d668a144661ffae6ce9de",
+  "zendeskApiBaseUrl": "https://fornhelp.zendesk.com/api/v2",
+  "openseaApiBaseUrl": "https://api.opensea.io",
+  "coingeckoApiBaseUrl": "https://api.coingecko.com/api/v3",
+  "supportedLocales": [
+    {
+      "languageCode": "en",
+      "countryCode": "US"
+    },
+    {
+      "languageCode": "ja",
+      "countryCode": "JP"
+    }
+  ],
+  "showExploreTab": true,
+  "showCommunityTab": true
+}

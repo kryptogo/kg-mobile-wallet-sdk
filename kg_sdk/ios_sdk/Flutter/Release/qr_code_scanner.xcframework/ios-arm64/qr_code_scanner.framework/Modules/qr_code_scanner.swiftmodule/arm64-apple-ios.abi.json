@@ -46,7 +46,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               },
               {
@@ -227,7 +227,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -248,7 +248,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPlatformView",
-                "printedName": "Flutter.FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
                 "usr": "c:objc(pl)FlutterPlatformView"
               },
               {
@@ -296,7 +296,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
               }
             ],
             "declKind": "Func",
@@ -434,7 +434,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -460,7 +460,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -629,721 +629,133 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 608,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 657,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 706,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 809,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 904,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 962,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1007,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1057,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1103,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1195,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "IntegerLiteral",
       "offset": 1244,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 1581,
-      "length": 14,
-      "value": "\"cameraFacing\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 1674,
-      "length": 44,
-      "value": "\"net.touchcapture.qr.flutterqr\/qrview_\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 1717,
-      "length": 42,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2049,
-      "length": 15,
-      "value": "\"setDimensions\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2253,
-      "length": 7,
-      "value": "\"width\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2265,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2326,
-      "length": 8,
-      "value": "\"height\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2339,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2407,
-      "length": 15,
-      "value": "\"scanAreaWidth\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2427,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2496,
-      "length": 16,
-      "value": "\"scanAreaHeight\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2517,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2586,
-      "length": 16,
-      "value": "\"scanAreaOffset\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2607,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2631,
-      "length": 11,
-      "value": "\"startScan\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2740,
-      "length": 12,
-      "value": "\"flipCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
-      "length": 13,
-      "value": "\"toggleFlash\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2902,
-      "length": 13,
-      "value": "\"pauseCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 2984,
-      "length": 12,
-      "value": "\"stopCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 3064,
-      "length": 14,
-      "value": "\"resumeCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 3148,
-      "length": 15,
-      "value": "\"getCameraInfo\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 3234,
-      "length": 14,
-      "value": "\"getFlashInfo\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 3318,
-      "length": 19,
-      "value": "\"getSystemFeatures\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3812,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3818,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4447,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4470,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4605,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4645,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4777,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4921,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "Array",
-      "offset": 5236,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 5526,
-      "length": 17,
-      "value": "\"onPermissionSet\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6076,
-      "length": 7,
-      "value": "\"AZTEC\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6214,
-      "length": 9,
-      "value": "\"CODE_39\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6354,
-      "length": 9,
-      "value": "\"CODE_93\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6495,
-      "length": 10,
-      "value": "\"CODE_128\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6640,
-      "length": 13,
-      "value": "\"DATA_MATRIX\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6782,
-      "length": 7,
-      "value": "\"EAN_8\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 6919,
-      "length": 8,
-      "value": "\"EAN_13\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 7143,
-      "length": 5,
-      "value": "\"ITF\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 7279,
-      "length": 9,
-      "value": "\"PDF_417\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 7415,
-      "length": 9,
-      "value": "\"QR_CODE\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 7553,
-      "length": 7,
-      "value": "\"UPC_E\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9301,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9321,
-      "length": 10,
-      "value": "\"rawBytes\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9501,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9522,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9624,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9645,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9665,
-      "length": 10,
-      "value": "\"rawBytes\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9858,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 9968,
-      "length": 15,
-      "value": "\"onRecognizeQR\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 10232,
-      "length": 15,
-      "value": "\"unknown-error\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 10258,
-      "length": 26,
-      "value": "\"Unable to start scanning\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11061,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11077,
-      "length": 26,
-      "value": "\"No barcode scanner found\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11288,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11351,
-      "length": 24,
-      "value": "\"cameraInformationError\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11386,
-      "length": 33,
-      "value": "\"Could not get flash information\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11726,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11789,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11805,
-      "length": 36,
-      "value": "\"This device doesn't support flash\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11909,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 11925,
-      "length": 26,
-      "value": "\"No barcode scanner found\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12199,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 12256,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 12272,
-      "length": 26,
-      "value": "\"No barcode scanner found\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12550,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 12607,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 12623,
-      "length": 26,
-      "value": "\"No barcode scanner found\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12821,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12863,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12950,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12990,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13079,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13157,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13245,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 13326,
-      "length": 16,
-      "value": "\"hasFrontCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 13379,
-      "length": 15,
-      "value": "\"hasBackCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 13430,
-      "length": 10,
-      "value": "\"hasFlash\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 13473,
-      "length": 14,
-      "value": "\"activeCamera\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 13571,
-      "length": 5,
-      "value": "\"404\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"qr_code_scanner.QRView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRViewFactory.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRViewFactory.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 13,
       "value": "\"qr_code_scanner.QRViewFactory\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 275,
-      "length": 38,
-      "value": "\"net.touchcapture.qr.flutterqr\/qrview\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
       "kind": "StringLiteral",
       "offset": 42,
       "length": 20,

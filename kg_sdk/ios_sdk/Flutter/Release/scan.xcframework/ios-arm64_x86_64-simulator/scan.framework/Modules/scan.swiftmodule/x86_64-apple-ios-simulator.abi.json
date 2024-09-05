@@ -404,7 +404,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -573,7 +573,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -609,9 +609,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -707,9 +707,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -821,9 +821,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -927,9 +927,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1025,9 +1025,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1139,9 +1139,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1253,9 +1253,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1367,9 +1367,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1473,9 +1473,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1563,9 +1563,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1661,9 +1661,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1767,9 +1767,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1857,9 +1857,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1947,9 +1947,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2037,9 +2037,9 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2148,7 +2148,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -2552,12 +2552,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Flutter.FlutterPluginRegistrar?",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -2583,12 +2583,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "Flutter.FlutterPluginRegistrar?",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "FlutterPluginRegistrar",
-                        "printedName": "Flutter.FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
                         "usr": "c:objc(pl)FlutterPluginRegistrar"
                       }
                     ],
@@ -2616,12 +2616,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "Flutter.FlutterPluginRegistrar?",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "FlutterPluginRegistrar",
-                        "printedName": "Flutter.FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
                         "usr": "c:objc(pl)FlutterPluginRegistrar"
                       }
                     ],
@@ -2671,12 +2671,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Flutter.FlutterPluginRegistrar?",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "FlutterPluginRegistrar",
-                    "printedName": "Flutter.FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
                     "usr": "c:objc(pl)FlutterPluginRegistrar"
                   }
                 ],
@@ -2702,7 +2702,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPlatformView",
-                "printedName": "Flutter.FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
                 "usr": "c:objc(pl)FlutterPlatformView"
               },
               {
@@ -2751,7 +2751,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
               }
             ],
             "declKind": "Func",
@@ -2897,7 +2897,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -3220,70 +3220,70 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
       "kind": "StringLiteral",
       "offset": 124,
       "length": 16,
       "value": "\"scan.ScanPlatformView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 317,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 414,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 612,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 653,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "IntegerLiteral",
       "offset": 776,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "FloatLiteral",
       "offset": 801,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "StringLiteral",
       "offset": 138,
       "length": 8,
       "value": "\"scan.ScanView\""
     },
     {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 15,

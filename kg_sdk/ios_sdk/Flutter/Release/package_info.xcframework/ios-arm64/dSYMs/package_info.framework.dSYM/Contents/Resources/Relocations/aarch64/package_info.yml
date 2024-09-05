@@ -1,10 +1,10 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/charleschien/Desktop/kg-projects/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/package_info/package_info.framework/package_info'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/package_info/package_info.framework/package_info'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x56C96, size: 0x8, addend: 0x0, symName: _package_infoVersionString, symObjAddr: 0x0, symBinAddr: 0x4530, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x56CCB, size: 0x8, addend: 0x0, symName: _package_infoVersionNumber, symObjAddr: 0x30, symBinAddr: 0x4560, symSize: 0x0 }
-  - { offsetInCU: 0x27, offset: 0x56D08, size: 0x8, addend: 0x0, symName: '+[FLTPackageInfoPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
-  - { offsetInCU: 0x54, offset: 0x56D35, size: 0x8, addend: 0x0, symName: '+[FLTPackageInfoPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
-  - { offsetInCU: 0xB3, offset: 0x56D94, size: 0x8, addend: 0x0, symName: '-[FLTPackageInfoPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x40A0, symSize: 0x2E4 }
+  - { offsetInCU: 0x34, offset: 0x574FD, size: 0x8, addend: 0x0, symName: _package_infoVersionString, symObjAddr: 0x0, symBinAddr: 0x4530, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x57532, size: 0x8, addend: 0x0, symName: _package_infoVersionNumber, symObjAddr: 0x30, symBinAddr: 0x4560, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x5756F, size: 0x8, addend: 0x0, symName: '+[FLTPackageInfoPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offsetInCU: 0x54, offset: 0x5759C, size: 0x8, addend: 0x0, symName: '+[FLTPackageInfoPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xA0 }
+  - { offsetInCU: 0xB3, offset: 0x575FB, size: 0x8, addend: 0x0, symName: '-[FLTPackageInfoPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x40A0, symSize: 0x2E4 }
 ...

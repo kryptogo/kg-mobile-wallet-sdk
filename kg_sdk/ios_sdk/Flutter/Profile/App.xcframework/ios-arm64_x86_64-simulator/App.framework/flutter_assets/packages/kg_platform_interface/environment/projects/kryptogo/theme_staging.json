@@ -1,1 +1,22 @@
-{"primaryValue":"FFFFC211","primaryContainerValue":"26FFC211","secondaryValue":"FF001F58","secondaryContainerValue":"19001F58","errorValue":"FFE1004A","errorContainerValue":"19E81F61","successValue":"FF0BD9A5","successContainerValue":"190BD9A5","textPrimaryValue":"FF121212","textPrimaryDarkValue":"FFFFFFFF","textSecondaryValue":"FF838383","textSecondaryDarkValue":"FF121212","textPlaceholderValue":"FFC4C4C4","textPlaceholderDarkValue":"FF707070","textDisabledValue":"FFE0E0E0","textDisabledDarkValue":"FF4C4C4C","textContrastValue":"FFFFFFFF","textContrastDarkValue":"FF121212","backgroundValue":"FFFFFFFF","backgroundDarkValue":"FF121212","headline1Size":24,"headline2Size":18,"headline3Size":16,"headline4Size":14,"bodyText1Size":16,"bodyText2Size":14,"captionSize":14}
+{
+  "primaryValue": "FFFFC211",
+  "primaryDTValue": "FFFFC211",
+  "secondaryValue": "FF121212",
+  "secondaryDTValue": "FF121212",
+  "errorValue": "FFE1004A",
+  "successValue": "FF0BD9A5",
+  "textPrimaryValue": "FF121212",
+  "textSecondaryValue": "FF838383",
+  "textPlaceholderValue": "FFC4C4C4",
+  "textDisabledValue": "FFE0E0E0",
+  "textContrastValue": "FFFFFFFF",
+  "backgroundValue": "FFFFFFFF",
+  "backgroundPrimaryDTValue": "FF121212",
+  "headline1Size": 24,
+  "headline2Size": 18,
+  "headline3Size": 16,
+  "headline4Size": 14,
+  "bodyText1Size": 16,
+  "bodyText2Size": 14,
+  "captionSize": 12
+}

@@ -1,1 +1,105 @@
-{"maxWallet":100,"localizelySDKToken":"a7b3f3fe8117405ebe6762d045b637a7f19220c6","localizelyDistributionId":"710cd0200eaf4a688bdea727aa0d04ec","privacyPolicyUrl":"https://kryptogo.notion.site/Privacy-and-Policy-c8139f5745104e8093c272effdd5ef16","privacyAndLegalUrl":"https://kryptogo.notion.site/Privacy-and-Policy-c8139f5745104e8093c272effdd5ef16","helpCenterUrl":"https://kryptogo.notion.site/FAQ-2d19ac2590794b3dacee98c569eb9d5a","allRpcs":["ethereum","polygon","btc","bsc","tron"],"evmRpcs":["ethereum","polygon","bsc"],"dappSupportedRpcs":["ethereum","polygon","bsc"],"supportedAssetTypes":["token","nft"],"headerNameDevUid":"KG-DEV-UID","headerNameWalletToken":"KG-WALLET-TOKEN","supportUrl":"","discordUrl":"","twitterUrl":"https://twitter.com/use_tag","telegramUrl":"","facebookUrl":"https://www.facebook.com/tagblockchain/","instagramUrl":"https://www.instagram.com/TAG.blockchain/","supportEmail":"mailto:support@think-and-grow.com","featureRequestUrl":"","showNftSellBtn":false,"showRewards":false,"showDappFavourites":false,"showDappFavorites":false,"showContactProfileBtn":false,"showContactEditBtn":false,"showEarnBtn":false,"showDappRecommendation":true,"showDappBanner":false,"showPoap":false,"showKyc":false,"showKycPopup":false,"showTutorial":false,"showExploreTab":true,"showCollectiblesTab":true,"showChatRoomTab":true,"wcUrl":"https://kryptogo.com/wc?uri=wc:00e46b69-d0cc-4b3e-b6a2-cee442f97188@1?bridge=https%3A%2F%2Fbridge.walletconnect.org&key=81f3ba1cd17502e5cf2b17b0d09a504c","wcIconUrl":"https://avatars.githubusercontent.com/u/43375886?s=100&v=4","supportedLocales":[{"languageCode":"en","countryCode":"US"},{"languageCode":"vi","countryCode":"VN"},{"languageCode":"zh","countryCode":"CN"},{"languageCode":"ja","countryCode":"JP"}],"walletIcons":["https://wallet-static.kryptogo.com/public/assets/walletItemIcon/tag_wallet_group.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/evm_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/ethereum_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/polygon_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/bsc_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/kcc_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/arbitrum_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/solana_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/tron_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/btc_wallet.svg","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Red.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Orange.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Yellow.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Green.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Blue.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-DarkBlue.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Purple.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Gray.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Metamask.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Rainbow.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-TrustWallet.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-CryptoCom.png","https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Ledger.png"],"enableGoogleLogin":false,"enableObserverWallet":false,"enableBuyCrypto":false}
+{
+  "maxWallet": 100,
+  "localizelySDKToken": "a7b3f3fe8117405ebe6762d045b637a7f19220c6",
+  "localizelyDistributionId": "710cd0200eaf4a688bdea727aa0d04ec",
+  "privacyPolicyUrl": "https://kryptogo.notion.site/Privacy-and-Policy-c8139f5745104e8093c272effdd5ef16",
+  "privacyAndLegalUrl": "https://kryptogo.notion.site/Privacy-and-Policy-c8139f5745104e8093c272effdd5ef16",
+  "helpCenterUrl": "https://kryptogo.notion.site/FAQ-2d19ac2590794b3dacee98c569eb9d5a",
+  "allRpcs": [
+    "ethereum",
+    "polygon",
+    "btc",
+    "bsc",
+    "tron"
+  ],
+  "evmRpcs": [
+    "ethereum",
+    "polygon",
+    "bsc"
+  ],
+  "dappSupportedRpcs": [
+    "ethereum",
+    "polygon",
+    "bsc"
+  ],
+  "supportedAssetTypes": [
+    "token",
+    "nft"
+  ],
+  "headerNameDevUid": "KG-DEV-UID",
+  "headerNameWalletToken": "KG-WALLET-TOKEN",
+  "supportUrl": "",
+  "discordUrl": "",
+  "twitterUrl": "https://twitter.com/use_tag",
+  "telegramUrl": "",
+  "facebookUrl": "https://www.facebook.com/tagblockchain/",
+  "instagramUrl": "https://www.instagram.com/TAG.blockchain/",
+  "supportEmail": "mailto:support@think-and-grow.com",
+  "featureRequestUrl": "",
+  "showNftSellBtn": false,
+  "showRewards": false,
+  "showDappFavourites": false,
+  "showDappFavorites": false,
+  "showContactProfileBtn": false,
+  "showContactEditBtn": false,
+  "showEarnBtn": false,
+  "showDappRecommendation": true,
+  "showDappBanner": false,
+  "showPoap": false,
+  "showKyc": false,
+  "showKycPopup": false,
+  "showTutorial": false,
+  "showExploreTab": true,
+  "showCollectiblesTab": true,
+  "showChatRoomTab": true,
+  "wcUrl": "https://kryptogo.com/wc?uri=wc:00e46b69-d0cc-4b3e-b6a2-cee442f97188@1?bridge=https%3A%2F%2Fbridge.walletconnect.org&key=81f3ba1cd17502e5cf2b17b0d09a504c",
+  "wcIconUrl": "https://avatars.githubusercontent.com/u/43375886?s=100&v=4",
+  "supportedLocales": [
+    {
+      "languageCode": "en",
+      "countryCode": "US"
+    },
+    {
+      "languageCode": "vi",
+      "countryCode": "VN"
+    },
+    {
+      "languageCode": "zh",
+      "countryCode": "CN"
+    },
+    {
+      "languageCode": "ja",
+      "countryCode": "JP"
+    }
+  ],
+  "walletIcons": [
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/tag_wallet_group.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/evm_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/ethereum_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/polygon_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/bsc_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/kcc_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/arbitrum_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/solana_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/tron_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/btc_wallet.svg",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Red.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Orange.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Yellow.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Green.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Blue.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-DarkBlue.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Purple.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Doge-Gray.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Metamask.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Rainbow.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-TrustWallet.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-CryptoCom.png",
+    "https://wallet-static.kryptogo.com/public/assets/walletItemIcon/Wallet-Ledger.png"
+  ],
+  "enableGoogleLogin": false,
+  "enableObserverWallet": false,
+  "enableBuyCrypto": false,
+  "defaultLoginMethod": "email",
+  "walletLogo": "https://firebasestorage.googleapis.com/v0/b/kryptogo-wallet-app-dev.appspot.com/o/public%2Fwallet_logo%2Ftag.png?alt=media&token=6187f9ed-abdc-455f-9a58-1d18ac569710"
+}

@@ -19,8 +19,6 @@
 		867B8C262BAACBEB00968628 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C192BAACBD300968628 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		867B8C272BAACBEC00968628 /* sentry_flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */; };
 		867B8C282BAACBEC00968628 /* sentry_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		867B8C292BAACBED00968628 /* SentryPrivate.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */; };
-		867B8C2A2BAACBEE00968628 /* SentryPrivate.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C1B2BAACBD500968628 /* SentryPrivate.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		867B8C2B2BAACBF000968628 /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C152BAACBC800968628 /* package_info_plus.xcframework */; };
 		867B8C2C2BAACBF000968628 /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 867B8C152BAACBC800968628 /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		867B8C2E2BABCE8500968628 /* KgSDKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867B8C2D2BABCE8500968628 /* KgSDKService.swift */; };
@@ -102,7 +100,6 @@
 				86CDF7142B95AE26001895C7 /* App.xcframework in Embed Frameworks */,
 				867B8C282BAACBEC00968628 /* sentry_flutter.xcframework in Embed Frameworks */,
 				8692B0622BD7536B00ECC559 /* SAMKeychain.xcframework in Embed Frameworks */,
-				867B8C2A2BAACBEE00968628 /* SentryPrivate.xcframework in Embed Frameworks */,
 				D64A06722BD90E2800044A0C /* video_player_avfoundation.xcframework in Embed Frameworks */,
 				86CDF70A2B95AE20001895C7 /* package_info.xcframework in Embed Frameworks */,
 				86CDF7122B95AE25001895C7 /* flutter_inappwebview_ios.xcframework in Embed Frameworks */,
@@ -197,7 +194,6 @@
 				8692B0612BD7536B00ECC559 /* SAMKeychain.xcframework in Frameworks */,
 				867B8C272BAACBEC00968628 /* sentry_flutter.xcframework in Frameworks */,
 				867B8C252BAACBEB00968628 /* Sentry.xcframework in Frameworks */,
-				867B8C292BAACBED00968628 /* SentryPrivate.xcframework in Frameworks */,
 				867B8C232BAACBE900968628 /* share_plus.xcframework in Frameworks */,
 				86CDF7052B95AE1D001895C7 /* shared_preferences_foundation.xcframework in Frameworks */,
 				86CDF7022B95AE1C001895C7 /* sqflite.xcframework in Frameworks */,

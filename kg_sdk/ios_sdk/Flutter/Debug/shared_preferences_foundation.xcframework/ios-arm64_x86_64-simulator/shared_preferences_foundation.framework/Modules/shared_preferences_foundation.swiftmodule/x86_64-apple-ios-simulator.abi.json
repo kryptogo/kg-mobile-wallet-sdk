@@ -313,18 +313,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterBinaryMessenger",
-                "printedName": "Flutter.FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
                 "usr": "c:objc(pl)FlutterBinaryMessenger"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "shared_preferences_foundation.UserDefaultsApi?",
+                "printedName": "(any shared_preferences_foundation.UserDefaultsApi)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "UserDefaultsApi",
-                    "printedName": "shared_preferences_foundation.UserDefaultsApi",
+                    "printedName": "any shared_preferences_foundation.UserDefaultsApi",
                     "usr": "s:29shared_preferences_foundation15UserDefaultsApiP"
                   }
                 ],
@@ -406,7 +406,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],

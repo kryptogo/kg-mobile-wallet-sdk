@@ -43,7 +43,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FlutterPluginRegistrar",
-                "printedName": "Flutter.FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
                 "usr": "c:objc(pl)FlutterPluginRegistrar"
               }
             ],
@@ -208,62 +208,5 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": [
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 223,
-      "length": 14,
-      "value": "\"flutter_udid\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 504,
-      "length": 9,
-      "value": "\"getUDID\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 766,
-      "length": 14,
-      "value": "\"CFBundleName\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 1352,
-      "length": 38,
-      "value": "\"SAMKeychainQuery Exception: \""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 1389,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 1453,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 1495,
-      "length": 13,
-      "value": "\"UNAVAILABLE\""
-    },
-    {
-      "filePath": "\/Users\/charleschien\/.pub-cache\/hosted\/pub.dev\/flutter_udid-3.0.0\/ios\/Classes\/FlutterUdidPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 1550,
-      "length": 20,
-      "value": "\"UDID not available\""
-    }
-  ]
+  "ConstValues": []
 }
