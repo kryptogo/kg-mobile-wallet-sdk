@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/flutter_udid/flutter_udid.framework/flutter_udid'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/flutter_udid/flutter_udid.framework/flutter_udid'
 relocations:
   - { offsetInCU: 0x34, offset: 0x57E4E, size: 0x8, addend: 0x0, symName: _flutter_udidVersionString, symObjAddr: 0x0, symBinAddr: 0x7EA0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x57E83, size: 0x8, addend: 0x0, symName: _flutter_udidVersionNumber, symObjAddr: 0x30, symBinAddr: 0x7ED0, symSize: 0x0 }

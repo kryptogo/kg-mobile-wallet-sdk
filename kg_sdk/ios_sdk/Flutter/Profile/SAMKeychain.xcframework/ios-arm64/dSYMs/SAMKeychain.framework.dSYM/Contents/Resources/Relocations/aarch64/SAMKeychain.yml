@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/SAMKeychain/SAMKeychain.framework/SAMKeychain'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/SAMKeychain/SAMKeychain.framework/SAMKeychain'
 relocations:
   - { offsetInCU: 0x34, offset: 0x53B5E, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionString, symObjAddr: 0x0, symBinAddr: 0x58B0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x53B93, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionNumber, symObjAddr: 0x30, symBinAddr: 0x58E0, symSize: 0x0 }
@@ -13,7 +13,7 @@ relocations:
   - { offsetInCU: 0xB9, offset: 0x53C62, size: 0x8, addend: 0x0, symName: _kSAMKeychainLabelKey, symObjAddr: 0x5B8, symBinAddr: 0x8148, symSize: 0x0 }
   - { offsetInCU: 0xCF, offset: 0x53C78, size: 0x8, addend: 0x0, symName: _kSAMKeychainLastModifiedKey, symObjAddr: 0x5C0, symBinAddr: 0x8150, symSize: 0x0 }
   - { offsetInCU: 0xE5, offset: 0x53C8E, size: 0x8, addend: 0x0, symName: _kSAMKeychainWhereKey, symObjAddr: 0x5C8, symBinAddr: 0x8158, symSize: 0x0 }
-  - { offsetInCU: 0xFB, offset: 0x53CA4, size: 0x8, addend: 0x0, symName: _SAMKeychainAccessibilityType, symObjAddr: 0x3850, symBinAddr: 0x8DE8, symSize: 0x0 }
+  - { offsetInCU: 0xFB, offset: 0x53CA4, size: 0x8, addend: 0x0, symName: _SAMKeychainAccessibilityType, symObjAddr: 0x3848, symBinAddr: 0x8DE8, symSize: 0x0 }
   - { offsetInCU: 0x15F, offset: 0x53D08, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
   - { offsetInCU: 0x1B0, offset: 0x53D59, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:error:]', symObjAddr: 0x8, symBinAddr: 0x4008, symSize: 0xA8 }
   - { offsetInCU: 0x223, offset: 0x53DCC, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordDataForService:account:]', symObjAddr: 0xB0, symBinAddr: 0x40B0, symSize: 0x8 }
@@ -32,8 +32,8 @@ relocations:
   - { offsetInCU: 0x6C2, offset: 0x5426B, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setAccessibilityType:]', symObjAddr: 0x43C, symBinAddr: 0x443C, symSize: 0x38 }
   - { offsetInCU: 0x27, offset: 0x54405, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
   - { offsetInCU: 0x35, offset: 0x54413, size: 0x8, addend: 0x0, symName: '+[SAMKeychainQuery errorWithCode:]', symObjAddr: 0x9C0, symBinAddr: 0x4E34, symSize: 0x224 }
-  - { offsetInCU: 0x5F, offset: 0x5443D, size: 0x8, addend: 0x0, symName: '_errorWithCode:.onceToken', symObjAddr: 0x5FD0, symBinAddr: 0x8DF0, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x54453, size: 0x8, addend: 0x0, symName: '_errorWithCode:.resourcesBundle', symObjAddr: 0x5FD8, symBinAddr: 0x8DF8, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0x5443D, size: 0x8, addend: 0x0, symName: '_errorWithCode:.onceToken', symObjAddr: 0x5FC8, symBinAddr: 0x8DF0, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x54453, size: 0x8, addend: 0x0, symName: '_errorWithCode:.resourcesBundle', symObjAddr: 0x5FD0, symBinAddr: 0x8DF8, symSize: 0x0 }
   - { offsetInCU: 0x241, offset: 0x5461F, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
   - { offsetInCU: 0x391, offset: 0x5476F, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery deleteItem:]', symObjAddr: 0x288, symBinAddr: 0x46FC, symSize: 0xEC }
   - { offsetInCU: 0x419, offset: 0x547F7, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery fetchAll:]', symObjAddr: 0x374, symBinAddr: 0x47E8, symSize: 0x118 }

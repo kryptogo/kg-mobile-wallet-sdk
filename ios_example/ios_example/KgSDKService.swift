@@ -2,184 +2,254 @@ import Flutter
 import SwiftUI
 import FlutterPluginRegistrant
 
-
-class KgSDKService : ObservableObject{
+class KgSDKService: ObservableObject {
     static let shared = KgSDKService()
-    private var flutterEngine: FlutterEngine?
+    
+    private let flutterEngine: FlutterEngine
+    private let methodChannel: FlutterMethodChannel
     private var flutterViewController: FlutterViewController?
-    private var methodChannel: FlutterMethodChannel?
-    private var openVerifyPageCallback: ((_ result: @escaping FlutterResult) -> Void)?
-    private var channelName: String = "com.kryptogo.sdk/channel"
-    private var engineName: String = "flutter_engine"
+    private let channelName = "com.kryptogo.sdk/channel"
+    private let engineName = "flutter_engine"
     
-    
-    private init (flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
+    private init() {
+        flutterEngine = FlutterEngine(name: engineName)
+        flutterEngine.run()
         
-        self.openVerifyPageCallback = openVerifyPageCallback
-        self.flutterEngine = FlutterEngine(name: engineName)
-        flutterEngine!.run()
+        let messenger = flutterEngine.binaryMessenger
+        methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: messenger)
         
-        self.flutterViewController = FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
-        self.methodChannel = FlutterMethodChannel(name: channelName, binaryMessenger: self.flutterViewController!.binaryMessenger)
-        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
-        setInitParams()
+        GeneratedPluginRegistrant.register(with: flutterEngine)
+        setupMethodChannel()
         
-    }
-    
-    
-    private func initializeFlutterViewController(flutterEngine: FlutterEngine) {
-        guard let flutterVC = flutterViewController else { return }
-        setUpMethodChannel()
-    }
-    
-    private func setInitParams() {
-        let sharedSecret = fetchSharedSecret()
-        
-        // Send initial parameter to KG_SDK.
-        var initParam: [String: Any] = [
-            "appName": "TWMTEST",
-            "walletConfig": [
-                "maxWallet": 100,
-                "enableAutoSssSignUp": true,
-                "enableSSS":true,
-                "allRpcs": ["ethereum"]
-            ],
-            "themeData": [
-                "primaryValue": "FFFFC211"
-            ],
-            "flavorEnum": "dev",
-            "clientId": "def3b0768f8f95ffa0be37d0f54e2064",
-            "clientToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlbW8ta2V5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJodHRwczovL2tyeXB0b2dvLmNvbSIsImV4cCI6MjAyNzQwOTg2MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmtyeXB0b2dvLmNvbSIsInN1YiI6InRlc3QtdXNlciJ9.Kmbblm_cUJNpoRImSRQmb83ljY35Kn-ZcA5SBy5WOPqqL6T42YVDJFMyOAp05j3aFfUIZxCOqQAFuT23bC53jZM9SOZjz9cmwqHOE6D9wzk6Y2gwdOABSIeEet2nGzXfoHcPR1GLXJYdnOWYdh9ZivE4dtH4wGRO-eiOUoJX_kxSunBk1XanG6T3BcCDduEd-jxHTBSoi2fcMU_KfDVA9ZTc3kwzzYq3qQUMu8lBIBUQYqeV3S4M29AMn1gUAlP5Z1oKuQZzYEM3jLxAkN9hls1fMavsfi2VGYK87UE7THyWmTgMU9BDNzk3DrT7Wcxc1DOhwotyrTtep8BQkjsCJw"
-        ]
-        
+        // 創建單個 FlutterViewController 實例
+        flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+        flutterViewController?.modalPresentationStyle = .automatic
+        flutterViewController?.isViewOpaque = false
 
-        if sharedSecret != nil {
-            initParam["sharedSecret"] = sharedSecret
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) { [weak self] in
+            self?.setInitParams(clientToken: Constants.KgSDK.clientToken)
         }
-        
-        methodChannel?.invokeMethod("init", arguments: initParam)
-        print("innns")
-        
+    }
+    func setInitParams(clientToken: String) {
+        print("setInitParams")
+        methodChannel.invokeMethod("initClientToken", arguments: clientToken)
     }
     
-    private func setUpMethodChannel() {
-        methodChannel?.setMethodCallHandler { [self] (call: FlutterMethodCall, result: @escaping FlutterResult) in
+    private func setupMethodChannel() {
+        methodChannel.setMethodCallHandler { [weak self] call, result in
+            guard let self = self else { return }
+            
             switch call.method {
             case "closeFlutterView":
-                flutterViewController!.dismiss(animated: true, completion: nil)
+                self.closeFlutterView()
             case "openVerifyPage":
-                openVerifyPage(result:result)
+                self.openVerifyPage(result: result)
             case "updateSharedSecret":
-                let sharedSecret = (call.arguments as? [String: String])?["sharedSecret"]
-                let isSuccess = self.updateSharedSecret(sharedSecret: sharedSecret)
-                result(isSuccess)
+                self.handleUpdateSharedSecret(call: call, result: result)
             case "requestSharedSecret":
-                let reason = (call.arguments as? [String: String])?["reason"]
-                print("requestSharedSecret: \(reason ?? "")")
-                openVerifyPage { verificationResult in
-                    guard let isVerified = verificationResult as? Bool else {
-                        print("no-data")
-                        return
-                    }
-                    
-                    let sharedSecret = self.fetchSharedSecret()
-                    result(sharedSecret)
-                }
-                
+                self.handleRequestSharedSecret(call: call, result: result)
             default:
                 result(FlutterMethodNotImplemented)
             }
         }
     }
     
-    func openVerifyPage(result: @escaping FlutterResult) {
-        // Assuming you have a VerifyPageViewController that handles the verification logic
-        
-        let verifyPageVC = VerifyPageViewController()
-        verifyPageVC.isModalInPresentation = true
-        
-        verifyPageVC.completion = { isVerified in
-            print(isVerified)
-            if isVerified {
-                DispatchQueue.main.async {
-                    verifyPageVC.dismiss(animated: true) {
-                        result(isVerified)
-                    }
-                }
-            }
-            
-        }
-        // Present your verifyPageVC here, e.g., using the top most view controller or another method.
-        // Find the top most view controller to present the verifyPageVC
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            
-            // Present your verifyPageVC here
-            topController.present(verifyPageVC, animated: true, completion: nil)
+    
+    
+    func showKgSDK(from viewController: UIViewController) {
+        guard let flutterViewController = flutterViewController else {
+            print("Error: FlutterViewController is not initialized")
+            return
         }
         
-    }
-    
-    // To be implemented: update to server
-    func updateSharedSecret(sharedSecret: String?) -> Bool {
-        guard let secret = sharedSecret else {
-            return false
-        }
-        UserDefaults.standard.set(secret, forKey: "sharedSecret")
-        return true
-    }
-    
-    
-    // To be implemented: fetch from server
-    func fetchSharedSecret() -> String? {
-        return UserDefaults.standard.string(forKey: "sharedSecret")
-    }
-    
-    
-    func showKgSDK(from rootViewController: UIViewController) {
-        // check flutterViewController is initialized
-        initializeFlutterViewController(flutterEngine:flutterEngine!)
+        // 確保 Flutter 視圖已加載
+        flutterViewController.view.layoutIfNeeded()
         
-        flutterViewController?.isViewOpaque = false
-        rootViewController.present(flutterViewController ?? createFlutterViewController(), animated: true)
+        // 設置為全螢幕顯示
+        flutterViewController.modalPresentationStyle = .fullScreen
+        
+        DispatchQueue.main.async {
+            viewController.present(flutterViewController, animated: true, completion: nil)
+        }
     }
     
-    private func createFlutterViewController() -> FlutterViewController{
-        return FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
-    }
-    
-    
-    func callKgSDK(funcName: String, completion: @escaping (Any?) -> Void) {
-        methodChannel?.invokeMethod(funcName, arguments: nil,result: { (result) in
-            completion(result)
-        })
+    func dismissKgSDK(completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            self.flutterViewController?.dismiss(animated: true, completion: completion)
+        }
     }
     
     func isReady(completion: @escaping (Any?) -> Void) {
-        methodChannel?.invokeMethod("isReady", arguments: nil,result: { (result) in
-            completion(result)
-        })
+        methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
     }
     
+    func hasBackupSharedSecret() async -> Any? {
+        await withCheckedContinuation { continuation in
+            methodChannel.invokeMethod("hasBackupSharedSecret", arguments: nil) { result in
+                continuation.resume(returning: result)
+            }
+        }
+    }
+
+    func goRoute(route: String) {
+        methodChannel.invokeMethod("goRoute", arguments: route, result: nil)
+    }
+    
+    func kDebugMode() async throws -> Bool {
+            return try await withCheckedThrowingContinuation { continuation in
+                methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
+                    switch result {
+                    case let boolResult as Bool:
+                        continuation.resume(returning: boolResult)
+                    default:
+                        continuation.resume(returning: false )
+                    }
+                }
+            }
+        }
+    
+    func hasLocalShareKey() async throws -> Bool {
+            return try await withCheckedThrowingContinuation { continuation in
+                methodChannel.invokeMethod("hasLocalShareKey", arguments: nil) { result in
+                    switch result {
+                    case let boolResult as Bool:
+                        continuation.resume(returning: boolResult)
+                    default:
+                        continuation.resume(throwing: "error" as! Error)
+                    }
+                }
+            }
+        }
+    
+    func isWalletCreated() async throws -> Bool {
+            return try await withCheckedThrowingContinuation { continuation in
+                methodChannel.invokeMethod("isWalletCreated", arguments: nil) { result in
+                    switch result {
+                    case let boolResult as Bool:
+                        continuation.resume(returning: boolResult)
+                    default:
+                        continuation.resume(throwing: "error" as! Error)
+                    }
+                }
+            }
+        }
+    
     func getAccessToken(completion: @escaping (Any?) -> Void) {
-        methodChannel?.invokeMethod("getAccessToken", arguments: nil,result: { (result) in
-            completion(result)
-        })
+        methodChannel.invokeMethod("getAccessToken", arguments: nil, result: completion)
     }
     
     func getBalance(completion: @escaping (Any?) -> Void) {
-        methodChannel?.invokeMethod("getBalance", arguments: nil,result: { (result) in
-            completion(result)
-        })
+        methodChannel.invokeMethod("getBalance", arguments: nil, result: completion)
     }
     
     func checkDevice(completion: @escaping (Any?) -> Void) {
-        methodChannel?.invokeMethod("checkDevice", arguments: nil,result: { (result) in
-            completion(result)
-        })
+        methodChannel.invokeMethod("checkDevice", arguments: nil, result: completion)
     }
     
+    
+    private func closeFlutterView() {
+        DispatchQueue.main.async { [weak self] in
+            self?.flutterViewController?.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+
+    private func openVerifyPage(result: @escaping FlutterResult) {
+        DispatchQueue.main.async {
+            guard let topViewController = UIApplication.shared.windows.first?.rootViewController?.topMostViewController() else {
+                result(FlutterError(code: "NO_VIEWCONTROLLER", message: "Unable to find a view controller to present from", details: nil))
+                return
+            }
+            
+            let verifyPageVC = VerifyPageViewController()
+            verifyPageVC.modalPresentationStyle = .fullScreen
+            verifyPageVC.completion = { isVerified in
+                if isVerified {
+                    result(true)
+                } else {
+                    result(FlutterError(code: "VERIFICATION_FAILED", message: "User verification failed", details: nil))
+                }
+                topViewController.dismiss(animated: true, completion: nil)
+            }
+            
+            topViewController.present(verifyPageVC, animated: true, completion: nil)
+        }
+    }
+    private func handleUpdateSharedSecret(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        guard let sharedSecret = (call.arguments as? [String: String])?["sharedSecret"] else {
+            result(false)
+            return
+        }
+        
+        let isSuccess = updateSharedSecret(sharedSecret: sharedSecret)
+        result(isSuccess)
+    }
+    
+    private func handleRequestSharedSecret(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        guard let reason = (call.arguments as? [String: String])?["reason"] else {
+            result(FlutterError(code: "INVALID_ARGUMENT", message: "Reason is required", details: nil))
+            return
+        }
+        
+        print("requestSharedSecret: \(reason)")
+        openVerifyPage { verificationResult in
+            guard let isVerified = verificationResult as? Bool, isVerified else {
+                result(FlutterError(code: "VERIFICATION_FAILED", message: "User verification failed", details: nil))
+                return
+            }
+            
+            let sharedSecret = self.fetchSharedSecret()
+            result(sharedSecret)
+        }
+    }
+    
+    private func updateSharedSecret(sharedSecret: String) -> Bool {
+         // Here we're using UserDefaults for simplicity. In a real app, you'd want to use
+         // a more secure storage method, like Keychain.
+         UserDefaults.standard.set(sharedSecret, forKey: "KgSDKSharedSecret")
+         return true
+     }
+     
+     private func fetchSharedSecret() -> String? {
+         return UserDefaults.standard.string(forKey: "KgSDKSharedSecret")
+     }
 }
 
+struct OutlineButton: View {
+    let title: String
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.blue, lineWidth: 2)
+                )
+                .foregroundColor(.blue)
+        }
+    }
+}
+
+
+import UIKit
+
+extension UIViewController {
+    func topMostViewController() -> UIViewController {
+        if let presented = self.presentedViewController {
+            return presented.topMostViewController()
+        }
+        
+        if let navigation = self as? UINavigationController {
+            return navigation.visibleViewController?.topMostViewController() ?? navigation
+        }
+        
+        if let tab = self as? UITabBarController {
+            return tab.selectedViewController?.topMostViewController() ?? tab
+        }
+        
+        return self
+    }
+}

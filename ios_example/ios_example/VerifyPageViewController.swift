@@ -38,6 +38,13 @@ class VerifyPageViewController: UIViewController {
         ])
         
         submitButton.addTarget(self, action: #selector(submitAction), for: .touchUpInside)
+        
+        // Set close button action
+        verifyView.setCloseAction { [weak self] in
+            self?.dismiss(animated: true) {
+                self?.completion?(false)
+            }
+        }
     }
     
     @objc func submitAction() {

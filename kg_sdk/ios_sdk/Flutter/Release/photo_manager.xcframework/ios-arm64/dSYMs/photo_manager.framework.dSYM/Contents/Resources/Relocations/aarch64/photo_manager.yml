@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/photo_manager/photo_manager.framework/photo_manager'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Release/iphoneos/Release-iphoneos/photo_manager/photo_manager.framework/photo_manager'
 relocations:
   - { offsetInCU: 0x34, offset: 0x71201, size: 0x8, addend: 0x0, symName: _photo_managerVersionString, symObjAddr: 0x0, symBinAddr: 0x1E190, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x71236, size: 0x8, addend: 0x0, symName: _photo_managerVersionNumber, symObjAddr: 0x30, symBinAddr: 0x1E1C0, symSize: 0x0 }

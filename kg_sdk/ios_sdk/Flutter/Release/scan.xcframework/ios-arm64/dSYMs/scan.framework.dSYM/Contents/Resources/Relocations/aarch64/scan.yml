@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Release/iphoneos/Release-iphoneos/scan/scan.framework/scan'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Release/iphoneos/Release-iphoneos/scan/scan.framework/scan'
 relocations:
   - { offsetInCU: 0x34, offset: 0x8A6C7, size: 0x8, addend: 0x0, symName: _scanVersionString, symObjAddr: 0x0, symBinAddr: 0xD050, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x8A6FC, size: 0x8, addend: 0x0, symName: _scanVersionNumber, symObjAddr: 0x28, symBinAddr: 0xD078, symSize: 0x0 }

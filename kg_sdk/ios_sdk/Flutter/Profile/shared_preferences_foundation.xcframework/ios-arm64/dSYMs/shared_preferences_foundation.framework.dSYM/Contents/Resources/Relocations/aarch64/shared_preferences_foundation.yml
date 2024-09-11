@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Profile/iphoneos/Profile-iphoneos/shared_preferences_foundation/shared_preferences_foundation.framework/shared_preferences_foundation'
+binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Profile/iphoneos/Profile-iphoneos/shared_preferences_foundation/shared_preferences_foundation.framework/shared_preferences_foundation'
 relocations:
   - { offsetInCU: 0x34, offset: 0x57C4A, size: 0x8, addend: 0x0, symName: _shared_preferences_foundationVersionString, symObjAddr: 0x0, symBinAddr: 0xE1C0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x57C7F, size: 0x8, addend: 0x0, symName: _shared_preferences_foundationVersionNumber, symObjAddr: 0x40, symBinAddr: 0xE200, symSize: 0x0 }
