@@ -76,6 +76,32 @@ struct SDKView: View {
                                 .stroke(Color.blue, lineWidth: 2)
                         )
                     }
+
+
+                    // Button(action: {
+                    //     Task {
+                    //         do {
+                    //             let result = try await viewModel.deleteUser()
+                    //             viewModel.checkIsReady()
+                    //             print("User deleted: \(result)")
+                    //         } catch {
+                    //             print("Error deleting user: \(error)")
+                    //         }
+                    //     }
+                    // }) {
+                    //     HStack {
+                    //         Image(systemName: "trash.fill")
+                    //         Text("Delete User")
+                    //     }
+                    //     .frame(maxWidth: .infinity)
+                    //     .padding()
+                    //     .background(Color.clear)
+                    //     .foregroundColor(.blue)
+                    //     .overlay(
+                    //         RoundedRectangle(cornerRadius: 10)
+                    //             .stroke(Color.blue, lineWidth: 2)
+                    //     )
+                    // }
                 }
                 .padding()
             }

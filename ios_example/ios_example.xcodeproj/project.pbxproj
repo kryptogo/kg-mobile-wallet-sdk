@@ -11,12 +11,10 @@
 		48CDDD23EFC2756627777F6D /* Pods_ios_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1C8C4F133247B193E8770 /* Pods_ios_exampleTests.framework */; };
 		860643992C905A71004B6F0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643942C905A71004B6F0E /* ContentView.swift */; };
 		8606439A2C905A71004B6F0E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643952C905A71004B6F0E /* HomeView.swift */; };
-		8606439B2C905A71004B6F0E /* KgSDKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643962C905A71004B6F0E /* KgSDKService.swift */; };
 		8606439C2C905A71004B6F0E /* ios_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643972C905A71004B6F0E /* ios_exampleApp.swift */; };
 		8606439D2C905A71004B6F0E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643982C905A71004B6F0E /* Constant.swift */; };
 		860643A32C905A79004B6F0E /* WalletContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606439E2C905A79004B6F0E /* WalletContentView.swift */; };
 		860643A42C905A79004B6F0E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606439F2C905A79004B6F0E /* WebView.swift */; };
-		860643A52C905A79004B6F0E /* SDKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860643A02C905A79004B6F0E /* SDKView.swift */; };
 		860643A82C905D37004B6F0E /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDF6F02B95ADDD001895C7 /* App.xcframework */; };
 		860643A92C905D37004B6F0E /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861873882BC6856700A969D6 /* device_info_plus.xcframework */; };
 		860643AA2C905D37004B6F0E /* flutter_inappwebview_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDF6F22B95ADDF001895C7 /* flutter_inappwebview_ios.xcframework */; };
@@ -48,6 +46,7 @@
 		867B8C2E2BABCE8500968628 /* KgSDKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867B8C2D2BABCE8500968628 /* KgSDKService.swift */; };
 		8692B0602BD7536900ECC559 /* flutter_udid.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8692B05B2BD7529300ECC559 /* flutter_udid.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8692B0622BD7536B00ECC559 /* SAMKeychain.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8692B05D2BD752ED00ECC559 /* SAMKeychain.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86C668492C92B8EB00BC15DC /* SDKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C668482C92B8EB00BC15DC /* SDKView.swift */; };
 		86CDF6CB2B95AC1D001895C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */; };
 		86CDF6CE2B95AC1D001895C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CDF6CD2B95AC1D001895C7 /* Preview Assets.xcassets */; };
 		86CDF6D82B95AC1D001895C7 /* ios_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDF6D72B95AC1D001895C7 /* ios_exampleTests.swift */; };
@@ -133,12 +132,10 @@
 		858641F33F58AFE92A7C4448 /* Pods_ios_example_ios_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example_ios_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		860643942C905A71004B6F0E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		860643952C905A71004B6F0E /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		860643962C905A71004B6F0E /* KgSDKService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KgSDKService.swift; sourceTree = "<group>"; };
 		860643972C905A71004B6F0E /* ios_exampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ios_exampleApp.swift; sourceTree = "<group>"; };
 		860643982C905A71004B6F0E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8606439E2C905A79004B6F0E /* WalletContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletContentView.swift; sourceTree = "<group>"; };
 		8606439F2C905A79004B6F0E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		860643A02C905A79004B6F0E /* SDKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKView.swift; sourceTree = "<group>"; };
 		861873882BC6856700A969D6 /* device_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = device_info_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/device_info_plus.xcframework; sourceTree = "<group>"; };
 		8664F3CF2BAAC8DA002712C5 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework"; sourceTree = "<group>"; };
 		8664F3D12BAAC8E3002712C5 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "../../kg-flutter/packages/kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework"; sourceTree = "<group>"; };
@@ -155,6 +152,7 @@
 		867B8C2D2BABCE8500968628 /* KgSDKService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KgSDKService.swift; sourceTree = "<group>"; };
 		8692B05B2BD7529300ECC559 /* flutter_udid.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_udid.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/flutter_udid.xcframework; sourceTree = "<group>"; };
 		8692B05D2BD752ED00ECC559 /* SAMKeychain.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAMKeychain.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/SAMKeychain.xcframework; sourceTree = "<group>"; };
+		86C668482C92B8EB00BC15DC /* SDKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDKView.swift; path = ios_example/SDKView.swift; sourceTree = SOURCE_ROOT; };
 		86CDF6C32B95AC1C001895C7 /* ios_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86CDF6CD2B95AC1D001895C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -311,16 +309,15 @@
 		86CDF6C52B95AC1C001895C7 /* ios_example */ = {
 			isa = PBXGroup;
 			children = (
+				86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */,
+				86CDF6CC2B95AC1D001895C7 /* Preview Content */,
 				860643972C905A71004B6F0E /* ios_exampleApp.swift */,
+				86C668482C92B8EB00BC15DC /* SDKView.swift */,
 				867B8C2D2BABCE8500968628 /* KgSDKService.swift */,
+				8606439E2C905A79004B6F0E /* WalletContentView.swift */,
 				860643982C905A71004B6F0E /* Constant.swift */,
 				860643942C905A71004B6F0E /* ContentView.swift */,
 				860643952C905A71004B6F0E /* HomeView.swift */,
-				860643962C905A71004B6F0E /* KgSDKService.swift */,
-				86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */,
-				86CDF6CC2B95AC1D001895C7 /* Preview Content */,
-				860643A02C905A79004B6F0E /* SDKView.swift */,
-				8606439E2C905A79004B6F0E /* WalletContentView.swift */,
 				8606439F2C905A79004B6F0E /* WebView.swift */,
 				86CDF7172B95AEA1001895C7 /* VerifyPageView.swift */,
 				86CDF7192B95AEBB001895C7 /* VerifyPageViewController.swift */,
@@ -595,14 +592,13 @@
 				86CDF7182B95AEA1001895C7 /* VerifyPageView.swift in Sources */,
 				860643A32C905A79004B6F0E /* WalletContentView.swift in Sources */,
 				860643A42C905A79004B6F0E /* WebView.swift in Sources */,
-				860643A52C905A79004B6F0E /* SDKView.swift in Sources */,
+				86C668492C92B8EB00BC15DC /* SDKView.swift in Sources */,
 				8606439C2C905A71004B6F0E /* ios_exampleApp.swift in Sources */,
 				860643992C905A71004B6F0E /* ContentView.swift in Sources */,
 				86CDF71A2B95AEBB001895C7 /* VerifyPageViewController.swift in Sources */,
 				8606439A2C905A71004B6F0E /* HomeView.swift in Sources */,
 				867B8C2E2BABCE8500968628 /* KgSDKService.swift in Sources */,
 				8606439D2C905A71004B6F0E /* Constant.swift in Sources */,
-				8606439B2C905A71004B6F0E /* KgSDKService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

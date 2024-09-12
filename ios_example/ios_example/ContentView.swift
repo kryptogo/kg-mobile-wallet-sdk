@@ -14,12 +14,24 @@ class ContentViewModel: ObservableObject {
     init(kgSDKService: KgSDKService = .shared) {
         self.kgSDKService = kgSDKService
     }
-    
+
+    func deleteUser() {
+        Task {
+            do {
+                try await kgSDKService.deleteUser()
+            } catch {
+                print("Error deleting user: \(error)")
+            }
+        }
+    }
+
+    // Check if the SDK is ready
     func checkIsReady() {
         isCheckingReady = true
         checkReadyStatus()
     }
     
+    // Set the initialization parameters, clientToken is required
     func setInitParams() {
         let clientToken = Constants.KgSDK.clientToken
         kgSDKService.setInitParams(clientToken: clientToken)
@@ -49,7 +61,6 @@ class ContentViewModel: ObservableObject {
                     }
                 }
             } else {
-                self.showToast(message: "Failed to check ready status")
                 self.isCheckingReady = false
             }
         }
@@ -63,9 +74,6 @@ class ContentViewModel: ObservableObject {
         }
     }
     
-    private func showToast(message: String) {
-        // Implementation of showToast method
-    }
 }
 
 struct ContentView: View {

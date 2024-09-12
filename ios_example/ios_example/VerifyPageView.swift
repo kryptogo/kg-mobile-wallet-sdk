@@ -36,7 +36,16 @@ class VerifyPageView: UIView {
         button.setTitleColor(.systemBlue, for: .normal)
         return button
     }()
-
+    
+    private let submitButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Submit", for: .normal)
+        return button
+    }()
+    
+    private var submitAction: (() -> Void)?
+    
     // MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -54,6 +63,7 @@ class VerifyPageView: UIView {
         addSubview(titleLabel)
         addSubview(textField)
         addSubview(closeButton)
+        addSubview(submitButton)
 
         NSLayoutConstraint.activate([
             closeButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -66,6 +76,12 @@ class VerifyPageView: UIView {
             textField.centerXAnchor.constraint(equalTo: centerXAnchor),
             textField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.8),
             textField.heightAnchor.constraint(equalToConstant: 50),
+            
+            submitButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20),
+            submitButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            submitButton.widthAnchor.constraint(equalToConstant: 200),
+            submitButton.heightAnchor.constraint(equalToConstant: 44),
+            submitButton.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -20) // 確保按鈕不會太靠近底部
         ])
     }
     
@@ -73,6 +89,10 @@ class VerifyPageView: UIView {
     @objc private func submitTapped() {
         // Handle submit action here
         print("Verification code submitted: \(getVerificationCode())")
+    }
+
+    @objc private func submitButtonTapped() {
+        submitAction?()
     }
 
     // MARK: - Public Methods
@@ -83,6 +103,11 @@ class VerifyPageView: UIView {
     func setCloseAction(_ action: @escaping () -> Void) {
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
         closeAction = action
+    }
+    
+    func setSubmitAction(_ action: @escaping () -> Void) {
+        submitAction = action
+        submitButton.addTarget(self, action: #selector(submitButtonTapped), for: .touchUpInside)
     }
     
     // MARK: - Private Methods

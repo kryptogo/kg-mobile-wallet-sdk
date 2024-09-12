@@ -79,16 +79,23 @@ class KgSDKService: ObservableObject {
         }
     }
     
-    func isReady(completion: @escaping (Any?) -> Void) {
-        methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
-    }
-    
-    func hasBackupSharedSecret() async -> Any? {
-        await withCheckedContinuation { continuation in
-            methodChannel.invokeMethod("hasBackupSharedSecret", arguments: nil) { result in
-                continuation.resume(returning: result)
+    func deleteUser() async throws -> Bool {
+        return try await withCheckedThrowingContinuation { continuation in
+            methodChannel.invokeMethod("deleteUser", arguments: nil) { result in
+                switch result {
+                case let boolResult as Bool:
+                    continuation.resume(returning: boolResult)
+                case let error as FlutterError:
+                    continuation.resume(throwing: NSError(domain: "KgSDKService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Flutter Error"]))
+                default:
+                    continuation.resume(throwing: NSError(domain: "KgSDKService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Unexpected result type"]))
+                }
             }
         }
+    }
+    
+    func isReady(completion: @escaping (Any?) -> Void) {
+        methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
     }
 
     func goRoute(route: String) {
@@ -128,7 +135,7 @@ class KgSDKService: ObservableObject {
                     case let boolResult as Bool:
                         continuation.resume(returning: boolResult)
                     default:
-                        continuation.resume(throwing: "error" as! Error)
+                        continuation.resume(returning: false)
                     }
                 }
             }
@@ -175,6 +182,9 @@ class KgSDKService: ObservableObject {
             topViewController.present(verifyPageVC, animated: true, completion: nil)
         }
     }
+
+    
+    
     private func handleUpdateSharedSecret(call: FlutterMethodCall, result: @escaping FlutterResult) {
         guard let sharedSecret = (call.arguments as? [String: String])?["sharedSecret"] else {
             result(false)
@@ -210,9 +220,9 @@ class KgSDKService: ObservableObject {
          return true
      }
      
-     private func fetchSharedSecret() -> String? {
+    func fetchSharedSecret() -> String? {
          return UserDefaults.standard.string(forKey: "KgSDKSharedSecret")
-     }
+    }
 }
 
 struct OutlineButton: View {

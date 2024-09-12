@@ -88,6 +88,12 @@ class WalletCenterViewModel: ObservableObject {
             }
         }
     }
+    
+    func restoreWallet(with password: String) {
+        // Implement the logic to restore the wallet using the provided password
+        print("Attempting to restore wallet with password: \(password)")
+      
+    }
 }
 
 struct WalletCenterView: View {
@@ -96,7 +102,7 @@ struct WalletCenterView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Welcome to Your Wallet")
+            Text("Hi, Wallet")
                 .font(.largeTitle)
             
             VStack(alignment: .leading) {
@@ -143,11 +149,11 @@ struct WalletCenterView: View {
                         .frame(width: 50, height: 50)
                         .foregroundColor(.gray)
                     
-                    Text("Wallet not connect")
+                    Text("Wallet created, but no local share key")
                         .foregroundColor(.gray)
                     
                     Button(action: {
-                        // Add action to restore wallet
+                        showPasswordAlert()
                     }) {
                         Text("Restore Wallet")
                             .padding()
@@ -210,11 +216,42 @@ struct WalletCenterView: View {
                 )
                 .padding()
             }
+            Spacer() // 添加這行來將內容推到頂部
         }
+        .frame(maxHeight: .infinity, alignment: .top) // 添加這行來確保整個 VStack 靠上對齊
         .padding()
         .navigationBarTitle("Wallet Center", displayMode: .inline)
         .sheet(isPresented: $isShowingKgSDK) {
             KgSDKView()
+        }
+    }
+    
+    func showPasswordAlert() {
+        let alert = UIAlertController(title: "Restore Wallet", message: "Please enter your password", preferredStyle: .alert)
+        
+        alert.addTextField { textField in
+            textField.isSecureTextEntry = true
+            textField.placeholder = "Password"
+        }
+        
+        let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
+            guard let password = alert.textFields?.first?.text, !password.isEmpty else {
+                print("Password is empty")
+                return
+            }
+            
+            // Here you can call the function to restore the wallet with the entered password
+            self.viewModel.restoreWallet(with: password)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(submitAction)
+        alert.addAction(cancelAction)
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let viewController = windowScene.windows.first?.rootViewController {
+            viewController.present(alert, animated: true, completion: nil)
         }
     }
 }

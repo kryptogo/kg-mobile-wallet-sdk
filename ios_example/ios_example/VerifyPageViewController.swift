@@ -12,32 +12,22 @@ class VerifyPageViewController: UIViewController {
     private func setupView() {
         // Initialize and set up the verify view
         verifyView = VerifyPageView()
-        verifyView.backgroundColor = .white // 设置 verifyView 的背景色
-
+        verifyView.backgroundColor = .white
         self.view.addSubview(verifyView)
         
-        // 设置 verifyPageView 的约束以全屏展示
+        // 設置 verifyView 的約束，讓它不是全屏顯示
         verifyView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            verifyView.topAnchor.constraint(equalTo: view.topAnchor),
-            verifyView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            verifyView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             verifyView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             verifyView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            verifyView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier:1) // 設置高度為視圖高度的 70%
         ])
         
-        // Add submit button and its action
-        let submitButton = UIButton(type: .system)
-        submitButton.setTitle("Submit", for: .normal)
-        submitButton.translatesAutoresizingMaskIntoConstraints = false
-        verifyView.addSubview(submitButton) // Add button to verifyView instead of self.view
-        
-        // Adjust constraints for the submit button within verifyView
-        NSLayoutConstraint.activate([
-            submitButton.centerXAnchor.constraint(equalTo: verifyView.centerXAnchor),
-            submitButton.bottomAnchor.constraint(equalTo: verifyView.bottomAnchor, constant: -200) // Adjust constant as needed
-        ])
-        
-        submitButton.addTarget(self, action: #selector(submitAction), for: .touchUpInside)
+        // 設置 submitButton 的動作
+        verifyView.setSubmitAction { [weak self] in
+            self?.submitAction()
+        }
         
         // Set close button action
         verifyView.setCloseAction { [weak self] in
@@ -47,23 +37,21 @@ class VerifyPageViewController: UIViewController {
         }
     }
     
-    @objc func submitAction() {
+    @objc private func submitAction() {
         let inputCode = verifyView.getVerificationCode()
-        // Check the verification code here and close the view controller
-        if (inputCode == "111111") {
-            // Assuming you have a method to communicate back to Flutter
+        // 檢查驗證碼並關閉視圖控制器
+        if inputCode == "111111" {
+            // 假設你有一個方法來與 Flutter 通信
             communicateToFlutter(verificationSuccess: true)
-        }
-        else {
-            let alertController = UIAlertController(title: "Error", message: "Invalid verification code", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        } else {
+            let alertController = UIAlertController(title: "錯誤", message: "無效的驗證碼", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "確定", style: .default, handler: nil)
             alertController.addAction(okAction)
             
             DispatchQueue.main.async {
                 self.present(alertController, animated: true, completion: nil)
             }
         }
-        
     }
     
     func communicateToFlutter(verificationSuccess: Bool) {
