@@ -5,6 +5,7 @@ class ContentViewModel: ObservableObject {
     @Published var isCheckingReady = false
     @Published var showWebView = false
     @Published var balance = ""
+    @Published var initParamsInput: String = ""
     
     let webUrl = URL(string: "http://localhost:62320/")!
     let kgOauthToken = ""
@@ -36,6 +37,10 @@ class ContentViewModel: ObservableObject {
         let clientToken = Constants.KgSDK.clientToken
         kgSDKService.setInitParams(clientToken: clientToken)
     }
+
+    func setCustomInitParams() {
+        kgSDKService.setInitParams(clientToken: initParamsInput)
+   }
     
     func setNewUserInitParams() {
         let clientToken = Constants.KgSDK.newUserclientToken

@@ -1,194 +1,202 @@
-# Swift Example
-# Open SDK screen
-Before using KG_SDK, you need to import the ~[KgSDKService.swift](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen/kgsdkservice.swift)~ file into your iOS application. This file will help you quickly start and effectively integrate KG_SDK.
-# [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen#init-kg_sdk-service)Init KG_SDK Service
-To get started with KG_SDK in your iOS application, you need to set up the initial service in your SwiftUI environment. Below is the code snippet for initializing the KgSDKService within the main entry point of your SwiftUI application:
-Copy
-import SwiftUI
-// The following library connects plugins with iOS platform code to this app.
-import Flutter
-import FlutterPluginRegistrant
+# KG_SDK for iOS
 
-@main
-struct testApp: App {
-    @StateObject var kgSDKService = KgSDKService.shared
-    var body: some Scene {
-            WindowGroup {
-                ContentView().environmentObject(kgSDKService)
-            }
-        }
-}
+## Table of Contents
+- [KG\_SDK for iOS](#kg_sdk-for-ios)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Setup](#setup)
+  - [Implementation](#implementation)
+    - [Creating KgSDKService](#creating-kgsdkservice)
+    - [Initializing KG\_SDK in SwiftUI](#initializing-kg_sdk-in-swiftui)
+    - [Opening KG\_SDK Screen](#opening-kg_sdk-screen)
+    - [Using KG\_SDK Functions](#using-kg_sdk-functions)
+  - [Required Implementations](#required-implementations)
+  - [Configuration](#configuration)
 
-This setup involves importing necessary Flutter dependencies and registering KgSDKService as an environment object to make it available throughout your app.
-# [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen#open-kg_sdk-screen)Open KG_SDK Screen
-To interact with the KG_SDK, you’ll need to provide a user interface component that triggers SDK functions. Here’s how to create a simple button within ContentView to open the wallet:
-Copy
-import SwiftUI import Flutter
+## Introduction
 
-struct ContentView: View {
-EnvironmentObject. @EnvironmentObject var
-flutterDependencies: FlutterDependencies
+KG_SDK is a powerful SDK for integrating blockchain and wallet management capabilities into your iOS application. This README provides instructions on how to implement and use KG_SDK in your Swift project.
 
+## Setup
 
-var body: some View { Button(“Open Wallet!”) { showKgSDK() } }
+To use KG_SDK, you need to set up Flutter in your iOS project. Follow these steps:
 
-private func showKgSDK() {
-    if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
-        kgSDKService.showKgSDK(from: rootViewController)
-    }
-}
-This code snippet adds a button that, when pressed, calls the showKgSDK function to display the KG_SDK interface from the main application window.
-# [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen#supported-functions-in-kg_sdk)Supported Functions in KG_SDK
-KG_SDK offers a variety of functions that can be called using the funcName parameter within your app. These functions enable you to perform different operations related to blockchain and wallet management. Here is a list of some commonly used functions and their purposes:
-* **getBalance**: Retrieves the current balance of the user's wallet. This function is ideal for quickly checking how much funds are available in the wallet.
+1. Add Flutter to your project as described in the Flutter documentation.
+2. Ensure you have the necessary Flutter dependencies in your Podfile.
 
-⠀Copy
-private func callKgSDK() {
-    kgSDKService.callKgSDK(funcName: "getBalance", completion: { result in
-        print(result ?? "no-balance")
-    })
-}
+## Implementation
 
-# KgSDKService.swift
-KgSDKService.swift
-# [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen/kgsdkservice.swift#function-should-be-implement)Function should be Implement
+### Creating KgSDKService
 
-
-| name | desc | return type |
-|---|---|---|
-| updateSharedSecret | updateSharedSecret to your storage | Copy<br>(sharedSecret: String?) -> Bool |
-| fetchSharedSecret | get sharedSecret to from your storage | Copy<br>() -> String? |
-# [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen/kgsdkservice.swift#parameter-should-be-update)Parameter should be update
-### you can see all params at ~[Get Started](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/get-started)~
-| name | desc |
-|---|---|
-| clientId | clientId from KryptoGO Studio |
-| clientToken | clientToken from your own service |
+Create a `KgSDKService` class to manage the interaction with the KG_SDK. Here's an example of how to structure this class:
 
 ```swift
-
 import Flutter
-import FlutterPluginRegistrant
+import SwiftUI
 
-
-class KgSDKService : ObservableObject{
+class KgSDKService: ObservableObject {
     static let shared = KgSDKService()
-    private var flutterEngine: FlutterEngine?
+    
+    private let flutterEngine: FlutterEngine
+    private let methodChannel: FlutterMethodChannel
     private var flutterViewController: FlutterViewController?
-    private var methodChannel: FlutterMethodChannel?
-    private var openVerifyPageCallback: ((_ result: @escaping FlutterResult) -> Void)?
     
-    
-    private init (flutterViewController: FlutterViewController? = nil, methodChannel: FlutterMethodChannel? = nil, openVerifyPageCallback: ( (_: FlutterResult) -> Void)? = nil) {
-        self.flutterViewController = flutterViewController
-        self.methodChannel = methodChannel
-        self.openVerifyPageCallback = openVerifyPageCallback
-        self.flutterEngine = FlutterEngine(name: "flutter_engine")
-        flutterEngine?.run()
-        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
-    }
-    
-    
-    private func initializeFlutterViewController(flutterEngine: FlutterEngine) {
+    private init() {
+        flutterEngine = FlutterEngine(name: "kg_sdk_engine")
+        flutterEngine.run()
+        
+        let messenger = flutterEngine.binaryMessenger
+        methodChannel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: messenger)
+        
+        setupMethodChannel()
+        
         flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
-        guard let flutterVC = flutterViewController else { return }
-        methodChannel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterVC.binaryMessenger)
-        setUpMethodChannel()
+        flutterViewController?.modalPresentationStyle = .fullScreen
+        flutterViewController?.isViewOpaque = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.setInitParams()
+        }
     }
     
-    private func setUpMethodChannel() {
-        let sharedSecret = fetchSharedSecret()
-        // Send initial parameter to Flutter.
-        var initParam: [String: Any] = [
-            "appName": "TWMTEST",
-            "walletConfig": [
-                "maxWallet": 100,
-                "enableAutoSssSignUp": true,
-                "enableSSS":true,
-                "allRpcs": ["ethereum"]
-            ],
-            "themeData": [
-                "primaryValue": "FFFFC211"
-            ],
-            "flavorEnum": "dev",
-            "clientId": "$YOUR_CLIENT_ID",
-            "clientToken": "$YOUR_CLIENTTOKEN"
-        ]
-        if sharedSecret != nil {
-            initParam["sharedSecret"] = sharedSecret
+    private func setupMethodChannel() {
+        // Implement method channel setup here
+    }
+    
+    private func setInitParams() {
+        // Set initial parameters for KG_SDK
+    }
+    
+    // Implement other necessary methods here
+}
+```
+
+### Initializing KG_SDK in SwiftUI
+
+In your main SwiftUI app file, initialize the KgSDKService:
+
+```swift
+import SwiftUI
+
+@main
+struct YourApp: App {
+    @StateObject var kgSDKService = KgSDKService.shared
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView().environmentObject(kgSDKService)
         }
-        
-        methodChannel?.invokeMethod("getInitialParam", arguments: initParam)
-        
-        // Set method call handler for future Flutter-to-native calls.
-        methodChannel?.setMethodCallHandler { [self] (call: FlutterMethodCall, result: @escaping FlutterResult) in
-            switch call.method {
-            case "closeFlutterView":
-                flutterViewController!.dismiss(animated: true, completion: nil)
-            case "openVerifyPage":
-                self.openVerifyPageCallback?(result)
-            case "updateSharedSecret":
-                print(call.arguments)
-                let sharedSecret = (call.arguments as? [String: String])?["sharedSecret"]
-                let isSuccess = self.updateSharedSecret(sharedSecret: sharedSecret)
-                result(isSuccess)
-            default:
-                result(FlutterMethodNotImplemented)
+    }
+}
+```
+
+### Opening KG_SDK Screen
+
+To open the KG_SDK screen, implement a method in your KgSDKService:
+
+```swift
+func showKgSDK(from viewController: UIViewController) {
+    guard let flutterViewController = flutterViewController else {
+        print("Error: FlutterViewController is not initialized")
+        return
+    }
+    
+    DispatchQueue.main.async {
+        viewController.present(flutterViewController, animated: true, completion: nil)
+    }
+}
+```
+
+Use it in your SwiftUI view:
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    @EnvironmentObject var kgSDKService: KgSDKService
+
+    var body: some View {
+        Button("Open Wallet") {
+            if let window = UIApplication.shared.windows.first,
+               let rootViewController = window.rootViewController {
+                kgSDKService.showKgSDK(from: rootViewController)
             }
         }
     }
-    
-    // To be implemented: update to server
-    func updateSharedSecret(sharedSecret: String?) -> Bool {
-        guard let secret = sharedSecret else {
-            return false
-        }
-        UserDefaults.standard.set(secret, forKey: "sharedSecret")
-        return true
-    }
-    
-    
-    // To be implemented: fetch from server
-    func fetchSharedSecret() -> String? {
-        return UserDefaults.standard.string(forKey: "sharedSecret")
-    }
-    
-    
-    func showKgSDK(from rootViewController: UIViewController) {
-        // check flutterViewController is initialized
-        if flutterViewController == nil {
-            initializeFlutterViewController(flutterEngine:flutterEngine!)
-        }
-        
-        
-        flutterViewController?.modalPresentationStyle = .overCurrentContext
-        flutterViewController?.isViewOpaque = false
-        rootViewController.present(flutterViewController ?? createFlutterViewController(), animated: true)
-    }
-    
-    private func createFlutterViewController() -> FlutterViewController{
-        return FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
-    }
-    
-    
-    func callKgSDK(funcName: String, completion: @escaping (Any?) -> Void) {
-        // Create the FlutterViewController.
-        let flutterViewController = FlutterViewController(
-            engine: flutterEngine!,
-            nibName: nil,
-            bundle: nil)
-        
-        let channel = FlutterMethodChannel(name: "com.kryptogo.sdk/channel", binaryMessenger: flutterViewController.binaryMessenger)
-        channel.invokeMethod(funcName, arguments: nil,result: { (result) in
-            print(result ?? "no-data")
-            completion(result)
-            
-        })
-    }
-    
+}
+```
+
+### Using KG_SDK Functions
+
+Implement methods in KgSDKService to interact with KG_SDK:
+
+```swift
+func getBalance(completion: @escaping (Any?) -> Void) {
+    methodChannel.invokeMethod("getBalance", arguments: nil, result: completion)
 }
 
+func isReady(completion: @escaping (Any?) -> Void) {
+    methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
+}
 
+func goRoute(route: String) {
+    methodChannel.invokeMethod("goRoute", arguments: route, result: nil)
+}
 
+func kDebugMode() async throws -> Bool {
+    return try await withCheckedThrowingContinuation { continuation in
+        methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
+            continuation.resume(returning: result as? Bool ?? false)
+        }
+    }
+}
+
+func isWalletCreated() async throws -> Bool {
+    return try await withCheckedThrowingContinuation { continuation in
+        methodChannel.invokeMethod("isWalletCreated", arguments: nil) { result in
+            continuation.resume(returning: result as? Bool ?? false)
+        }
+    }
+}
 ```
+
+## Required Implementations
+
+You need to implement the following functions in your KgSDKService:
+
+1. `updateSharedSecret(sharedSecret: String?) -> Bool`
+   - Update the shared secret in your secure storage.
+   
+2. `fetchSharedSecret() -> String?`
+   - Retrieve the shared secret from your secure storage.
+
+Example implementation:
+
+```swift
+func updateSharedSecret(sharedSecret: String?) -> Bool {
+    // Implement secure storage of sharedSecret
+    // Return true if successful, false otherwise
+}
+
+func fetchSharedSecret() -> String? {
+    // Implement secure retrieval of sharedSecret
+    // Return the stored sharedSecret or nil if not found
+}
 ```
+
+## Configuration
+
+Before using KG_SDK, update the following parameters in the `setInitParams` method of KgSDKService:
+
+```swift
+private func setInitParams() {
+    methodChannel.invokeMethod("initParams", arguments: [
+        "clientToken": "YOUR_CLIENT_TOKEN",
+        "clientId": "YOUR_CLIENT_ID"
+    ])
+}
+```
+
+Replace `YOUR_CLIENT_TOKEN` and `YOUR_CLIENT_ID` with the values provided by KryptoGO Studio.
+
+For more detailed information on getting started with KG_SDK, please refer to the [official documentation](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/get-started).****

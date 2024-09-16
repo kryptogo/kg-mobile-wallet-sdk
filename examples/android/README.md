@@ -58,16 +58,16 @@ fun callKgSDK(funcName: String): String{
 ### Function should be Implement
 
 
-| name | desc | return type |
-|---|---|---|
-| updateSharedSecret | updateSharedSecret to your storage | Copy<br>(sharedSecret: String?) -> Bool |
-| fetchSharedSecret | get sharedSecret to from your storage | Copy<br>() -> String? |
+| name               | desc                                  | return type                             |
+| ------------------ | ------------------------------------- | --------------------------------------- |
+| updateSharedSecret | updateSharedSecret to your storage    | Copy<br>(sharedSecret: String?) -> Bool |
+| fetchSharedSecret  | get sharedSecret to from your storage | Copy<br>() -> String?                   |
 ### Parameter should be update
 
 
-| name | desc |
-|---|---|
-| clientId | clientId from KryptoGO Studio |
+| name        | desc                              |
+| ----------- | --------------------------------- |
+| clientId    | clientId from KryptoGO Studio     |
 | clientToken | clientToken from your own service |
 
 
@@ -275,8 +275,8 @@ class CustomFlutterActivity : FlutterActivity() {
 
         channel.setMethodCallHandler { call, result ->
             when (call.method) {
-                "closeFlutterView" -> {
-                    closeFlutterView()
+                "closeSdkView" -> {
+                    closeSdkView()
                     result.success(null)
                 }
                 "openVerifyPage" -> {
@@ -298,7 +298,7 @@ class CustomFlutterActivity : FlutterActivity() {
         channel.invokeMethod("getInitialParam", initParam)
     }
 
-    private fun closeFlutterView() {
+    private fun closeSdkView() {
         finish()
     }
 }

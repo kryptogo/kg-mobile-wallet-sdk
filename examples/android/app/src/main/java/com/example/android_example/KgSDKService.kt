@@ -202,8 +202,8 @@ class CustomFlutterActivity : FlutterActivity() {
 
         channel.setMethodCallHandler { call, result ->
             when (call.method) {
-                "closeFlutterView" -> {
-                    closeFlutterView()
+                "closeSdkView" -> {
+                    closeSdkView()
                     result.success(null)
                 }
                 "openVerifyPage" -> {
@@ -225,7 +225,7 @@ class CustomFlutterActivity : FlutterActivity() {
         channel.invokeMethod("init", initParam)
     }
 
-    private fun closeFlutterView() {
+    private fun closeSdkView() {
         finish()
     }
 }

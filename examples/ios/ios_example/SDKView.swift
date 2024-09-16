@@ -8,7 +8,6 @@ struct SDKView: View {
             ScrollView {
                 VStack(spacing: 20) {
                     SDKStatusView(isCheckingReady: $viewModel.isCheckingReady, isSDKReady: $viewModel.isSDKReady)
-                    
                     Button(action: {
                         viewModel.checkIsReady()
                     }) {
@@ -21,8 +20,37 @@ struct SDKView: View {
                         .background(Color.green)
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                    }
+                    }.padding(.horizontal)
                     
+                    
+                    Divider()
+                        .padding(.vertical)
+                    
+                    VStack() {
+                        TextField("Client Token", text: $viewModel.initParamsInput)
+                            .padding()
+                            .frame(height: 50)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 1)
+                            ).padding(.vertical)
+                            
+                            
+                        
+                        Button(action: {
+                            viewModel.setCustomInitParams()
+                            viewModel.checkIsReady()
+                        }) {
+                            Text("set client token")
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                    }.padding(.horizontal)
+                    
+                 
                     NavigationLink(destination: WalletCenterView()) {
                         HStack {
                             Image(systemName: "wallet.pass")
@@ -33,75 +61,13 @@ struct SDKView: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                    }
+                    }.padding(.horizontal)
                     
                     
                     if viewModel.showWebView {
                         WebViewContainer(url: viewModel.webUrl, token: viewModel.kgOauthToken, isPresented: $viewModel.showWebView)
                     }
-
-                    Button(action: {
-                        viewModel.setInitParams()
-                        viewModel.checkIsReady()
-                    }) {
-                        HStack {
-                            Image(systemName: "person.crop.circle.badge.checkmark")
-                            Text("設定已有錢包帳號")
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.clear)
-                        .foregroundColor(.blue)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.blue, lineWidth: 2)
-                        )
-                    }
                     
-                    
-                    Button(action: {
-                        viewModel.setNewUserInitParams()
-                        viewModel.checkIsReady()
-                    }) {
-                        HStack {
-                            Image(systemName: "person.crop.circle.badge.plus")
-                            Text("設定成新帳號")
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.clear)
-                        .foregroundColor(.blue)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.blue, lineWidth: 2)
-                        )
-                    }
-
-
-                    // Button(action: {
-                    //     Task {
-                    //         do {
-                    //             let result = try await viewModel.deleteUser()
-                    //             viewModel.checkIsReady()
-                    //             print("User deleted: \(result)")
-                    //         } catch {
-                    //             print("Error deleting user: \(error)")
-                    //         }
-                    //     }
-                    // }) {
-                    //     HStack {
-                    //         Image(systemName: "trash.fill")
-                    //         Text("Delete User")
-                    //     }
-                    //     .frame(maxWidth: .infinity)
-                    //     .padding()
-                    //     .background(Color.clear)
-                    //     .foregroundColor(.blue)
-                    //     .overlay(
-                    //         RoundedRectangle(cornerRadius: 10)
-                    //             .stroke(Color.blue, lineWidth: 2)
-                    //     )
-                    // }
                 }
                 .padding()
             }

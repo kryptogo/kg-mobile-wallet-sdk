@@ -13,6 +13,8 @@ class WalletCenterViewModel: ObservableObject {
             await checkWalletStatus()
         }
     }
+
+    
     
     func goRoute(route: String) {
         // Open KgSDK
@@ -67,6 +69,9 @@ class WalletCenterViewModel: ObservableObject {
     
     func refreshBalance() {
         balance = "Loading..."
+        Task {
+            await checkWalletStatus()
+        }
         kgSDKService.getBalance { [weak self] result in
             DispatchQueue.main.async {
                 
@@ -240,8 +245,15 @@ struct WalletCenterView: View {
                 return
             }
             
-            // Here you can call the function to restore the wallet with the entered password
+            // Call the function to restore the wallet with the entered password
             self.viewModel.restoreWallet(with: password)
+            
+            // Open KgSDK after submitting the password
+            DispatchQueue.main.async {
+                if let topViewController = UIApplication.shared.windows.first?.rootViewController?.topMostViewController() {
+                    KgSDKService.shared.showKgSDK(from: topViewController)
+                }
+            }
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

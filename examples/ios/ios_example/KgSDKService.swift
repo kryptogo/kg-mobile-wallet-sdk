@@ -25,14 +25,18 @@ class KgSDKService: ObservableObject {
         flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         flutterViewController?.modalPresentationStyle = .automatic
         flutterViewController?.isViewOpaque = false
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) { [weak self] in
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) { [weak self] in
             self?.setInitParams(clientToken: Constants.KgSDK.clientToken)
         }
     }
     func setInitParams(clientToken: String) {
-        print("setInitParams")
-        methodChannel.invokeMethod("initClientToken", arguments: clientToken)
+        print("setInitParams--------")
+        methodChannel.invokeMethod("initParams", arguments: [
+            "clientToken": clientToken,
+            "clientId": "def3b0768f8f95ffa0be37d0f54e2064"
+        ])
     }
     
     private func setupMethodChannel() {
@@ -40,8 +44,8 @@ class KgSDKService: ObservableObject {
             guard let self = self else { return }
             
             switch call.method {
-            case "closeFlutterView":
-                self.closeFlutterView()
+            case "closeSdkView":
+                self.closeSdkView()
             case "openVerifyPage":
                 self.openVerifyPage(result: result)
             case "updateSharedSecret":
@@ -97,49 +101,49 @@ class KgSDKService: ObservableObject {
     func isReady(completion: @escaping (Any?) -> Void) {
         methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
     }
-
+    
     func goRoute(route: String) {
         methodChannel.invokeMethod("goRoute", arguments: route, result: nil)
     }
     
     func kDebugMode() async throws -> Bool {
-            return try await withCheckedThrowingContinuation { continuation in
-                methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
-                    switch result {
-                    case let boolResult as Bool:
-                        continuation.resume(returning: boolResult)
-                    default:
-                        continuation.resume(returning: false )
-                    }
+        return try await withCheckedThrowingContinuation { continuation in
+            methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
+                switch result {
+                case let boolResult as Bool:
+                    continuation.resume(returning: boolResult)
+                default:
+                    continuation.resume(returning: false )
                 }
             }
         }
+    }
     
     func hasLocalShareKey() async throws -> Bool {
-            return try await withCheckedThrowingContinuation { continuation in
-                methodChannel.invokeMethod("hasLocalShareKey", arguments: nil) { result in
-                    switch result {
-                    case let boolResult as Bool:
-                        continuation.resume(returning: boolResult)
-                    default:
-                        continuation.resume(throwing: "error" as! Error)
-                    }
+        return try await withCheckedThrowingContinuation { continuation in
+            methodChannel.invokeMethod("hasLocalShareKey", arguments: nil) { result in
+                switch result {
+                case let boolResult as Bool:
+                    continuation.resume(returning: boolResult)
+                default:
+                    continuation.resume(returning: false)
                 }
             }
         }
+    }
     
     func isWalletCreated() async throws -> Bool {
-            return try await withCheckedThrowingContinuation { continuation in
-                methodChannel.invokeMethod("isWalletCreated", arguments: nil) { result in
-                    switch result {
-                    case let boolResult as Bool:
-                        continuation.resume(returning: boolResult)
-                    default:
-                        continuation.resume(returning: false)
-                    }
+        return try await withCheckedThrowingContinuation { continuation in
+            methodChannel.invokeMethod("isWalletCreated", arguments: nil) { result in
+                switch result {
+                case let boolResult as Bool:
+                    continuation.resume(returning: boolResult)
+                default:
+                    continuation.resume(returning: false)
                 }
             }
         }
+    }
     
     func getAccessToken(completion: @escaping (Any?) -> Void) {
         methodChannel.invokeMethod("getAccessToken", arguments: nil, result: completion)
@@ -154,13 +158,13 @@ class KgSDKService: ObservableObject {
     }
     
     
-    private func closeFlutterView() {
+    private func closeSdkView() {
         DispatchQueue.main.async { [weak self] in
             self?.flutterViewController?.dismiss(animated: true, completion: nil)
         }
     }
     
-
+    
     private func openVerifyPage(result: @escaping FlutterResult) {
         DispatchQueue.main.async {
             guard let topViewController = UIApplication.shared.windows.first?.rootViewController?.topMostViewController() else {
@@ -182,7 +186,7 @@ class KgSDKService: ObservableObject {
             topViewController.present(verifyPageVC, animated: true, completion: nil)
         }
     }
-
+    
     
     
     private func handleUpdateSharedSecret(call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -207,21 +211,27 @@ class KgSDKService: ObservableObject {
                 result(FlutterError(code: "VERIFICATION_FAILED", message: "User verification failed", details: nil))
                 return
             }
+            print("------------------------")
+            print(isVerified)
             
             let sharedSecret = self.fetchSharedSecret()
+            print("------------------------", sharedSecret)
+            
             result(sharedSecret)
         }
     }
     
     private func updateSharedSecret(sharedSecret: String) -> Bool {
-         // Here we're using UserDefaults for simplicity. In a real app, you'd want to use
-         // a more secure storage method, like Keychain.
-         UserDefaults.standard.set(sharedSecret, forKey: "KgSDKSharedSecret")
-         return true
-     }
-     
+        // Here we're using UserDefaults for simplicity. In a real app, you'd want to use
+        // a more secure storage method, like Keychain.
+        print("update share secret")
+        UserDefaults.standard.set(sharedSecret, forKey: "KgSDKSharedSecret")
+        return true
+    }
+    
     func fetchSharedSecret() -> String? {
-         return UserDefaults.standard.string(forKey: "KgSDKSharedSecret")
+        print("fetchSharedSecret()")
+        return UserDefaults.standard.string(forKey: "KgSDKSharedSecret")
     }
 }
 
