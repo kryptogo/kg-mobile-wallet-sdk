@@ -185,6 +185,7 @@
 		86757E192C9BC78C001BB52C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
 		86757E1A2C9BC78C001BB52C /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/sentry_flutter.xcframework"; sourceTree = "<group>"; };
 		86757E302C9BC78D001BB52C /* video_player_avfoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = video_player_avfoundation.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/video_player_avfoundation.xcframework"; sourceTree = "<group>"; };
+		86757E612C9BD65C001BB52C /* ios-example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ios-example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		867B8C152BAACBC800968628 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework; sourceTree = "<group>"; };
 		867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework; sourceTree = "<group>"; };
 		867B8C192BAACBD300968628 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/Sentry.xcframework; sourceTree = "<group>"; };
@@ -439,6 +440,7 @@
 		86CDF6C52B95AC1C001895C7 /* ios_example */ = {
 			isa = PBXGroup;
 			children = (
+				86757E612C9BD65C001BB52C /* ios-example-Info.plist */,
 				86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */,
 				86CDF6CC2B95AC1D001895C7 /* Preview Content */,
 				860643972C905A71004B6F0E /* ios_exampleApp.swift */,
@@ -892,7 +894,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"ios_example/Preview Content\"";
 				DEVELOPMENT_TEAM = TG37KG4WDZ;
 				ENABLE_PREVIEWS = YES;
@@ -903,9 +905,10 @@
 					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-example-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code!!";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library permission is required to scan QR code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -935,7 +938,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"ios_example/Preview Content\"";
 				DEVELOPMENT_TEAM = TG37KG4WDZ;
 				ENABLE_PREVIEWS = YES;
@@ -946,9 +949,10 @@
 					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-example-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code!!";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library permission is required to scan QR code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
