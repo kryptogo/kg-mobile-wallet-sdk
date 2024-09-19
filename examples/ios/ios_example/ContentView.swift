@@ -5,25 +5,19 @@ class ContentViewModel: ObservableObject {
     @Published var isCheckingReady = false
     @Published var showWebView = false
     @Published var balance = ""
-    @Published var initParamsInput: String = ""
+    @Published var initParamsInput: String
     
     let webUrl = URL(string: "http://localhost:62320/")!
     let kgOauthToken = ""
     
     private let kgSDKService: KgSDKService
+    private let clientTokenKey = "KgSDKClientToken"
     
     init(kgSDKService: KgSDKService = .shared) {
         self.kgSDKService = kgSDKService
-    }
-
-    func deleteUser() {
-        Task {
-            do {
-                try await kgSDKService.deleteUser()
-            } catch {
-                print("Error deleting user: \(error)")
-            }
-        }
+        
+        // Load saved clientToken from UserDefaults
+        self.initParamsInput = UserDefaults.standard.string(forKey: clientTokenKey) ?? ""
     }
 
     // Check if the SDK is ready
@@ -39,8 +33,11 @@ class ContentViewModel: ObservableObject {
     }
 
     func setCustomInitParams() {
+        // Save the clientToken to UserDefaults
+        UserDefaults.standard.set(initParamsInput, forKey: clientTokenKey)
+        
         kgSDKService.setInitParams(clientToken: initParamsInput)
-   }
+    }
     
     func setNewUserInitParams() {
         let clientToken = Constants.KgSDK.newUserclientToken
@@ -97,7 +94,6 @@ struct ContentView: View {
                 }
         }
         .onAppear {
-            viewModel.checkIsReady()
         }
     }
 }

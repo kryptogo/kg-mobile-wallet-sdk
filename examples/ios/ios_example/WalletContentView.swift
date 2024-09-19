@@ -88,7 +88,7 @@ class WalletCenterViewModel: ObservableObject {
                         self?.balance = "Invalid balance format"
                     }
                 } else {
-                    self?.balance = "Error fetching balance"
+                    self?.balance = "Wallet not ready"
                 }
             }
         }

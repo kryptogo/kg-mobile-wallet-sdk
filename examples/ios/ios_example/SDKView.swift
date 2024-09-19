@@ -61,7 +61,10 @@ struct SDKView: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                    }.padding(.horizontal)
+                    }
+                    .disabled(!viewModel.isSDKReady)
+                    .opacity(viewModel.isSDKReady ? 1.0 : 0.3)
+                    .padding(.horizontal)
                     
                     
                     if viewModel.showWebView {

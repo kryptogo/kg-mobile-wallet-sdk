@@ -29,6 +29,16 @@ class VerifyPageView: UIView {
         return label
     }()
     
+    private let subTitle: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Verification code is 111111"
+        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        label.textColor = .gray
+        label.textAlignment = .center
+        return label
+    }()
+    
     private let closeButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +71,7 @@ class VerifyPageView: UIView {
         backgroundColor = .systemBackground
         
         addSubview(titleLabel)
+        addSubview(subTitle)
         addSubview(textField)
         addSubview(closeButton)
         addSubview(submitButton)

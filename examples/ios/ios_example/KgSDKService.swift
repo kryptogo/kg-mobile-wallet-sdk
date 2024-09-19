@@ -25,14 +25,12 @@ class KgSDKService: ObservableObject {
         flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         flutterViewController?.modalPresentationStyle = .automatic
         flutterViewController?.isViewOpaque = false
-        
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()+1) { [weak self] in
-            self?.setInitParams(clientToken: Constants.KgSDK.clientToken)
-        }
     }
+    
     func setInitParams(clientToken: String) {
         print("setInitParams--------")
+        
+        // Invoke method
         methodChannel.invokeMethod("initParams", arguments: [
             "clientToken": clientToken,
             "clientId": "def3b0768f8f95ffa0be37d0f54e2064"
@@ -57,8 +55,6 @@ class KgSDKService: ObservableObject {
             }
         }
     }
-    
-    
     
     func showKgSDK(from viewController: UIViewController) {
         guard let flutterViewController = flutterViewController else {
