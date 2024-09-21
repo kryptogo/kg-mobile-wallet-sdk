@@ -7,9 +7,18 @@ class KgSDKService: ObservableObject {
     
     private let flutterEngine: FlutterEngine
     private let methodChannel: FlutterMethodChannel
-    private var flutterViewController: FlutterViewController?
+//    private var flutterViewController: FlutterViewController?
     private let channelName = "com.kryptogo.sdk/channel"
     private let engineName = "flutter_engine"
+    
+    
+    // 將 flutterViewController 改為懶加載
+    private lazy var flutterViewController: FlutterViewController = {
+        let controller = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: Bundle.main)
+        controller.modalPresentationStyle = .fullScreen
+        controller.isViewOpaque = false
+        return controller
+    }()
     
     private init() {
         flutterEngine = FlutterEngine(name: engineName)
@@ -20,11 +29,6 @@ class KgSDKService: ObservableObject {
         
         GeneratedPluginRegistrant.register(with: flutterEngine)
         setupMethodChannel()
-        
-        // 創建單個 FlutterViewController 實例
-        flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
-        flutterViewController?.modalPresentationStyle = .automatic
-        flutterViewController?.isViewOpaque = false
     }
     
     func setInitParams(clientToken: String) {
@@ -57,10 +61,10 @@ class KgSDKService: ObservableObject {
     }
     
     func showKgSDK(from viewController: UIViewController) {
-        guard let flutterViewController = flutterViewController else {
-            print("Error: FlutterViewController is not initialized")
-            return
-        }
+//        guard let flutterViewController = flutterViewController else {
+//            print("Error: FlutterViewController is not initialized")
+//            return
+//        }
         
         // 確保 Flutter 視圖已加載
         flutterViewController.view.layoutIfNeeded()
@@ -69,13 +73,13 @@ class KgSDKService: ObservableObject {
         flutterViewController.modalPresentationStyle = .fullScreen
         
         DispatchQueue.main.async {
-            viewController.present(flutterViewController, animated: true, completion: nil)
+            viewController.present(self.flutterViewController, animated: true, completion: nil)
         }
     }
     
     func dismissKgSDK(completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
-            self.flutterViewController?.dismiss(animated: true, completion: completion)
+            self.flutterViewController.dismiss(animated: true, completion: completion)
         }
     }
     
@@ -156,7 +160,7 @@ class KgSDKService: ObservableObject {
     
     private func closeSdkView() {
         DispatchQueue.main.async { [weak self] in
-            self?.flutterViewController?.dismiss(animated: true, completion: nil)
+            self?.flutterViewController.dismiss(animated: true, completion: nil)
         }
     }
     

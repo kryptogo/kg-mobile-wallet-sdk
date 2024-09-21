@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "scan",
+    "printedName": "scan",
     "children": [
       {
         "kind": "Import",
@@ -482,6 +482,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -586,6 +600,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -610,8 +625,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -708,8 +724,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -822,8 +839,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -928,8 +946,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1026,8 +1045,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1140,8 +1160,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1254,8 +1275,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1368,8 +1390,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1474,8 +1497,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1564,8 +1588,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1662,8 +1687,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1768,8 +1794,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1858,8 +1885,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1948,8 +1976,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2038,8 +2067,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "Custom"
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2157,6 +2187,7 @@
             "mangledName": "$s4scan8ScanViewC_6viewId4args9registrarACSo6CGRectV_s5Int64VypSgSo22FlutterPluginRegistrar_ptcfc",
             "moduleName": "scan",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "init_kind": "Designated"
@@ -2178,6 +2209,7 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -2200,6 +2232,7 @@
             "moduleName": "scan",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -2226,6 +2259,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -2253,6 +2287,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -2294,6 +2329,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -2344,6 +2380,7 @@
             "objc_name": "captureOutput:didOutputMetadataObjects:fromConnection:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2400,6 +2437,7 @@
             "objc_name": "handleMethodCall:result:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2433,6 +2471,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -2445,6 +2484,7 @@
         "moduleName": "scan",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2457,6 +2497,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2809,6 +2863,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3012,6 +3080,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3159,6 +3241,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3220,13 +3316,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanPlatformView.swift",
-      "kind": "StringLiteral",
-      "offset": 124,
-      "length": 16,
-      "value": "\"scan.ScanPlatformView\""
-    },
-    {
       "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
       "kind": "BooleanLiteral",
       "offset": 317,
@@ -3274,20 +3363,6 @@
       "offset": 801,
       "length": 3,
       "value": "0.7"
-    },
-    {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanView.swift",
-      "kind": "StringLiteral",
-      "offset": 138,
-      "length": 8,
-      "value": "\"scan.ScanView\""
-    },
-    {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/scan-1.6.0\/ios\/Classes\/ScanViewFactory.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 15,
-      "value": "\"scan.ScanViewFactory\""
     }
   ]
 }

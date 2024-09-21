@@ -2,60 +2,60 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/dora/work/kg-flutter/packages/kg_sdk/ios_sdk/Release/iphoneos/Release-iphoneos/SAMKeychain/SAMKeychain.framework/SAMKeychain'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x53B5E, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionString, symObjAddr: 0x0, symBinAddr: 0x58B0, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x53B93, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionNumber, symObjAddr: 0x30, symBinAddr: 0x58E0, symSize: 0x0 }
-  - { offsetInCU: 0x27, offset: 0x53BD0, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
-  - { offsetInCU: 0x41, offset: 0x53BEA, size: 0x8, addend: 0x0, symName: _kSAMKeychainErrorDomain, symObjAddr: 0x590, symBinAddr: 0x8120, symSize: 0x0 }
-  - { offsetInCU: 0x61, offset: 0x53C0A, size: 0x8, addend: 0x0, symName: _kSAMKeychainAccountKey, symObjAddr: 0x598, symBinAddr: 0x8128, symSize: 0x0 }
-  - { offsetInCU: 0x77, offset: 0x53C20, size: 0x8, addend: 0x0, symName: _kSAMKeychainCreatedAtKey, symObjAddr: 0x5A0, symBinAddr: 0x8130, symSize: 0x0 }
-  - { offsetInCU: 0x8D, offset: 0x53C36, size: 0x8, addend: 0x0, symName: _kSAMKeychainClassKey, symObjAddr: 0x5A8, symBinAddr: 0x8138, symSize: 0x0 }
-  - { offsetInCU: 0xA3, offset: 0x53C4C, size: 0x8, addend: 0x0, symName: _kSAMKeychainDescriptionKey, symObjAddr: 0x5B0, symBinAddr: 0x8140, symSize: 0x0 }
-  - { offsetInCU: 0xB9, offset: 0x53C62, size: 0x8, addend: 0x0, symName: _kSAMKeychainLabelKey, symObjAddr: 0x5B8, symBinAddr: 0x8148, symSize: 0x0 }
-  - { offsetInCU: 0xCF, offset: 0x53C78, size: 0x8, addend: 0x0, symName: _kSAMKeychainLastModifiedKey, symObjAddr: 0x5C0, symBinAddr: 0x8150, symSize: 0x0 }
-  - { offsetInCU: 0xE5, offset: 0x53C8E, size: 0x8, addend: 0x0, symName: _kSAMKeychainWhereKey, symObjAddr: 0x5C8, symBinAddr: 0x8158, symSize: 0x0 }
-  - { offsetInCU: 0xFB, offset: 0x53CA4, size: 0x8, addend: 0x0, symName: _SAMKeychainAccessibilityType, symObjAddr: 0x3850, symBinAddr: 0x8DE8, symSize: 0x0 }
-  - { offsetInCU: 0x15F, offset: 0x53D08, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
-  - { offsetInCU: 0x1B0, offset: 0x53D59, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:error:]', symObjAddr: 0x8, symBinAddr: 0x4008, symSize: 0xA8 }
-  - { offsetInCU: 0x223, offset: 0x53DCC, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordDataForService:account:]', symObjAddr: 0xB0, symBinAddr: 0x40B0, symSize: 0x8 }
-  - { offsetInCU: 0x274, offset: 0x53E1D, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordDataForService:account:error:]', symObjAddr: 0xB8, symBinAddr: 0x40B8, symSize: 0xA8 }
-  - { offsetInCU: 0x2E7, offset: 0x53E90, size: 0x8, addend: 0x0, symName: '+[SAMKeychain deletePasswordForService:account:]', symObjAddr: 0x160, symBinAddr: 0x4160, symSize: 0x8 }
-  - { offsetInCU: 0x338, offset: 0x53EE1, size: 0x8, addend: 0x0, symName: '+[SAMKeychain deletePasswordForService:account:error:]', symObjAddr: 0x168, symBinAddr: 0x4168, symSize: 0x98 }
-  - { offsetInCU: 0x3AB, offset: 0x53F54, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPassword:forService:account:]', symObjAddr: 0x200, symBinAddr: 0x4200, symSize: 0x8 }
-  - { offsetInCU: 0x40A, offset: 0x53FB3, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPassword:forService:account:error:]', symObjAddr: 0x208, symBinAddr: 0x4208, symSize: 0xC4 }
-  - { offsetInCU: 0x48D, offset: 0x54036, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPasswordData:forService:account:]', symObjAddr: 0x2CC, symBinAddr: 0x42CC, symSize: 0x8 }
-  - { offsetInCU: 0x4EC, offset: 0x54095, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPasswordData:forService:account:error:]', symObjAddr: 0x2D4, symBinAddr: 0x42D4, symSize: 0xC4 }
-  - { offsetInCU: 0x56F, offset: 0x54118, size: 0x8, addend: 0x0, symName: '+[SAMKeychain allAccounts]', symObjAddr: 0x398, symBinAddr: 0x4398, symSize: 0x8 }
-  - { offsetInCU: 0x5A4, offset: 0x5414D, size: 0x8, addend: 0x0, symName: '+[SAMKeychain allAccounts:]', symObjAddr: 0x3A0, symBinAddr: 0x43A0, symSize: 0xC }
-  - { offsetInCU: 0x5E9, offset: 0x54192, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accountsForService:]', symObjAddr: 0x3AC, symBinAddr: 0x43AC, symSize: 0x8 }
-  - { offsetInCU: 0x62C, offset: 0x541D5, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accountsForService:error:]', symObjAddr: 0x3B4, symBinAddr: 0x43B4, symSize: 0x7C }
-  - { offsetInCU: 0x68F, offset: 0x54238, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accessibilityType]', symObjAddr: 0x430, symBinAddr: 0x4430, symSize: 0xC }
-  - { offsetInCU: 0x6C2, offset: 0x5426B, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setAccessibilityType:]', symObjAddr: 0x43C, symBinAddr: 0x443C, symSize: 0x38 }
-  - { offsetInCU: 0x27, offset: 0x54405, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
-  - { offsetInCU: 0x35, offset: 0x54413, size: 0x8, addend: 0x0, symName: '+[SAMKeychainQuery errorWithCode:]', symObjAddr: 0x9C0, symBinAddr: 0x4E34, symSize: 0x224 }
-  - { offsetInCU: 0x5F, offset: 0x5443D, size: 0x8, addend: 0x0, symName: '_errorWithCode:.onceToken', symObjAddr: 0x5FD0, symBinAddr: 0x8DF0, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x54453, size: 0x8, addend: 0x0, symName: '_errorWithCode:.resourcesBundle', symObjAddr: 0x5FD8, symBinAddr: 0x8DF8, symSize: 0x0 }
-  - { offsetInCU: 0x241, offset: 0x5461F, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
-  - { offsetInCU: 0x391, offset: 0x5476F, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery deleteItem:]', symObjAddr: 0x288, symBinAddr: 0x46FC, symSize: 0xEC }
-  - { offsetInCU: 0x419, offset: 0x547F7, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery fetchAll:]', symObjAddr: 0x374, symBinAddr: 0x47E8, symSize: 0x118 }
-  - { offsetInCU: 0x4BD, offset: 0x5489B, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery fetch:]', symObjAddr: 0x48C, symBinAddr: 0x4900, symSize: 0x180 }
-  - { offsetInCU: 0x551, offset: 0x5492F, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPasswordObject:]', symObjAddr: 0x60C, symBinAddr: 0x4A80, symSize: 0x44 }
-  - { offsetInCU: 0x594, offset: 0x54972, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery passwordObject]', symObjAddr: 0x650, symBinAddr: 0x4AC4, symSize: 0x90 }
-  - { offsetInCU: 0x5CB, offset: 0x549A9, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPassword:]', symObjAddr: 0x6E0, symBinAddr: 0x4B54, symSize: 0x44 }
-  - { offsetInCU: 0x60E, offset: 0x549EC, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery password]', symObjAddr: 0x724, symBinAddr: 0x4B98, symSize: 0x94 }
-  - { offsetInCU: 0x645, offset: 0x54A23, size: 0x8, addend: 0x0, symName: '+[SAMKeychainQuery isSynchronizationAvailable]', symObjAddr: 0x7B8, symBinAddr: 0x4C2C, symSize: 0x24 }
-  - { offsetInCU: 0x678, offset: 0x54A56, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery query]', symObjAddr: 0x7DC, symBinAddr: 0x4C50, symSize: 0x1E4 }
-  - { offsetInCU: 0x71E, offset: 0x54AFC, size: 0x8, addend: 0x0, symName: '___34+[SAMKeychainQuery errorWithCode:]_block_invoke', symObjAddr: 0xC0C, symBinAddr: 0x5080, symSize: 0xA0 }
-  - { offsetInCU: 0x764, offset: 0x54B42, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery account]', symObjAddr: 0xCAC, symBinAddr: 0x5120, symSize: 0x8 }
-  - { offsetInCU: 0x79B, offset: 0x54B79, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setAccount:]', symObjAddr: 0xCB4, symBinAddr: 0x5128, symSize: 0x8 }
-  - { offsetInCU: 0x7DA, offset: 0x54BB8, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery service]', symObjAddr: 0xCBC, symBinAddr: 0x5130, symSize: 0x8 }
-  - { offsetInCU: 0x811, offset: 0x54BEF, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setService:]', symObjAddr: 0xCC4, symBinAddr: 0x5138, symSize: 0x8 }
-  - { offsetInCU: 0x850, offset: 0x54C2E, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery label]', symObjAddr: 0xCCC, symBinAddr: 0x5140, symSize: 0x8 }
-  - { offsetInCU: 0x887, offset: 0x54C65, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setLabel:]', symObjAddr: 0xCD4, symBinAddr: 0x5148, symSize: 0x8 }
-  - { offsetInCU: 0x8C6, offset: 0x54CA4, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery passwordData]', symObjAddr: 0xCDC, symBinAddr: 0x5150, symSize: 0x8 }
-  - { offsetInCU: 0x8FD, offset: 0x54CDB, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPasswordData:]', symObjAddr: 0xCE4, symBinAddr: 0x5158, symSize: 0x8 }
-  - { offsetInCU: 0x93C, offset: 0x54D1A, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery accessGroup]', symObjAddr: 0xCEC, symBinAddr: 0x5160, symSize: 0x8 }
-  - { offsetInCU: 0x973, offset: 0x54D51, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setAccessGroup:]', symObjAddr: 0xCF4, symBinAddr: 0x5168, symSize: 0x8 }
-  - { offsetInCU: 0x9B2, offset: 0x54D90, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery synchronizationMode]', symObjAddr: 0xCFC, symBinAddr: 0x5170, symSize: 0x8 }
-  - { offsetInCU: 0x9E9, offset: 0x54DC7, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setSynchronizationMode:]', symObjAddr: 0xD04, symBinAddr: 0x5178, symSize: 0x8 }
-  - { offsetInCU: 0xA26, offset: 0x54E04, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery .cxx_destruct]', symObjAddr: 0xD0C, symBinAddr: 0x5180, symSize: 0x54 }
+  - { offset: 0x58B7D, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionString, symObjAddr: 0x0, symBinAddr: 0x58C0, symSize: 0x0 }
+  - { offset: 0x58BB2, size: 0x8, addend: 0x0, symName: _SAMKeychainVersionNumber, symObjAddr: 0x30, symBinAddr: 0x58F0, symSize: 0x0 }
+  - { offset: 0x58BEF, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
+  - { offset: 0x58C09, size: 0x8, addend: 0x0, symName: _kSAMKeychainErrorDomain, symObjAddr: 0x590, symBinAddr: 0x8120, symSize: 0x0 }
+  - { offset: 0x58C29, size: 0x8, addend: 0x0, symName: _kSAMKeychainAccountKey, symObjAddr: 0x598, symBinAddr: 0x8128, symSize: 0x0 }
+  - { offset: 0x58C3F, size: 0x8, addend: 0x0, symName: _kSAMKeychainCreatedAtKey, symObjAddr: 0x5A0, symBinAddr: 0x8130, symSize: 0x0 }
+  - { offset: 0x58C55, size: 0x8, addend: 0x0, symName: _kSAMKeychainClassKey, symObjAddr: 0x5A8, symBinAddr: 0x8138, symSize: 0x0 }
+  - { offset: 0x58C6B, size: 0x8, addend: 0x0, symName: _kSAMKeychainDescriptionKey, symObjAddr: 0x5B0, symBinAddr: 0x8140, symSize: 0x0 }
+  - { offset: 0x58C81, size: 0x8, addend: 0x0, symName: _kSAMKeychainLabelKey, symObjAddr: 0x5B8, symBinAddr: 0x8148, symSize: 0x0 }
+  - { offset: 0x58C97, size: 0x8, addend: 0x0, symName: _kSAMKeychainLastModifiedKey, symObjAddr: 0x5C0, symBinAddr: 0x8150, symSize: 0x0 }
+  - { offset: 0x58CAD, size: 0x8, addend: 0x0, symName: _kSAMKeychainWhereKey, symObjAddr: 0x5C8, symBinAddr: 0x8158, symSize: 0x0 }
+  - { offset: 0x58CC3, size: 0x8, addend: 0x0, symName: _SAMKeychainAccessibilityType, symObjAddr: 0x3820, symBinAddr: 0x8DE8, symSize: 0x0 }
+  - { offset: 0x58CF3, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
+  - { offset: 0x58D44, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordForService:account:error:]', symObjAddr: 0x8, symBinAddr: 0x4008, symSize: 0xA8 }
+  - { offset: 0x58DB7, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordDataForService:account:]', symObjAddr: 0xB0, symBinAddr: 0x40B0, symSize: 0x8 }
+  - { offset: 0x58E08, size: 0x8, addend: 0x0, symName: '+[SAMKeychain passwordDataForService:account:error:]', symObjAddr: 0xB8, symBinAddr: 0x40B8, symSize: 0xA8 }
+  - { offset: 0x58E7B, size: 0x8, addend: 0x0, symName: '+[SAMKeychain deletePasswordForService:account:]', symObjAddr: 0x160, symBinAddr: 0x4160, symSize: 0x8 }
+  - { offset: 0x58ECC, size: 0x8, addend: 0x0, symName: '+[SAMKeychain deletePasswordForService:account:error:]', symObjAddr: 0x168, symBinAddr: 0x4168, symSize: 0x98 }
+  - { offset: 0x58F3F, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPassword:forService:account:]', symObjAddr: 0x200, symBinAddr: 0x4200, symSize: 0x8 }
+  - { offset: 0x58F9E, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPassword:forService:account:error:]', symObjAddr: 0x208, symBinAddr: 0x4208, symSize: 0xC4 }
+  - { offset: 0x59021, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPasswordData:forService:account:]', symObjAddr: 0x2CC, symBinAddr: 0x42CC, symSize: 0x8 }
+  - { offset: 0x59080, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setPasswordData:forService:account:error:]', symObjAddr: 0x2D4, symBinAddr: 0x42D4, symSize: 0xC4 }
+  - { offset: 0x59103, size: 0x8, addend: 0x0, symName: '+[SAMKeychain allAccounts]', symObjAddr: 0x398, symBinAddr: 0x4398, symSize: 0x8 }
+  - { offset: 0x59138, size: 0x8, addend: 0x0, symName: '+[SAMKeychain allAccounts:]', symObjAddr: 0x3A0, symBinAddr: 0x43A0, symSize: 0xC }
+  - { offset: 0x5917D, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accountsForService:]', symObjAddr: 0x3AC, symBinAddr: 0x43AC, symSize: 0x8 }
+  - { offset: 0x591C0, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accountsForService:error:]', symObjAddr: 0x3B4, symBinAddr: 0x43B4, symSize: 0x7C }
+  - { offset: 0x59223, size: 0x8, addend: 0x0, symName: '+[SAMKeychain accessibilityType]', symObjAddr: 0x430, symBinAddr: 0x4430, symSize: 0xC }
+  - { offset: 0x59256, size: 0x8, addend: 0x0, symName: '+[SAMKeychain setAccessibilityType:]', symObjAddr: 0x43C, symBinAddr: 0x443C, symSize: 0x38 }
+  - { offset: 0x59424, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
+  - { offset: 0x59432, size: 0x8, addend: 0x0, symName: '+[SAMKeychainQuery errorWithCode:]', symObjAddr: 0x9C0, symBinAddr: 0x4E34, symSize: 0x224 }
+  - { offset: 0x5945C, size: 0x8, addend: 0x0, symName: '_errorWithCode:.onceToken', symObjAddr: 0x5ED0, symBinAddr: 0x8DF0, symSize: 0x0 }
+  - { offset: 0x59472, size: 0x8, addend: 0x0, symName: '_errorWithCode:.resourcesBundle', symObjAddr: 0x5ED8, symBinAddr: 0x8DF8, symSize: 0x0 }
+  - { offset: 0x59622, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery save:]', symObjAddr: 0x0, symBinAddr: 0x4474, symSize: 0x288 }
+  - { offset: 0x59772, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery deleteItem:]', symObjAddr: 0x288, symBinAddr: 0x46FC, symSize: 0xEC }
+  - { offset: 0x597FA, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery fetchAll:]', symObjAddr: 0x374, symBinAddr: 0x47E8, symSize: 0x118 }
+  - { offset: 0x5989E, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery fetch:]', symObjAddr: 0x48C, symBinAddr: 0x4900, symSize: 0x180 }
+  - { offset: 0x59932, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPasswordObject:]', symObjAddr: 0x60C, symBinAddr: 0x4A80, symSize: 0x44 }
+  - { offset: 0x59975, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery passwordObject]', symObjAddr: 0x650, symBinAddr: 0x4AC4, symSize: 0x90 }
+  - { offset: 0x599AC, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPassword:]', symObjAddr: 0x6E0, symBinAddr: 0x4B54, symSize: 0x44 }
+  - { offset: 0x599EF, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery password]', symObjAddr: 0x724, symBinAddr: 0x4B98, symSize: 0x94 }
+  - { offset: 0x59A26, size: 0x8, addend: 0x0, symName: '+[SAMKeychainQuery isSynchronizationAvailable]', symObjAddr: 0x7B8, symBinAddr: 0x4C2C, symSize: 0x24 }
+  - { offset: 0x59A59, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery query]', symObjAddr: 0x7DC, symBinAddr: 0x4C50, symSize: 0x1E4 }
+  - { offset: 0x59AFF, size: 0x8, addend: 0x0, symName: '___34+[SAMKeychainQuery errorWithCode:]_block_invoke', symObjAddr: 0xC0C, symBinAddr: 0x5080, symSize: 0xA0 }
+  - { offset: 0x59B45, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery account]', symObjAddr: 0xCAC, symBinAddr: 0x5120, symSize: 0x8 }
+  - { offset: 0x59B7C, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setAccount:]', symObjAddr: 0xCB4, symBinAddr: 0x5128, symSize: 0x8 }
+  - { offset: 0x59BBB, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery service]', symObjAddr: 0xCBC, symBinAddr: 0x5130, symSize: 0x8 }
+  - { offset: 0x59BF2, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setService:]', symObjAddr: 0xCC4, symBinAddr: 0x5138, symSize: 0x8 }
+  - { offset: 0x59C31, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery label]', symObjAddr: 0xCCC, symBinAddr: 0x5140, symSize: 0x8 }
+  - { offset: 0x59C68, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setLabel:]', symObjAddr: 0xCD4, symBinAddr: 0x5148, symSize: 0x8 }
+  - { offset: 0x59CA7, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery passwordData]', symObjAddr: 0xCDC, symBinAddr: 0x5150, symSize: 0x8 }
+  - { offset: 0x59CDE, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setPasswordData:]', symObjAddr: 0xCE4, symBinAddr: 0x5158, symSize: 0x8 }
+  - { offset: 0x59D1D, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery accessGroup]', symObjAddr: 0xCEC, symBinAddr: 0x5160, symSize: 0x8 }
+  - { offset: 0x59D54, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setAccessGroup:]', symObjAddr: 0xCF4, symBinAddr: 0x5168, symSize: 0x8 }
+  - { offset: 0x59D93, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery synchronizationMode]', symObjAddr: 0xCFC, symBinAddr: 0x5170, symSize: 0x8 }
+  - { offset: 0x59DCA, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery setSynchronizationMode:]', symObjAddr: 0xD04, symBinAddr: 0x5178, symSize: 0x8 }
+  - { offset: 0x59E07, size: 0x8, addend: 0x0, symName: '-[SAMKeychainQuery .cxx_destruct]', symObjAddr: 0xD0C, symBinAddr: 0x5180, symSize: 0x54 }
 ...

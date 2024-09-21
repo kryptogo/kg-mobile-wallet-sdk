@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Sentry",
+    "printedName": "Sentry",
     "children": [
       {
         "kind": "Import",
@@ -79,6 +79,27 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
         "name": "_SentryPrivate",
         "printedName": "_SentryPrivate",
         "declKind": "Import",
@@ -86,6 +107,20 @@
         "declAttributes": [
           "ImplementationOnly"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
       },
       {
         "kind": "TypeDecl",
@@ -230,6 +265,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -278,6 +327,20 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
       },
       {
         "kind": "Import",
@@ -685,6 +748,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -814,7 +891,506 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SentryLevel",
+        "printedName": "SentryLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelNone",
+            "mangledName": "$s6Sentry0A5LevelO4noneyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelNone",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelDebug",
+            "mangledName": "$s6Sentry0A5LevelO5debugyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelDebug",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelInfo",
+            "mangledName": "$s6Sentry0A5LevelO4infoyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelInfo",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelWarning",
+            "mangledName": "$s6Sentry0A5LevelO7warningyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelWarning",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelError",
+            "mangledName": "$s6Sentry0A5LevelO5erroryA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelError",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "fatal",
+            "printedName": "fatal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryLevel.Type) -> Sentry.SentryLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryLevel",
+                        "printedName": "Sentry.SentryLevel",
+                        "usr": "c:@M@Sentry@E@SentryLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryLevel@kSentryLevelFatal",
+            "mangledName": "$s6Sentry0A5LevelO5fatalyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryLevelFatal",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Sentry.SentryLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryLevel",
+                    "printedName": "Sentry.SentryLevel",
+                    "usr": "c:@M@Sentry@E@SentryLevel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sentry0A5LevelO8rawValueACSgSu_tcfc",
+            "mangledName": "$s6Sentry0A5LevelO8rawValueACSgSu_tcfc",
+            "moduleName": "Sentry",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sentry0A5LevelO8rawValueSuvp",
+            "mangledName": "$s6Sentry0A5LevelO8rawValueSuvp",
+            "moduleName": "Sentry",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A5LevelO8rawValueSuvg",
+                "mangledName": "$s6Sentry0A5LevelO8rawValueSuvg",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sentry0A5LevelO11descriptionSSvp",
+            "mangledName": "$s6Sentry0A5LevelO11descriptionSSvp",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A5LevelO11descriptionSSvg",
+                "mangledName": "$s6Sentry0A5LevelO11descriptionSSvg",
+                "moduleName": "Sentry",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Sentry@E@SentryLevel",
+        "mangledName": "$s6Sentry0A5LevelO",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "UInt",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
       },
       {
         "kind": "Import",
@@ -1248,6 +1824,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1410,6 +2000,23 @@
       },
       {
         "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1420,6 +2027,273 @@
         "name": "SentryReplayOptions",
         "printedName": "SentryReplayOptions",
         "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "SentryReplayQuality",
+            "printedName": "SentryReplayQuality",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "low",
+                "printedName": "low",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Sentry.SentryReplayOptions.SentryReplayQuality.Type) -> Sentry.SentryReplayOptions.SentryReplayQuality",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryReplayQuality",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                        "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SentryReplayQuality",
+                            "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                            "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO3lowyA2EmF",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO3lowyA2EmF",
+                "moduleName": "Sentry",
+                "declAttributes": [
+                  "RawDocComment",
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "medium",
+                "printedName": "medium",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Sentry.SentryReplayOptions.SentryReplayQuality.Type) -> Sentry.SentryReplayOptions.SentryReplayQuality",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryReplayQuality",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                        "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SentryReplayQuality",
+                            "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                            "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO6mediumyA2EmF",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO6mediumyA2EmF",
+                "moduleName": "Sentry",
+                "declAttributes": [
+                  "RawDocComment",
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "high",
+                "printedName": "high",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Sentry.SentryReplayOptions.SentryReplayQuality.Type) -> Sentry.SentryReplayOptions.SentryReplayQuality",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryReplayQuality",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                        "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SentryReplayQuality",
+                            "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                            "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO4highyA2EmF",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO4highyA2EmF",
+                "moduleName": "Sentry",
+                "declAttributes": [
+                  "RawDocComment",
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 2
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryReplayQuality",
+                        "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                        "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueAESgSi_tcfc",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueAESgSi_tcfc",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueSivp",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueSivp",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueSivg",
+                    "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO8rawValueSivg",
+                    "moduleName": "Sentry",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC0aB7QualityO",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "sessionSampleRate",
@@ -1515,8 +2389,8 @@
           },
           {
             "kind": "Var",
-            "name": "errorSampleRate",
-            "printedName": "errorSampleRate",
+            "name": "onErrorSampleRate",
+            "printedName": "onErrorSampleRate",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1526,8 +2400,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(py)errorSampleRate",
-            "mangledName": "$s6Sentry0A13ReplayOptionsC15errorSampleRateSfvp",
+            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(py)onErrorSampleRate",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC17onErrorSampleRateSfvp",
             "moduleName": "Sentry",
             "declAttributes": [
               "HasStorage",
@@ -1550,8 +2424,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)errorSampleRate",
-                "mangledName": "$s6Sentry0A13ReplayOptionsC15errorSampleRateSfvg",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)onErrorSampleRate",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC17onErrorSampleRateSfvg",
                 "moduleName": "Sentry",
                 "implicit": true,
                 "declAttributes": [
@@ -1577,8 +2451,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)setErrorSampleRate:",
-                "mangledName": "$s6Sentry0A13ReplayOptionsC15errorSampleRateSfvs",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)setOnErrorSampleRate:",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC17onErrorSampleRateSfvs",
                 "moduleName": "Sentry",
                 "implicit": true,
                 "declAttributes": [
@@ -1598,8 +2472,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Sentry0A13ReplayOptionsC15errorSampleRateSfvM",
-                "mangledName": "$s6Sentry0A13ReplayOptionsC15errorSampleRateSfvM",
+                "usr": "s:6Sentry0A13ReplayOptionsC17onErrorSampleRateSfvM",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC17onErrorSampleRateSfvM",
                 "moduleName": "Sentry",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1799,6 +2673,372 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "quality",
+            "printedName": "quality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SentryReplayQuality",
+                "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(py)quality",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC7qualityAC0aB7QualityOvp",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryReplayQuality",
+                    "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                    "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)quality",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC7qualityAC0aB7QualityOvg",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryReplayQuality",
+                    "printedName": "Sentry.SentryReplayOptions.SentryReplayQuality",
+                    "usr": "s:6Sentry0A13ReplayOptionsC0aB7QualityO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)setQuality:",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC7qualityAC0aB7QualityOvs",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A13ReplayOptionsC7qualityAC0aB7QualityOvM",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC7qualityAC0aB7QualityOvM",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redactViewTypes",
+            "printedName": "redactViewTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any AnyObject.Type]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(py)redactViewTypes",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC15redactViewTypesSayyXlXpGvp",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any AnyObject.Type]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExistentialMetatype",
+                        "printedName": "any AnyObject.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "AnyObject"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)redactViewTypes",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC15redactViewTypesSayyXlXpGvg",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any AnyObject.Type]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExistentialMetatype",
+                        "printedName": "any AnyObject.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "AnyObject"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)setRedactViewTypes:",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC15redactViewTypesSayyXlXpGvs",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A13ReplayOptionsC15redactViewTypesSayyXlXpGvM",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC15redactViewTypesSayyXlXpGvM",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ignoreRedactViewTypes",
+            "printedName": "ignoreRedactViewTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any AnyObject.Type]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(py)ignoreRedactViewTypes",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC21ignoreRedactViewTypesSayyXlXpGvp",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any AnyObject.Type]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExistentialMetatype",
+                        "printedName": "any AnyObject.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "AnyObject"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)ignoreRedactViewTypes",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC21ignoreRedactViewTypesSayyXlXpGvg",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any AnyObject.Type]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExistentialMetatype",
+                        "printedName": "any AnyObject.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "AnyObject"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)setIgnoreRedactViewTypes:",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC21ignoreRedactViewTypesSayyXlXpGvs",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A13ReplayOptionsC21ignoreRedactViewTypesSayyXlXpGvM",
+                "mangledName": "$s6Sentry0A13ReplayOptionsC21ignoreRedactViewTypesSayyXlXpGvM",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1828,7 +3068,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionSampleRate:errorSampleRate:redactAllText:redactAllImages:)",
+            "printedName": "init(sessionSampleRate:onErrorSampleRate:redactAllText:redactAllImages:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1866,8 +3106,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)initWithSessionSampleRate:errorSampleRate:redactAllText:redactAllImages:",
-            "mangledName": "$s6Sentry0A13ReplayOptionsC17sessionSampleRate05erroreF013redactAllText0hI6ImagesACSf_SfS2btcfc",
+            "usr": "c:@M@Sentry@objc(cs)SentryReplayOptions(im)initWithSessionSampleRate:onErrorSampleRate:redactAllText:redactAllImages:",
+            "mangledName": "$s6Sentry0A13ReplayOptionsC17sessionSampleRate07onErroreF013redactAllText0iJ6ImagesACSf_SfS2btcfc",
             "moduleName": "Sentry",
             "declAttributes": [
               "AccessControl",
@@ -1892,6 +3132,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1945,6 +3199,61 @@
       },
       {
         "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1962,8 +3271,545 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "_SentryPrivate",
+        "printedName": "_SentryPrivate",
+        "declKind": "Import",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SentryTransactionNameSource",
+        "printedName": "SentryTransactionNameSource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceCustom",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO6customyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceCustom",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceUrl",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO3urlyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceUrl",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "route",
+            "printedName": "route",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceRoute",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO5routeyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceRoute",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceView",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO4viewyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceView",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "component",
+            "printedName": "component",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceComponent",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO9componentyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceComponent",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "sourceTask",
+            "printedName": "sourceTask",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Sentry.SentryTransactionNameSource.Type) -> Sentry.SentryTransactionNameSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Sentry.SentryTransactionNameSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SentryTransactionNameSource",
+                        "printedName": "Sentry.SentryTransactionNameSource",
+                        "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Sentry@E@SentryTransactionNameSource@kSentryTransactionNameSourceTask",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO10sourceTaskyA2CmF",
+            "moduleName": "Sentry",
+            "objc_name": "kSentryTransactionNameSourceTask",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Sentry.SentryTransactionNameSource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryTransactionNameSource",
+                    "printedName": "Sentry.SentryTransactionNameSource",
+                    "usr": "c:@M@Sentry@E@SentryTransactionNameSource"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sentry0A21TransactionNameSourceO8rawValueACSgSi_tcfc",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO8rawValueACSgSi_tcfc",
+            "moduleName": "Sentry",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sentry0A21TransactionNameSourceO8rawValueSivp",
+            "mangledName": "$s6Sentry0A21TransactionNameSourceO8rawValueSivp",
+            "moduleName": "Sentry",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sentry0A21TransactionNameSourceO8rawValueSivg",
+                "mangledName": "$s6Sentry0A21TransactionNameSourceO8rawValueSivg",
+                "moduleName": "Sentry",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Sentry@E@SentryTransactionNameSource",
+        "mangledName": "$s6Sentry0A21TransactionNameSourceO",
+        "moduleName": "Sentry",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Sentry"
       },
@@ -2008,6 +3854,354 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC.NSObjCRuntime",
+        "printedName": "ObjectiveC.NSObjCRuntime",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sentry"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FixedWidthInteger",
+        "printedName": "FixedWidthInteger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "++",
+            "printedName": "++(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0",
+                "paramValueOwnership": "InOut"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s17FixedWidthIntegerP6SentryE2ppoPyxxzFZ",
+            "mangledName": "$ss17FixedWidthIntegerP6SentryE2ppoPyxxzFZ",
+            "moduleName": "Sentry",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.FixedWidthInteger>",
+            "sugared_genericSig": "<Self where Self : Swift.FixedWidthInteger>",
+            "static": true,
+            "declAttributes": [
+              "Postfix",
+              "DiscardableResult",
+              "Inlinable"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:s17FixedWidthIntegerP",
+        "mangledName": "$ss17FixedWidthIntegerP",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 : Swift.BinaryInteger, τ_0_0 : Swift.LosslessStringConvertible, τ_0_0.Magnitude : Swift.FixedWidthInteger, τ_0_0.Magnitude : Swift.UnsignedInteger, τ_0_0.Stride : Swift.FixedWidthInteger, τ_0_0.Stride : Swift.SignedInteger>",
+        "sugared_genericSig": "<Self : Swift.BinaryInteger, Self : Swift.LosslessStringConvertible, Self.Magnitude : Swift.FixedWidthInteger, Self.Magnitude : Swift.UnsignedInteger, Self.Stride : Swift.FixedWidthInteger, Self.Stride : Swift.SignedInteger>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BinaryInteger",
+            "printedName": "BinaryInteger",
+            "usr": "s:Sz",
+            "mangledName": "$sSz"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Numeric",
+            "printedName": "Numeric",
+            "usr": "s:Sj",
+            "mangledName": "$sSj"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdditiveArithmetic",
+            "printedName": "AdditiveArithmetic",
+            "usr": "s:s18AdditiveArithmeticP",
+            "mangledName": "$ss18AdditiveArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIView",
+        "printedName": "UIView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sentryReplayRedact",
+            "printedName": "sentryReplayRedact()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC6SentryE18sentryReplayRedactyyF",
+            "mangledName": "$sSo6UIViewC6SentryE18sentryReplayRedactyyF",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sentryReplayIgnore",
+            "printedName": "sentryReplayIgnore()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC6SentryE18sentryReplayIgnoreyyF",
+            "mangledName": "$sSo6UIViewC6SentryE18sentryReplayIgnoreyyF",
+            "moduleName": "Sentry",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIView",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -2063,32 +4257,11 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/CounterMetric.swift",
-      "kind": "StringLiteral",
-      "offset": 25,
-      "length": 13,
-      "value": "\"Sentry.CounterMetric\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/DistributionMetric.swift",
-      "kind": "StringLiteral",
-      "offset": 25,
-      "length": 18,
-      "value": "\"Sentry.DistributionMetric\""
-    },
-    {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/GaugeMetric.swift",
       "kind": "IntegerLiteral",
       "offset": 217,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/GaugeMetric.swift",
-      "kind": "StringLiteral",
-      "offset": 25,
-      "length": 11,
-      "value": "\"Sentry.GaugeMetric\""
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/LocalMetricsAggregator.swift",
@@ -2126,60 +4299,25 @@
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 530,
-      "length": 3,
-      "value": "\"c\""
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Extensions\/NumberExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 170,
+      "length": 1,
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 551,
-      "length": 3,
-      "value": "\"g\""
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/ANR\/SentryANRTrackerV2Delegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 194,
+      "length": 16,
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 579,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 598,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 530,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 551,
-      "length": 3,
-      "value": "\"g\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 579,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 598,
-      "length": 3,
-      "value": "\"s\""
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/SentryBaggageSerialization.swift",
+      "kind": "IntegerLiteral",
+      "offset": 131,
+      "length": 5,
+      "value": "8192"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/SentryExperimentalOptions.swift",
@@ -2191,7 +4329,7 @@
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/SentryExperimentalOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 244,
+      "offset": 246,
       "length": 1,
       "value": "0"
     },
@@ -2201,6 +4339,76 @@
       "offset": 210,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Protocol\/SentryId.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Protocol\/SentryId.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "Array",
+      "offset": 128,
+      "length": 54,
+      "value": "[\"none\", \"debug\", \"info\", \"warning\", \"error\", \"fatal\"]"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 355,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 406,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 463,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 516,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Helper\/Log\/SentryLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 569,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/SentryLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 139,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/SentryMetricsAPI.swift",
@@ -2245,39 +4453,11 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/SentryMetricsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 861,
-      "length": 16,
-      "value": "\"Sentry.SentryMetricsAPI\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/SentryMetricsClient.swift",
-      "kind": "StringLiteral",
-      "offset": 74,
-      "length": 19,
-      "value": "\"Sentry.SentryMetricsClient\""
-    },
-    {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/MetricKit\/SentryMXCallStackTree.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 21,
-      "value": "\"Sentry.SentryMXCallStackTree\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/MetricKit\/SentryMXCallStackTree.swift",
-      "kind": "StringLiteral",
-      "offset": 697,
-      "length": 17,
-      "value": "\"Sentry.SentryMXCallStack\""
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/MetricKit\/SentryMXCallStackTree.swift",
-      "kind": "StringLiteral",
-      "offset": 1123,
-      "length": 13,
-      "value": "\"Sentry.SentryMXFrame\""
+      "kind": "Array",
+      "offset": 1863,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/MetricKit\/SentryMXManager.swift",
@@ -2287,16 +4467,9 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/MetricKit\/SentryMXManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1206,
-      "length": 15,
-      "value": "\"Sentry.SentryMXManager\""
-    },
-    {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
+      "offset": 566,
       "length": 1,
       "value": "0"
     },
@@ -2304,148 +4477,358 @@
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
       "kind": "IntegerLiteral",
       "offset": 1005,
-      "length": 3,
-      "value": "200"
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
       "kind": "IntegerLiteral",
-      "offset": 1031,
-      "length": 3,
-      "value": "434"
-    },
-    {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1053,
+      "offset": 1025,
       "length": 6,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
       "kind": "IntegerLiteral",
-      "offset": 1080,
+      "offset": 1052,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryOnDemandReplay.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 20,
-      "value": "\"Sentry.SentryOnDemandReplay\""
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 429,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 539,
+      "length": 4,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1039,
+      "offset": 1498,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1272,
+      "offset": 1731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1491,
+      "offset": 2597,
       "length": 6,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1632,
-      "length": 1,
-      "value": "1"
+      "offset": 2606,
+      "length": 6,
+      "value": "20000"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "FloatLiteral",
-      "offset": 1755,
+      "offset": 2773,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "FloatLiteral",
+      "offset": 2779,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1879,
+      "offset": 3039,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3055,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2991,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3200,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2014,
+      "offset": 3335,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2126,
+      "offset": 3447,
       "length": 5,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2659,
+      "offset": 3982,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2687,
+      "offset": 4012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2712,
+      "offset": 4037,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2742,
+      "offset": 4067,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryVideoInfo.swift",
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayRecording.swift",
       "kind": "StringLiteral",
-      "offset": 38,
-      "length": 15,
-      "value": "\"Sentry.SentryVideoInfo\""
+      "offset": 158,
+      "length": 6,
+      "value": "\"h264\""
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/SentryViewPhotographer.swift",
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayRecording.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 5,
+      "value": "\"mp4\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayRecording.swift",
+      "kind": "StringLiteral",
+      "offset": 253,
+      "length": 10,
+      "value": "\"constant\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryReplayType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 117,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 136,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 154,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 174,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebTouchEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 105,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebTouchEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 126,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebTouchEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 147,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/RRWeb\/SentryRRWebTouchEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 714,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
       "kind": "Array",
-      "offset": 418,
+      "offset": 996,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/SentryViewPhotographer.swift",
-      "kind": "Array",
-      "offset": 548,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1094,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Metrics\/SetMetric.swift",
-      "kind": "StringLiteral",
-      "offset": 25,
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1182,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1227,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6170,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySessionReplay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6283,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentrySRDefaultBreadcrumbConverter.swift",
+      "kind": "Array",
+      "offset": 319,
+      "length": 148,
+      "value": "[\"status_code\", \"method\", \"response_body_size\", \"request_body_size\", \"http.query\", \"http.fragment\"]"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/SessionReplay\/SentryTouchTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 910,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 136,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 195,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 258,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 322,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 390,
       "length": 9,
-      "value": "\"Sentry.SetMetric\""
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Integrations\/Performance\/SentryTransactionNameSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 458,
+      "length": 10,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/UIRedactBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7487,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/UIRedactBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7550,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/UrlSanitized.swift",
@@ -2457,9 +4840,16 @@
     {
       "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/UrlSanitized.swift",
       "kind": "StringLiteral",
-      "offset": 38,
-      "length": 12,
-      "value": "\"Sentry.UrlSanitized\""
+      "offset": 822,
+      "length": 3,
+      "value": "\"?\""
+    },
+    {
+      "filePath": "\/Users\/dora\/work\/kg-flutter\/packages\/kg_sdk\/.ios\/Pods\/Sentry\/Sources\/Swift\/Tools\/UrlSanitized.swift",
+      "kind": "StringLiteral",
+      "offset": 852,
+      "length": 3,
+      "value": "\"#\""
     }
   ]
 }

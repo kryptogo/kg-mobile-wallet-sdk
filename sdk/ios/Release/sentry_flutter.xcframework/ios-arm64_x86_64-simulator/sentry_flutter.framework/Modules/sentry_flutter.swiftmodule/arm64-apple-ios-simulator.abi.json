@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "sentry_flutter",
+    "printedName": "sentry_flutter",
     "children": [
       {
         "kind": "Import",
@@ -92,6 +92,22 @@
         "declAttributes": [
           "Final",
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -206,6 +222,396 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "TypeDecl",
+            "name": "TimeSpan",
+            "printedName": "TimeSpan",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "startTimestampMsSinceEpoch",
+                "printedName": "startTimestampMsSinceEpoch",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvp",
+                "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvp",
+                "moduleName": "sentry_flutter",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvg",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvg",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvs",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvs",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvM",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpochSo8NSNumberCvM",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "stopTimestampMsSinceEpoch",
+                "printedName": "stopTimestampMsSinceEpoch",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvp",
+                "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvp",
+                "moduleName": "sentry_flutter",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvg",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvg",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvs",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvs",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvM",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV25stopTimestampMsSinceEpochSo8NSNumberCvM",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvp",
+                "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvp",
+                "moduleName": "sentry_flutter",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 2,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvg",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvg",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvs",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvs",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvM",
+                    "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV11descriptionSSvM",
+                    "moduleName": "sentry_flutter",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "addToMap",
+                "printedName": "addToMap(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV8addToMapyySDySSypGzF",
+                "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV8addToMapyySDySSypGzF",
+                "moduleName": "sentry_flutter",
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(startTimestampMsSinceEpoch:stopTimestampMsSinceEpoch:description:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimeSpan",
+                    "printedName": "sentry_flutter.SentryFlutterPluginApple.TimeSpan",
+                    "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpoch04stopjklM011descriptionAESo8NSNumberC_AJSStcfc",
+                "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV26startTimestampMsSinceEpoch04stopjklM011descriptionAESo8NSNumberC_AJSStcfc",
+                "moduleName": "sentry_flutter",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV",
+            "mangledName": "$s14sentry_flutter24SentryFlutterPluginAppleC8TimeSpanV",
+            "moduleName": "sentry_flutter",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -243,11 +649,25 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -304,79 +724,86 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 383,
       "length": 22,
       "value": "\"sentry.cocoa.flutter\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "BooleanLiteral",
-      "offset": 606,
+      "offset": 669,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "kind": "IntegerLiteral",
+      "offset": 960,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2255,
+      "offset": 2577,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2644,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2682,
       "length": 26,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss'Z'\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2910,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2655,
+      "offset": 2977,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "StringLiteral",
-      "offset": 2693,
+      "offset": 3015,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
-      "offset": 15343,
+      "offset": 19136,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
-      "offset": 15382,
+      "offset": 19175,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-7.20.2\/ios\/Classes\/SentryFlutterPluginApple.swift",
+      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/sentry_flutter-8.9.0\/ios\/Classes\/SentryFlutterPluginApple.swift",
       "kind": "IntegerLiteral",
-      "offset": 15419,
+      "offset": 19212,
       "length": 1,
       "value": "0"
     }

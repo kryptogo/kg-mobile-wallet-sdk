@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "qr_code_scanner",
+    "printedName": "qr_code_scanner",
     "children": [
       {
         "kind": "Import",
@@ -147,6 +147,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -350,6 +364,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -575,6 +603,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -739,27 +781,6 @@
       "offset": 1244,
       "length": 2,
       "value": "15"
-    },
-    {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRView.swift",
-      "kind": "StringLiteral",
-      "offset": 141,
-      "length": 6,
-      "value": "\"qr_code_scanner.QRView\""
-    },
-    {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/QRViewFactory.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 13,
-      "value": "\"qr_code_scanner.QRViewFactory\""
-    },
-    {
-      "filePath": "\/Users\/dora\/.pub-cache\/hosted\/pub.dev\/qr_code_scanner-1.0.1\/ios\/Classes\/SwiftFlutterQrPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 42,
-      "length": 20,
-      "value": "\"qr_code_scanner.SwiftFlutterQrPlugin\""
     }
   ]
 }

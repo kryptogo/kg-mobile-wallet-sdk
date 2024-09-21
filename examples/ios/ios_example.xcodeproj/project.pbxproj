@@ -19,8 +19,6 @@
 		86757E332C9BC7A5001BB52C /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E192C9BC78C001BB52C /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86757E342C9BC7A5001BB52C /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E172C9BC78C001BB52C /* device_info_plus.xcframework */; };
 		86757E352C9BC7A5001BB52C /* device_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E172C9BC78C001BB52C /* device_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		86757E362C9BC7A5001BB52C /* flutter_inappwebview_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E092C9BC78C001BB52C /* flutter_inappwebview_ios.xcframework */; };
-		86757E372C9BC7A5001BB52C /* flutter_inappwebview_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E092C9BC78C001BB52C /* flutter_inappwebview_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86757E382C9BC7A5001BB52C /* flutter_secure_storage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E062C9BC78C001BB52C /* flutter_secure_storage.xcframework */; };
 		86757E392C9BC7A5001BB52C /* flutter_secure_storage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E062C9BC78C001BB52C /* flutter_secure_storage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86757E3A2C9BC7A5001BB52C /* flutter_udid.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0C2C9BC78C001BB52C /* flutter_udid.xcframework */; };
@@ -28,8 +26,6 @@
 		86757E3C2C9BC7A5001BB52C /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0E2C9BC78C001BB52C /* FlutterPluginRegistrant.xcframework */; };
 		86757E3E2C9BC7A6001BB52C /* MTBBarcodeScanner.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0D2C9BC78C001BB52C /* MTBBarcodeScanner.xcframework */; };
 		86757E3F2C9BC7A6001BB52C /* MTBBarcodeScanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0D2C9BC78C001BB52C /* MTBBarcodeScanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		86757E402C9BC7A6001BB52C /* OrderedSet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0B2C9BC78C001BB52C /* OrderedSet.xcframework */; };
-		86757E412C9BC7A6001BB52C /* OrderedSet.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0B2C9BC78C001BB52C /* OrderedSet.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86757E422C9BC7A6001BB52C /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E162C9BC78C001BB52C /* package_info_plus.xcframework */; };
 		86757E432C9BC7A6001BB52C /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E162C9BC78C001BB52C /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86757E442C9BC7A6001BB52C /* package_info.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86757E0A2C9BC78C001BB52C /* package_info.xcframework */; };
@@ -111,8 +107,6 @@
 				86757E592C9BC7AA001BB52C /* sqflite.xcframework in Embed Frameworks */,
 				86757E5B2C9BC7AA001BB52C /* url_launcher_ios.xcframework in Embed Frameworks */,
 				86757E512C9BC7AA001BB52C /* sentry_flutter.xcframework in Embed Frameworks */,
-				86757E412C9BC7A6001BB52C /* OrderedSet.xcframework in Embed Frameworks */,
-				86757E372C9BC7A5001BB52C /* flutter_inappwebview_ios.xcframework in Embed Frameworks */,
 				86757E452C9BC7A6001BB52C /* package_info.xcframework in Embed Frameworks */,
 				86757E432C9BC7A6001BB52C /* package_info_plus.xcframework in Embed Frameworks */,
 			);
@@ -185,7 +179,8 @@
 		86757E192C9BC78C001BB52C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
 		86757E1A2C9BC78C001BB52C /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/sentry_flutter.xcframework"; sourceTree = "<group>"; };
 		86757E302C9BC78D001BB52C /* video_player_avfoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = video_player_avfoundation.xcframework; path = "../../sdk/ios/$(CONFIGURATION)/video_player_avfoundation.xcframework"; sourceTree = "<group>"; };
-		86757E612C9BD65C001BB52C /* ios-example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ios-example-Info.plist"; sourceTree = SOURCE_ROOT; };
+		86757E612C9BD65C001BB52C /* ios-example-Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-example-Info-Debug.plist"; sourceTree = SOURCE_ROOT; };
+		86757E622C9E0309001BB52C /* ios-example-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ios-example-Info-Release.plist"; sourceTree = SOURCE_ROOT; };
 		867B8C152BAACBC800968628 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/package_info_plus.xcframework; sourceTree = "<group>"; };
 		867B8C172BAACBCF00968628 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/sentry_flutter.xcframework; sourceTree = "<group>"; };
 		867B8C192BAACBD300968628 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../kg_sdk/ios_sdk/Flutter/Debug/Sentry.xcframework; sourceTree = "<group>"; };
@@ -267,10 +262,8 @@
 				86757E3E2C9BC7A6001BB52C /* MTBBarcodeScanner.xcframework in Frameworks */,
 				86757E542C9BC7AA001BB52C /* share_plus.xcframework in Frameworks */,
 				86757E5C2C9BC7AA001BB52C /* video_player_avfoundation.xcframework in Frameworks */,
-				86757E402C9BC7A6001BB52C /* OrderedSet.xcframework in Frameworks */,
 				86757E4C2C9BC7AA001BB52C /* SAMKeychain.xcframework in Frameworks */,
 				86757E502C9BC7AA001BB52C /* sentry_flutter.xcframework in Frameworks */,
-				86757E362C9BC7A5001BB52C /* flutter_inappwebview_ios.xcframework in Frameworks */,
 				86757E422C9BC7A6001BB52C /* package_info_plus.xcframework in Frameworks */,
 				86757E442C9BC7A6001BB52C /* package_info.xcframework in Frameworks */,
 				86757E342C9BC7A5001BB52C /* device_info_plus.xcframework in Frameworks */,
@@ -440,7 +433,8 @@
 		86CDF6C52B95AC1C001895C7 /* ios_example */ = {
 			isa = PBXGroup;
 			children = (
-				86757E612C9BD65C001BB52C /* ios-example-Info.plist */,
+				86757E612C9BD65C001BB52C /* ios-example-Info-Debug.plist */,
+				86757E622C9E0309001BB52C /* ios-example-Info-Release.plist */,
 				86CDF6CA2B95AC1D001895C7 /* Assets.xcassets */,
 				86CDF6CC2B95AC1D001895C7 /* Preview Content */,
 				860643972C905A71004B6F0E /* ios_exampleApp.swift */,
@@ -894,7 +888,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"ios_example/Preview Content\"";
 				DEVELOPMENT_TEAM = TG37KG4WDZ;
 				ENABLE_PREVIEWS = YES;
@@ -905,7 +899,7 @@
 					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios-example-Info.plist";
+				INFOPLIST_FILE = "ios-example-Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code!!";
@@ -938,7 +932,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"ios_example/Preview Content\"";
 				DEVELOPMENT_TEAM = TG37KG4WDZ;
 				ENABLE_PREVIEWS = YES;
@@ -949,7 +943,7 @@
 					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios-example-Info.plist";
+				INFOPLIST_FILE = "ios-example-Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR code!!";

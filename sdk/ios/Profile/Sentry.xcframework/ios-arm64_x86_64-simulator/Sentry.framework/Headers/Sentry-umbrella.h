@@ -12,6 +12,7 @@
 
 #import "Sentry.h"
 #import "SentryAttachment.h"
+#import "SentryBaggage.h"
 #import "SentryBreadcrumb.h"
 #import "SentryClient.h"
 #import "SentryCrashExceptionApplication.h"
@@ -46,10 +47,12 @@
 #import "SentrySpanStatus.h"
 #import "SentryStacktrace.h"
 #import "SentryThread.h"
+#import "SentryTraceContext.h"
 #import "SentryTraceHeader.h"
 #import "SentryTransactionContext.h"
 #import "SentryUser.h"
 #import "SentryUserFeedback.h"
+#import "SentryWithoutUIKit.h"
 #import "PrivateSentrySDKOnly.h"
 #import "PrivatesHeader.h"
 #import "SentryAppStartMeasurement.h"
@@ -62,6 +65,7 @@
 #import "SentryFramesTracker.h"
 #import "SentryOptions+HybridSDKs.h"
 #import "SentryScreenFrames.h"
+#import "SentrySessionReplayIntegration-Hybrid.h"
 #import "SentrySwizzle.h"
 #import "SentryUser+Private.h"
 

@@ -8,11 +8,10 @@
 build_mode = ENV['BUILD_MODE'] || 'Release'
 
 # The path of where the Flutter module is located
-flutter_path = ENV['FLUTTER_PATH'] || '../kg_sdk/ios_sdk/Flutter'
+flutter_path = ENV['FLUTTER_PATH'] || '../../sdk/ios'
 
 # Configure the path of Flutter.podspec
-pod 'Flutter', :podspec => '#{flutter_path}/#{build_mode}/Flutter.podspec'
-# pod 'KG_SDK', :podspec => "../kg_sdk/ios_sdk/Flutter/#{build_mode}/KG_SDK.podspec"
+pod 'Flutter', :podspec => '../../sdk/ios/Release/Flutter.podspec'
 
 target 'ios_example' do
   # Comment the next line if you don't want to use dynamic frameworks
