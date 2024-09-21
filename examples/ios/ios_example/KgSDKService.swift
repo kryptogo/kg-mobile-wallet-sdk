@@ -7,12 +7,11 @@ class KgSDKService: ObservableObject {
     
     private let flutterEngine: FlutterEngine
     private let methodChannel: FlutterMethodChannel
-//    private var flutterViewController: FlutterViewController?
     private let channelName = "com.kryptogo.sdk/channel"
     private let engineName = "flutter_engine"
     
-    
-    // 將 flutterViewController 改為懶加載
+    // flutterViewController need to be lazy load
+    // because we need to init FlutterEngine first
     private lazy var flutterViewController: FlutterViewController = {
         let controller = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: Bundle.main)
         controller.modalPresentationStyle = .fullScreen
@@ -60,12 +59,7 @@ class KgSDKService: ObservableObject {
         }
     }
     
-    func showKgSDK(from viewController: UIViewController) {
-//        guard let flutterViewController = flutterViewController else {
-//            print("Error: FlutterViewController is not initialized")
-//            return
-//        }
-        
+    func showKgSDK(from viewController: UIViewController) {        
         // 確保 Flutter 視圖已加載
         flutterViewController.view.layoutIfNeeded()
         
