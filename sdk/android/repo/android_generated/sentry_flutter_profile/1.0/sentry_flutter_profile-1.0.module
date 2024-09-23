@@ -34,7 +34,7 @@
           "group": "io.sentry",
           "module": "sentry-android",
           "version": {
-            "requires": "7.6.0"
+            "requires": "7.14.0"
           }
         }
       ],
@@ -42,11 +42,11 @@
         {
           "name": "sentry_flutter_profile-1.0.aar",
           "url": "sentry_flutter_profile-1.0.aar",
-          "size": 41653,
-          "sha512": "bd24a4ad9eb2b88055268b4a69d59e39539f36fa3d945f2bb1d511f190cd4a370206011a873200b5869d1faec297b7959d445b7ce9aee872845bdd0ca246ce51",
-          "sha256": "f70b4ba1dfb2f6c823956a975ab738781b9a81e81193ee660c9a8f06f23e1d53",
-          "sha1": "a1e931f6edf3ee2a205607e2bdfe45404ad28418",
-          "md5": "0321f90e5968d075ac096622b527bc21"
+          "size": 61906,
+          "sha512": "12fd9cbaa45b84c0db86fb780714c461dce9e8e5ca45d6e5eb17dd8a0131bd1728d654906fea52fbc6b43d33fad9b34999b5d8b07ad80e26e23e0c18f915f15e",
+          "sha256": "a651f9574d65dc3c291557b440453a522874511399f530932fd00936f85d1886",
+          "sha1": "1ceac1c4711864c8a54625f2405632b4ed8a3172",
+          "md5": "cf312078d8d2f19a33e4cc503409767d"
         }
       ]
     },
@@ -70,14 +70,14 @@
           "group": "io.sentry",
           "module": "sentry-android",
           "version": {
-            "requires": "7.6.0"
+            "requires": "7.14.0"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-jdk8",
           "version": {
-            "requires": "1.6.21"
+            "requires": "1.8.0"
           }
         },
         {
@@ -92,11 +92,11 @@
         {
           "name": "sentry_flutter_profile-1.0.aar",
           "url": "sentry_flutter_profile-1.0.aar",
-          "size": 41653,
-          "sha512": "bd24a4ad9eb2b88055268b4a69d59e39539f36fa3d945f2bb1d511f190cd4a370206011a873200b5869d1faec297b7959d445b7ce9aee872845bdd0ca246ce51",
-          "sha256": "f70b4ba1dfb2f6c823956a975ab738781b9a81e81193ee660c9a8f06f23e1d53",
-          "sha1": "a1e931f6edf3ee2a205607e2bdfe45404ad28418",
-          "md5": "0321f90e5968d075ac096622b527bc21"
+          "size": 61906,
+          "sha512": "12fd9cbaa45b84c0db86fb780714c461dce9e8e5ca45d6e5eb17dd8a0131bd1728d654906fea52fbc6b43d33fad9b34999b5d8b07ad80e26e23e0c18f915f15e",
+          "sha256": "a651f9574d65dc3c291557b440453a522874511399f530932fd00936f85d1886",
+          "sha1": "1ceac1c4711864c8a54625f2405632b4ed8a3172",
+          "md5": "cf312078d8d2f19a33e4cc503409767d"
         }
       ]
     }

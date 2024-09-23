@@ -91,12 +91,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.pichillilorenzo.flutter_inappwebview_android</groupId>
-      <artifactId>flutter_inappwebview_android_profile</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.fluttercandies.photo_manager</groupId>
       <artifactId>photo_manager_profile</artifactId>
       <version>1.0</version>
