@@ -16,7 +16,7 @@ class MainApplication : android.app.Application() {
 
     override fun onCreate() {
         super.onCreate()
-        KgSDKService.getInstance(this)
+        KgSDKService.getInstance()
     }
 }
 ```
@@ -24,7 +24,7 @@ This code snippet demonstrates how to create a FlutterEngine and initialize the 
 # [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen-1#open-kg_sdk-screen)Open KG_SDK Screen
 To display the KG_SDK interface, call the showKgSDK method from the context where you need the SDK functionality. Here is a simple method call:
 Copy
-KgSDKService.getInstance(context).showKgSDK()
+KgSDKService.getInstance().showKgSDK()
 This function triggers the KG_SDK's user interface, allowing the user to interact with the features provided by the SDK, such as wallet services and transaction interfaces.
 # [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen-1#supported-functions-in-kg_sdk)Supported Functions in KG_SDK
 **[](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen-1#interacting-with-kg_sdk)Interacting with KG_SDK**

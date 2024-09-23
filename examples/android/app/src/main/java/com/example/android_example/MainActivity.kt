@@ -6,30 +6,41 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.NonNull
 import androidx.annotation.Nullable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.android_example.ui.theme.Android_exampleTheme
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.MethodChannel
-
+import com.example.android_example.KgSDKService
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +61,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BottomTabExample() {
-    val items = listOf("Greeting", "Flutter", "Good")
+    val items = listOf("Home", "SDK")
     var selectedItem by remember { mutableStateOf(0) }
 
     Scaffold(
@@ -63,7 +74,6 @@ fun BottomTabExample() {
                                 imageVector = when (index) {
                                     0 -> Icons.Filled.Home // 首页图标
                                     1 -> Icons.Filled.Info
-                                    2 -> Icons.Filled.Add
                                     else -> Icons.Filled.Info
                                 },
                                 contentDescription = null
@@ -79,9 +89,8 @@ fun BottomTabExample() {
     ) { innerPadding ->
         Box(modifier = Modifier.padding(innerPadding)) {
             when (selectedItem) {
-                0 -> Greeting("Android")
-                1 -> FlutterViewButton()
-                2 -> FlutterViewButton2()
+                0 -> DataUsageApp()
+                1 -> SDKScreen()
             }
         }
     }
@@ -107,39 +116,6 @@ fun Greeting(name: String) {
     }
 }
 
-
-@Composable
-fun FlutterViewButton() {
-    val context = LocalContext.current
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Button(onClick = {
-            println("Button Clicked")
-            KgSDKService.getInstance(context).showKgSDK()
-        }, modifier = Modifier.padding(16.dp)) {
-            Text("Show KG_SDK")
-        }
-
-    }
-}
-
-@Composable
-fun FlutterViewButton2() {
-    val context = LocalContext.current
-    Box(
-        contentAlignment = Alignment.Center, // 设置内容居中
-        modifier = Modifier.fillMaxSize() // 确保 Box 填充父容器
-    ) {
-        Button(onClick = {
-           KgSDKService.getInstance(context).callKgSDK("testFuture")
-        }, modifier = Modifier.padding(16.dp)) {
-            Text("Call KG_SDK")
-        }
-    }
-}
-
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
@@ -147,4 +123,5 @@ fun DefaultPreview() {
         BottomTabExample()
     }
 }
+
 

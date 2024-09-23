@@ -10,7 +10,8 @@ class MainApplication : android.app.Application() {
 
     override fun onCreate() {
         super.onCreate()
-        var service = KgSDKService.getInstance(this)
+        // warm up the KgSDKService
+        KgSDKService.initialize(applicationContext)
     }
 
 }

@@ -7,7 +7,6 @@ class ContentViewModel: ObservableObject {
     @Published var balance = ""
     @Published var initParamsInput: String
     
-    let webUrl = URL(string: "http://localhost:62320/")!
     let kgOauthToken = ""
     
     private let kgSDKService: KgSDKService

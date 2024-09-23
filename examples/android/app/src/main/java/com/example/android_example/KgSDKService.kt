@@ -9,6 +9,8 @@ import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.MethodChannel
+import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlin.coroutines.resume
 
 class KgSDKService private constructor(private val context: Context) {
     private var flutterActivity: FlutterActivity? = null
@@ -17,18 +19,28 @@ class KgSDKService private constructor(private val context: Context) {
     private var flutterEngine: FlutterEngine? = null
     private val channelName = "com.kryptogo.sdk/channel"
     private val engineName = "flutter_engine"
-
+    private val YOUR_CLIENT_ID = "def3b0768f8f95ffa0be37d0f54e2064"
 
     companion object {
         private var instance: KgSDKService? = null
-        fun getInstance(@NonNull context: Context): KgSDKService {
+        private var appContext: Context? = null
+
+        fun initialize(@NonNull context: Context) {
+            if (appContext == null) {
+                appContext = context.applicationContext
+            }
+        }
+
+        fun getInstance(): KgSDKService {
             if (instance == null) {
-                instance = KgSDKService(context)
+                if (appContext == null) {
+                    throw IllegalStateException("KgSDKService is not initialized. Call initialize() with a Context first.")
+                }
+                instance = KgSDKService(appContext!!)
             }
             return instance!!
         }
     }
-
 
     init {
         if (flutterEngine == null) {
@@ -46,8 +58,132 @@ class KgSDKService private constructor(private val context: Context) {
         }
     }
 
+    // Check if the SDK is ready
+    suspend fun isReady(): Any? = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("isReady", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                continuation.resume(result)
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+        })
+    }
 
+    // Navigate to a specific route
+    suspend fun goRoute(route: String) {
+        methodChannel?.invokeMethod("goRoute", route)
+    }
 
+    // Check if debug mode is enabled
+    suspend fun kDebugMode(): Boolean = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("kDebugMode", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                when (result) {
+                    is Boolean -> continuation.resume(result)
+                    else -> continuation.resume(false)
+                }
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    // Check if there's a local share key
+    suspend fun hasLocalShareKey(): Boolean = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("hasLocalShareKey", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                when (result) {
+                    is Boolean -> continuation.resume(result)
+                    else -> continuation.resume(false)
+                }
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    // Check if a wallet has been created
+    suspend fun isWalletCreated(): Boolean = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("isWalletCreated", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                when (result) {
+                    is Boolean -> continuation.resume(result)
+                    else -> continuation.resume(false)
+                }
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(false) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    // Get the access token
+    suspend fun getAccessToken(): Any? = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("getAccessToken", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                continuation.resume(result)
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    // Get the balance
+    suspend fun getBalance(): Any? = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("getBalance", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                continuation.resume(result)
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    // Check the device
+    suspend fun checkDevice(): Any? = suspendCancellableCoroutine { continuation ->
+        methodChannel?.invokeMethod("checkDevice", null, object : MethodChannel.Result {
+            override fun success(result: Any?) {
+                continuation.resume(result)
+            }
+            override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+            override fun notImplemented() {
+                continuation.resume(null) // You might want to throw an exception instead
+            }
+        })
+    }
+
+    fun sendInitParams(clientToken: String) {
+        val initParam: MutableMap<String, Any> = mutableMapOf(
+            "clientId" to YOUR_CLIENT_ID,
+            "clientToken" to clientToken
+        )
+        methodChannel?.invokeMethod("initParams", initParam)
+    }
 
     private fun initializeFlutterActivity(flutterEngine: FlutterEngine) {
         flutterActivity  = CustomFlutterActivity()
@@ -128,8 +264,6 @@ class CustomFlutterActivity : FlutterActivity() {
     private val channelName = "com.kryptogo.sdk/channel"
     // Assume sharedSecret is a nullable String that might have been obtained elsewhere
     var sharedSecret: String? = null
-    var YOUR_CLIENT_ID = "def3b0768f8f95ffa0be37d0f54e2064"
-    var YOUR_CLIENT_TOKEN = "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlbW8ta2V5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJodHRwczovL2tyeXB0b2dvLmNvbSIsImV4cCI6MjAyNzQwOTg2MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmtyeXB0b2dvLmNvbSIsInN1YiI6InRlc3QtdXNlciJ9.Kmbblm_cUJNpoRImSRQmb83ljY35Kn-ZcA5SBy5WOPqqL6T42YVDJFMyOAp05j3aFfUIZxCOqQAFuT23bC53jZM9SOZjz9cmwqHOE6D9wzk6Y2gwdOABSIeEet2nGzXfoHcPR1GLXJYdnOWYdh9ZivE4dtH4wGRO-eiOUoJX_kxSunBk1XanG6T3BcCDduEd-jxHTBSoi2fcMU_KfDVA9ZTc3kwzzYq3qQUMu8lBIBUQYqeV3S4M29AMn1gUAlP5Z1oKuQZzYEM3jLxAkN9hls1fMavsfi2VGYK87UE7THyWmTgMU9BDNzk3DrT7Wcxc1DOhwotyrTtep8BQkjsCJw"
 
     companion object {
         fun withCachedEngine(engineId: String) = CustomCachedEngineIntentBuilder(engineId)
@@ -173,33 +307,12 @@ class CustomFlutterActivity : FlutterActivity() {
         }
     }
 
-
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 
         sharedSecret = fetchSharedSecret()
         val channel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, channelName)
-        var initParam: MutableMap<String, Any> = mutableMapOf(
-            "appName" to "TWMTEST",
-            "walletConfig" to mapOf(
-                "maxWallet" to 100,
-                "enableAutoSssSignUp" to true,
-                "enableSSS" to true,
-                "allRpcs" to listOf("ethereum")
-            ),
-            "themeData" to mapOf(
-                "primaryValue" to "FFFFC211"
-            ),
-            "flavorEnum" to "dev", // Initial flavor setting
-            "clientId" to "$YOUR_CLIENT_ID",
-            "clientToken" to "$YOUR_CLIENT_TOKEN"
-        )
-
-        // Conditionally add the sharedSecret if it is not null
-        sharedSecret?.let {
-            initParam["sharedSecret"] = it
-        }
-
+        
         channel.setMethodCallHandler { call, result ->
             when (call.method) {
                 "closeSdkView" -> {
@@ -221,8 +334,6 @@ class CustomFlutterActivity : FlutterActivity() {
                 }
             }
         }
-
-        channel.invokeMethod("init", initParam)
     }
 
     private fun closeSdkView() {
