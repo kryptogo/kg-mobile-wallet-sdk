@@ -34,6 +34,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.android_example.ui.theme.Android_exampleTheme
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -41,18 +45,19 @@ import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.MethodChannel
 import com.example.android_example.KgSDKService
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Android_exampleTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    BottomTabExample()
+                    AppNavigation()
                 }
             }
         }
@@ -60,7 +65,16 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun BottomTabExample() {
+fun AppNavigation() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = "bottomTab") {
+        composable("bottomTab") { BottomTabExample(navController = navController) }
+        composable("walletScreen") { WalletCenterScreen(navController = navController) }
+    }
+}
+
+@Composable
+fun BottomTabExample(navController: NavController) {
     val items = listOf("Home", "SDK")
     var selectedItem by remember { mutableStateOf(0) }
 
@@ -72,7 +86,7 @@ fun BottomTabExample() {
                         icon =  {
                             Icon(
                                 imageVector = when (index) {
-                                    0 -> Icons.Filled.Home // 首页图标
+                                    0 -> Icons.Filled.Home
                                     1 -> Icons.Filled.Info
                                     else -> Icons.Filled.Info
                                 },
@@ -90,7 +104,7 @@ fun BottomTabExample() {
         Box(modifier = Modifier.padding(innerPadding)) {
             when (selectedItem) {
                 0 -> DataUsageApp()
-                1 -> SDKScreen()
+                1 -> SDKScreen(navController)
             }
         }
     }
@@ -120,7 +134,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     Android_exampleTheme {
-        BottomTabExample()
     }
 }
 

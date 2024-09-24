@@ -4,11 +4,15 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Call
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.ThumbUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -30,8 +34,8 @@ fun DataUsageScreen() {
             TopAppBar(
                 title = { Text("iPhone 16") },
                 colors = TopAppBarDefaults.smallTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primary,
-                    titleContentColor = MaterialTheme.colorScheme.onPrimary
+                    containerColor = MaterialTheme.colorScheme.background,
+                    titleContentColor = MaterialTheme.colorScheme.onBackground
                 )
             )
         },
@@ -64,7 +68,7 @@ fun WelcomeSection() {
         }
         Column(horizontalAlignment = Alignment.End) {
             Text("Network Status", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            Text("4G LTE", fontSize = 14.sp, color = MaterialTheme.colorScheme.primary)
+            Text("4G LTE", fontSize = 14.sp, color = Color(0xFF4CAF50))  // Green color for network status
         }
     }
 }
@@ -79,7 +83,8 @@ fun DataUsageSection() {
             progress = 0.76f,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(8.dp)
+                .height(8.dp),
+            color = Color(0xFF2196F3)  // Blue color for progress bar
         )
         Text("6 days remaining", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
@@ -94,9 +99,9 @@ fun QuickActionsSection() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            QuickActionButton("Bill Pay", Icons.Default.Add)
+            QuickActionButton("Bill Pay", Icons.Default.ThumbUp)
             QuickActionButton("Add Data", Icons.Default.Add)
-            QuickActionButton("Support", Icons.Default.Add)
+            QuickActionButton("Support", Icons.Default.Call)
             QuickActionButton("Settings", Icons.Default.Settings)
         }
     }
@@ -108,9 +113,16 @@ fun QuickActionButton(text: String, icon: ImageVector) {
         FilledTonalButton(
             onClick = { /* TODO */ },
             shape = RoundedCornerShape(8.dp),
-            modifier = Modifier.size(56.dp)
+            modifier = Modifier.size(56.dp),
+            contentPadding = PaddingValues(0.dp),  // 移除按鈕內部的 padding
+            colors = ButtonDefaults.filledTonalButtonColors(containerColor = Color(0xFF2196F3))  // Blue color for buttons
         ) {
-            Icon(icon, contentDescription = text)
+            Icon(
+                icon,
+                contentDescription = text,
+                tint = Color.White,
+                modifier = Modifier.size(24.dp)
+            )
         }
         Text(text, fontSize = 12.sp)
     }
@@ -120,7 +132,7 @@ fun QuickActionButton(text: String, icon: ImageVector) {
 fun SpecialOfferSection() {
     Card(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFCCCB)),  // Light red color for special offer
         shape = RoundedCornerShape(8.dp)
     ) {
         Row(
@@ -130,11 +142,24 @@ fun SpecialOfferSection() {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
-                Text("Summer Data Boost", fontWeight = FontWeight.Bold)
-                Text("Get 5GB extra data for free!", fontSize = 14.sp)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(
+                    imageVector = Icons.Default.Favorite, // 或使用其他更適合的禮物圖標
+                    contentDescription = "Gift",
+                    tint = Color(0xFFFF6B6B), // 使用紅色
+                    modifier = Modifier.size(24.dp)
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Column {
+                    Text("Summer Data Boost", fontWeight = FontWeight.Bold, color = Color.Black)
+                    Text("Get 5GB extra data for free!", fontSize = 14.sp, color = Color.Black)
+                }
             }
-            Icon(Icons.Default.Add, contentDescription = "More info", tint = MaterialTheme.colorScheme.primary)
+            Icon(
+                imageVector = Icons.Default.Add,
+                contentDescription = "More info",
+                tint = Color(0xFFFF6B6B) // 使用紅色
+            )
         }
     }
 }

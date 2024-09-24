@@ -59,7 +59,7 @@ class SDKViewModel(private val sharedPreferences: SharedPreferences) : ViewModel
             _isCheckingReady.value = false
             getBalance()
         } else {
-            delay(10000) // Wait for 1 second before checking again
+            delay(3000) // Wait for 3 second before checking again
             checkReadyStatus()
         }
     }

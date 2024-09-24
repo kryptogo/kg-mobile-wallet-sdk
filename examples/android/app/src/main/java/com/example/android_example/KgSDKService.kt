@@ -14,20 +14,21 @@ import kotlin.coroutines.resume
 
 class KgSDKService private constructor(private val context: Context) {
     private var flutterActivity: FlutterActivity? = null
-    private var methodChannel: MethodChannel? = null
     private var openVerifyPageCallback: ((result: MethodChannel.Result) -> Unit)? = null
-    private var flutterEngine: FlutterEngine? = null
-    private val channelName = "com.kryptogo.sdk/channel"
-    private val engineName = "flutter_engine"
     private val YOUR_CLIENT_ID = "def3b0768f8f95ffa0be37d0f54e2064"
 
     companion object {
         private var instance: KgSDKService? = null
         private var appContext: Context? = null
+        private var flutterEngine: FlutterEngine? = null
+        private var methodChannel: MethodChannel? = null
+        private const val channelName = "com.kryptogo.sdk/channel"
+        private const val engineName = "flutter_engine"
 
         fun initialize(@NonNull context: Context) {
             if (appContext == null) {
                 appContext = context.applicationContext
+                initializeFlutterEngine(appContext!!)
             }
         }
 
@@ -40,21 +41,18 @@ class KgSDKService private constructor(private val context: Context) {
             }
             return instance!!
         }
-    }
 
-    init {
-        if (flutterEngine == null) {
-            flutterEngine = FlutterEngine(context)
-            // Initialize your Flutter engine here
-            flutterEngine!!.dartExecutor.executeDartEntrypoint(
-                DartExecutor.DartEntrypoint.createDefault()
-            )
-            // Cache the FlutterEngine to be used by FlutterActivity or FlutterFragment
-            FlutterEngineCache
-                .getInstance()
-                .put(engineName, flutterEngine!!)
-            val channel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, channelName)
-            this.methodChannel = channel
+        private fun initializeFlutterEngine(context: Context) {
+            if (flutterEngine == null) {
+                flutterEngine = FlutterEngine(context)
+                flutterEngine!!.dartExecutor.executeDartEntrypoint(
+                    DartExecutor.DartEntrypoint.createDefault()
+                )
+                FlutterEngineCache
+                    .getInstance()
+                    .put(engineName, flutterEngine!!)
+                methodChannel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, channelName)
+            }
         }
     }
 
@@ -230,7 +228,7 @@ class KgSDKService private constructor(private val context: Context) {
 
     fun showKgSDK() {
         if(flutterEngine == null) {
-            throw  Exception()
+            throw Exception("Flutter engine is not initialized")
         }
 
         initializeFlutterActivity(flutterEngine!!)

@@ -2,12 +2,19 @@ package com.example.android_example
 
 import SDKViewModel
 import android.content.Context
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Clear
@@ -37,9 +44,13 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.drawscope.rotate
+import androidx.navigation.NavController
 
 @Composable
-fun SDKScreen() {
+fun SDKScreen(navController: NavController) {
     val context = LocalContext.current
     val viewModel: SDKViewModel = viewModel { 
         SDKViewModel(context.getSharedPreferences("sdk_prefs", Context.MODE_PRIVATE))
@@ -59,14 +70,13 @@ fun SDKScreen() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.Start
         ) {
             Text(
                 text = "SDK",
-                style = MaterialTheme.typography.headlineMedium,
-                modifier = Modifier.padding(bottom = 24.dp)
+                style = MaterialTheme.typography.headlineLarge,
+                modifier = Modifier.padding(bottom = 12.dp)
             )
-            
             Text(
                 text = "SDK Status",
                 style = MaterialTheme.typography.bodyLarge,
@@ -78,7 +88,7 @@ fun SDKScreen() {
                     .fillMaxWidth()
                     .padding(bottom = 16.dp),
                 colors = CardDefaults.cardColors(containerColor = when {
-                    isCheckingReady -> Color(0xFFFFF9C4) // Light yellow for checking
+                    isCheckingReady -> Color(0xFFF5F5F5) // Light gray for checking
                     sdkStatus -> Color(0xFFE8F5E9) // Light green for ready
                     else -> Color(0xFFFFEBEE) // Light red for not ready
                 })
@@ -87,19 +97,18 @@ fun SDKScreen() {
                     modifier = Modifier.padding(8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        imageVector = when {
-                            isCheckingReady -> Icons.Default.Refresh
-                            sdkStatus -> Icons.Default.Check
-                            else -> Icons.Default.Close
-                        },
-                        contentDescription = null,
-                        tint = when {
-                            isCheckingReady -> Color(0xFFFFA000) // Amber for checking
-                            sdkStatus -> Color(0xFF4CAF50) // Green for ready
-                            else -> Color(0xFFE57373) // Red for not ready
-                        }
-                    )
+                    if (isCheckingReady) {
+                        SimpleLoadingIndicator(
+                            modifier = Modifier.size(24.dp),
+                            color = Color(0xFFFFA000) // Amber for checking
+                        )
+                    } else {
+                        Icon(
+                            imageVector = if (sdkStatus) Icons.Default.Check else Icons.Default.Close,
+                            contentDescription = null,
+                            tint = if (sdkStatus) Color(0xFF4CAF50) else Color(0xFFE57373)
+                        )
+                    }
                     Text(
                         text = when {
                             isCheckingReady -> "SDK is checking"
@@ -151,7 +160,7 @@ fun SDKScreen() {
             }
             
             Button(
-                onClick = { /* TODO: Implement wallet center logic */ },
+                onClick = { navController.navigate("walletScreen") },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2196F3)),
                 enabled = sdkStatus // 按鈕是否可點擊取決於 sdkStatus
@@ -163,13 +172,30 @@ fun SDKScreen() {
                 )
                 Text("Wallet Center")
             }
+        }
+    }
+}
 
-            Button(onClick = {
-                println("Button Clicked")
-                KgSDKService.getInstance().showKgSDK()
-            }, modifier = Modifier.padding(16.dp)) {
-                Text("Show KG_SDK")
-            }
+@Composable
+fun SimpleLoadingIndicator(modifier: Modifier = Modifier, color: Color = Color.Blue) {
+    val infiniteTransition = rememberInfiniteTransition()
+    val angle by infiniteTransition.animateFloat(
+        initialValue = 0f,
+        targetValue = 360f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(1000, easing = LinearEasing)
+        )
+    )
+
+    Canvas(modifier = modifier) {
+        rotate(angle) {
+            drawArc(
+                color = color,
+                startAngle = 0f,
+                sweepAngle = 300f,
+                useCenter = false,
+                style = Stroke(width = size.width / 10)
+            )
         }
     }
 }
