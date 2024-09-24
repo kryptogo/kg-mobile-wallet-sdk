@@ -29,6 +29,12 @@ fun WalletCenterScreen(navController: NavController) {
     val viewModel: WalletCenterViewModel = viewModel()
     val balance by viewModel.balance.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
+    val hasLocalShareKey by viewModel.hasLocalShareKey.collectAsState()
+    val isWalletCreated by viewModel.isWalletCreated.collectAsState()
+
+    LaunchedEffect(Unit) {
+        viewModel.refreshAll()
+    }
 
     Scaffold(
         topBar = {
@@ -58,7 +64,7 @@ fun WalletCenterScreen(navController: NavController) {
             Text(balance, fontSize = 32.sp, fontWeight = FontWeight.Bold)
             
             Button(
-                onClick = { viewModel.refreshBalance() },
+                onClick = { viewModel.refreshAll() },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2196F3)),
                 enabled = !isLoading
@@ -74,17 +80,33 @@ fun WalletCenterScreen(navController: NavController) {
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(8.dp)
             ) {
-                Column(modifier = Modifier.padding(16.dp)) {
-                    ActionItem(icon = Icons.Outlined.Send, text = "Send") {
-                        viewModel.openKGSDK("/send_token/select_token")
+                if (hasLocalShareKey && isWalletCreated) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        ActionItem(icon = Icons.Outlined.Send, text = "Send") {
+                            viewModel.openKGSDK("/send_token/select_token")
+                        }
+                        Divider()
+                        ActionItem(icon = Icons.Outlined.ArrowForward, text = "Swap") {
+                            viewModel.openKGSDK("/swap")
+                        }
+                        Divider()
+                        ActionItem(icon = Icons.Outlined.AddCircle, text = "Receive") {
+                            viewModel.openKGSDK("/receive_address")
+                        }
                     }
-                    Divider()
-                    ActionItem(icon = Icons.Outlined.ArrowForward, text = "Swap") {
-                        viewModel.openKGSDK("/swap")
-                    }
-                    Divider()
-                    ActionItem(icon = Icons.Outlined.AddCircle, text = "Receive") {
-                        viewModel.openKGSDK("/receive_address")
+                } else {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp)
+                            .clickable { viewModel.openKGSDK("/wallet/create") },
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "Tap to create wallet",
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MaterialTheme.colorScheme.primary
+                        )
                     }
                 }
             }

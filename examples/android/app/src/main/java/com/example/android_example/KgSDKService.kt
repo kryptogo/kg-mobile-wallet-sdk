@@ -2,6 +2,7 @@ package com.example.android_example
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.annotation.NonNull
 import androidx.annotation.Nullable
 import io.flutter.embedding.android.FlutterActivity
@@ -28,30 +29,39 @@ class KgSDKService private constructor(private val context: Context) {
         fun initialize(@NonNull context: Context) {
             if (appContext == null) {
                 appContext = context.applicationContext
-                initializeFlutterEngine(appContext!!)
+                try {
+                    initializeFlutterEngine(appContext!!)
+                } catch (e: Exception) {
+                    // 記錄錯誤，可以使用日誌庫或者自定義錯誤報告機制
+                    Log.e("KgSDKService", "Failed to initialize Flutter engine", e)
+                }
             }
         }
 
         fun getInstance(): KgSDKService {
-            if (instance == null) {
-                if (appContext == null) {
-                    throw IllegalStateException("KgSDKService is not initialized. Call initialize() with a Context first.")
-                }
-                instance = KgSDKService(appContext!!)
+            checkNotNull(appContext) { "KgSDKService is not initialized. Call initialize() with a Context first." }
+            return instance ?: synchronized(this) {
+                instance ?: KgSDKService(appContext!!).also { instance = it }
             }
-            return instance!!
         }
 
         private fun initializeFlutterEngine(context: Context) {
             if (flutterEngine == null) {
-                flutterEngine = FlutterEngine(context)
-                flutterEngine!!.dartExecutor.executeDartEntrypoint(
-                    DartExecutor.DartEntrypoint.createDefault()
-                )
-                FlutterEngineCache
-                    .getInstance()
-                    .put(engineName, flutterEngine!!)
-                methodChannel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, channelName)
+                try {
+                    flutterEngine = FlutterEngine(context)
+                    flutterEngine!!.dartExecutor.executeDartEntrypoint(
+                        DartExecutor.DartEntrypoint.createDefault()
+                    )
+                    FlutterEngineCache
+                        .getInstance()
+                        .put(engineName, flutterEngine!!)
+                    methodChannel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, channelName)
+                } catch (e: Exception) {
+                    // 記錄錯誤
+                    Log.e("KgSDKService", "Failed to initialize Flutter engine", e)
+                    flutterEngine = null
+                    methodChannel = null
+                }
             }
         }
     }

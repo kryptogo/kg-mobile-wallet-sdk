@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.android_example"
+        applicationId = "com.kryptogo.android_example"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
