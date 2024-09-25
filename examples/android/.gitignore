@@ -15,3 +15,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+/.idea/
+*.log
+.navigation/
+output.json
