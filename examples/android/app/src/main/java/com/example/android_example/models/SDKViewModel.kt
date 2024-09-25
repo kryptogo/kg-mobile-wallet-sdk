@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
 import android.content.SharedPreferences
-import com.example.android_example.KgSDKService
+import com.kryptogo.android_example.KgSDKService
 
 class SDKViewModel(private val sharedPreferences: SharedPreferences) : ViewModel() {
     private val clientTokenKey = "KgSDKClientToken"

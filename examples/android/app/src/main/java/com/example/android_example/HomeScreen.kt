@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape

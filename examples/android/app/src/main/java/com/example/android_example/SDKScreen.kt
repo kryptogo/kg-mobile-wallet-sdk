@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import SDKViewModel
 import android.content.Context

@@ -35,11 +35,11 @@
         {
           "name": "share_plus_profile-1.0.aar",
           "url": "share_plus_profile-1.0.aar",
-          "size": 21435,
-          "sha512": "ba71e0b3c2a7b5cd1d827058970cda4f8fe86dca1564f96c4880f276e75054df6000c0c1ceabbf1070ba62c37b2df90bbeace60585fabe6f6797e479ee2c45f3",
-          "sha256": "5511b6e243f77a2901f7317e26714c67e45ddc07369c18d843969e66992e943d",
-          "sha1": "4b8671d776a376a0f6758c9099020a4aa2738d9c",
-          "md5": "8e43acdf9e507e71ada2e571d372f20e"
+          "size": 22335,
+          "sha512": "04a261f3847c7489d18c6b62fa5fea8bb88ddfd12044d102ebbdb2bc4facbf58cc062bb3fe0f940f1e41a9f40ad7853ba1a8278d6c91c417bc842f1fccca0615",
+          "sha256": "b3224c58d6ae98a5c5e1edb80c176afe2ddb670978675ddca373e0d80bad4fcb",
+          "sha1": "2b4d829f9f8a29c23d9b1becc089e67ea8115185",
+          "md5": "4fde51fba3575b68b3c1ec319148f313"
         }
       ]
     },
@@ -63,21 +63,21 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib",
           "version": {
-            "requires": "1.6.10"
+            "requires": "1.7.22"
           }
         },
         {
           "group": "androidx.core",
           "module": "core-ktx",
           "version": {
-            "requires": "1.7.0"
+            "requires": "1.10.1"
           }
         },
         {
           "group": "androidx.annotation",
           "module": "annotation",
           "version": {
-            "requires": "1.3.0"
+            "requires": "1.7.0"
           }
         }
       ],
@@ -85,11 +85,11 @@
         {
           "name": "share_plus_profile-1.0.aar",
           "url": "share_plus_profile-1.0.aar",
-          "size": 21435,
-          "sha512": "ba71e0b3c2a7b5cd1d827058970cda4f8fe86dca1564f96c4880f276e75054df6000c0c1ceabbf1070ba62c37b2df90bbeace60585fabe6f6797e479ee2c45f3",
-          "sha256": "5511b6e243f77a2901f7317e26714c67e45ddc07369c18d843969e66992e943d",
-          "sha1": "4b8671d776a376a0f6758c9099020a4aa2738d9c",
-          "md5": "8e43acdf9e507e71ada2e571d372f20e"
+          "size": 22335,
+          "sha512": "04a261f3847c7489d18c6b62fa5fea8bb88ddfd12044d102ebbdb2bc4facbf58cc062bb3fe0f940f1e41a9f40ad7853ba1a8278d6c91c417bc842f1fccca0615",
+          "sha256": "b3224c58d6ae98a5c5e1edb80c176afe2ddb670978675ddca373e0d80bad4fcb",
+          "sha1": "2b4d829f9f8a29c23d9b1becc089e67ea8115185",
+          "md5": "4fde51fba3575b68b3c1ec319148f313"
         }
       ]
     }

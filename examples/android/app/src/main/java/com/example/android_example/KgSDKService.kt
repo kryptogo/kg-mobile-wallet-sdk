@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import android.content.Context
 import android.content.Intent

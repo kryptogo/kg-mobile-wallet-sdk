@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import android.content.Context
 import android.os.Bundle
@@ -38,13 +38,13 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.android_example.ui.theme.Android_exampleTheme
+import com.kryptogo.android_example.ui.theme.Android_exampleTheme
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.plugin.common.MethodChannel
-import com.example.android_example.KgSDKService
+import com.kryptogo.android_example.KgSDKService
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

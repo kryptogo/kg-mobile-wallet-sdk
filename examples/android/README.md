@@ -5,7 +5,7 @@ Before using KG_SDK, you need to import the ~[KgSDKService.kt](https://dora-xies
 # [](https://dora-xies-organization.gitbook.io/kg_sdk-doc/kg_sdk/open-sdk-screen-1#setting-up-the-kg_sdk-service)Setting Up the KG_SDK Service
 To integrate the KG_SDK into your Android application, begin by setting up the service in your main application class. Below is an example configuration using Kotlin in an Android environment:
 ```kotlin
-package com.example.android_example
+package com.kryptogo.android_example
 
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
@@ -72,7 +72,7 @@ fun callKgSDK(funcName: String): String{
 
 
 ```kotlin
-package com.example.android_example
+package com.kryptogo.android_example
 
 import android.content.Context
 import android.content.Intent

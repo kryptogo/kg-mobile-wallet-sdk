@@ -35,11 +35,11 @@
         {
           "name": "share_plus_release-1.0.aar",
           "url": "share_plus_release-1.0.aar",
-          "size": 21440,
-          "sha512": "8883a2dab360bc2fe2d84f5f39c034faeabb8f33782a67211bc7720ad911879c568dd6000929331fa8e441a1ab8078e1c95ee62342de1f36c89fe6967e976815",
-          "sha256": "fe84f12c48d8613703407395c7c709ca1c04edc96aa5cf043d460445c5adc6ff",
-          "sha1": "c4de43899e0e14464ea9bed282ff1d44b5e8a74a",
-          "md5": "821b66e4a741b2c1226eefdabe0dda1d"
+          "size": 22326,
+          "sha512": "4215a019b3bd021ee41a77ffb9a5d215b77fb72d07b2d02849aa8caa2f2da5165a0a154f9131b07c5699465c2263f80ce5742409700c67c9a5a694799df95e27",
+          "sha256": "36078f01ecf1924137f58127c965f5d1afc5a99fcfaa2ed431ade87bc4c9f247",
+          "sha1": "f4425cc99f73530e2240fe8400b684e806e12b85",
+          "md5": "cf7d54bb5b7e95a9d9734270da292aea"
         }
       ]
     },
@@ -63,21 +63,21 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib",
           "version": {
-            "requires": "1.6.10"
+            "requires": "1.7.22"
           }
         },
         {
           "group": "androidx.core",
           "module": "core-ktx",
           "version": {
-            "requires": "1.7.0"
+            "requires": "1.10.1"
           }
         },
         {
           "group": "androidx.annotation",
           "module": "annotation",
           "version": {
-            "requires": "1.3.0"
+            "requires": "1.7.0"
           }
         }
       ],
@@ -85,11 +85,11 @@
         {
           "name": "share_plus_release-1.0.aar",
           "url": "share_plus_release-1.0.aar",
-          "size": 21440,
-          "sha512": "8883a2dab360bc2fe2d84f5f39c034faeabb8f33782a67211bc7720ad911879c568dd6000929331fa8e441a1ab8078e1c95ee62342de1f36c89fe6967e976815",
-          "sha256": "fe84f12c48d8613703407395c7c709ca1c04edc96aa5cf043d460445c5adc6ff",
-          "sha1": "c4de43899e0e14464ea9bed282ff1d44b5e8a74a",
-          "md5": "821b66e4a741b2c1226eefdabe0dda1d"
+          "size": 22326,
+          "sha512": "4215a019b3bd021ee41a77ffb9a5d215b77fb72d07b2d02849aa8caa2f2da5165a0a154f9131b07c5699465c2263f80ce5742409700c67c9a5a694799df95e27",
+          "sha256": "36078f01ecf1924137f58127c965f5d1afc5a99fcfaa2ed431ade87bc4c9f247",
+          "sha1": "f4425cc99f73530e2240fe8400b684e806e12b85",
+          "md5": "cf7d54bb5b7e95a9d9734270da292aea"
         }
       ]
     }

@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.android_example"
+    namespace = "com.kryptogo.android_example"
     compileSdk = 34
 
     fun flutterArchitectures(): List<String> {
@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId = "com.kryptogo.android_example"
-        minSdk = 28
+        minSdk = 33
         targetSdk = 34
         versionCode = 2
         versionName = "1.0"
@@ -28,9 +28,19 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            keyAlias = "key0"
+            keyPassword = "Kg1234567890"
+            storeFile = file("../../../../../keystore/sdk-sample-Kg1234567890")
+            storePassword = "Kg1234567890"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

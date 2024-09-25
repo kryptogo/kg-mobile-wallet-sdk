@@ -1,4 +1,4 @@
-package com.example.android_example
+package com.kryptogo.android_example
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -21,7 +21,7 @@ import androidx.navigation.NavController
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.android_example.models.WalletCenterViewModel
+import com.kryptogo.android_example.models.WalletCenterViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

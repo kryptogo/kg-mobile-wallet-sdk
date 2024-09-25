@@ -1,4 +1,4 @@
-package com.example.android_example.ui.theme
+package com.kryptogo.android_example.ui.theme
 
 import android.app.Activity
 import android.os.Build

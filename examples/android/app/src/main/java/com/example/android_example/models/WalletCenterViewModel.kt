@@ -1,8 +1,8 @@
-package com.example.android_example.models
+package com.kryptogo.android_example.models
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.android_example.KgSDKService
+import com.kryptogo.android_example.KgSDKService
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
