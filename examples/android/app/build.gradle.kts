@@ -16,7 +16,7 @@ android {
         applicationId = "com.kryptogo.android_example"
         minSdk = 33
         targetSdk = 34
-        versionCode = 2
+        versionCode = 3
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -46,7 +46,15 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            // 如果需要，可以在这里添加debug特定的配置
+        }
+        create("profile") {
+            initWith(getByName("debug"))
+            // 如果需要，可以在这里添加profile特定的配置
+        }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -67,19 +75,21 @@ android {
     }
 }
 
+val compose_version = "1.4.3"
+
+
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
+    implementation(platform("androidx.compose:compose-bom:2024.09.02"))
+    implementation ("androidx.compose.ui:ui:$compose_version")
+    implementation("androidx.compose.ui:ui-graphics:$compose_version")
+    implementation ("androidx.compose.material3:material3:1.1.0")
+    implementation ("androidx.compose.foundation:foundation:$compose_version")
     implementation("androidx.lifecycle:lifecycle-viewmodel-android:2.8.6")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation("androidx.navigation:navigation-compose:2.5.3")
-    implementation("androidx.compose.foundation:foundation-layout-android:1.5.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -89,4 +99,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation ("com.kryptogo.kg_sdk:flutter_debug:1.0")
     releaseImplementation ("com.kryptogo.kg_sdk:flutter_release:1.0")
+    add("profileImplementation", "com.kryptogo.kg_sdk:flutter_profile:1.0")
 }

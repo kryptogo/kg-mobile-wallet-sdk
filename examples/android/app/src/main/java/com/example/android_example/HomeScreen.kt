@@ -33,7 +33,7 @@ fun DataUsageScreen() {
         topBar = {
             TopAppBar(
                 title = { Text("iPhone 16") },
-                colors = TopAppBarDefaults.smallTopAppBarColors(
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.background,
                     titleContentColor = MaterialTheme.colorScheme.onBackground
                 )
