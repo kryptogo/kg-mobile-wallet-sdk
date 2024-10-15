@@ -6,8 +6,7 @@
 
 KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet functionality.
 
-- [Documentation](https://dora-xies-organization.gitbook.io/KryptoGO Mobile Wallet SDK-doc)
-- [GitHub Repository](https://github.com/kryptogo/kg-mobile-wallet-sdk)
+- [Documentation (Deprecated)](https://dora-xies-organization.gitbook.io/kg_sdk-doc)
 
 ## Table of Contents
 
