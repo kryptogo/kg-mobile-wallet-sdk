@@ -131,29 +131,40 @@ struct ContentView: View {
 Implement methods in KgSDKService to interact with KG_SDK:
 
 ```swift
-func getBalance(completion: @escaping (Any?) -> Void) {
-    methodChannel.invokeMethod("getBalance", arguments: nil, result: completion)
-}
+
 
 func isReady(completion: @escaping (Any?) -> Void) {
     methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
+}
+
+func checkDevice(completion: @escaping (Any?) -> Void) {
+    methodChannel.invokeMethod("checkDevice", arguments: nil, result: completion)
 }
 
 func goRoute(route: String) {
     methodChannel.invokeMethod("goRoute", arguments: route, result: nil)
 }
 
-func kDebugMode() async throws -> Bool {
-    return try await withCheckedThrowingContinuation { continuation in
-        methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
-            continuation.resume(returning: result as? Bool ?? false)
-        }
-    }
+func refreshSharedSecret(secret: String?) -> Void {
+    methodChannel.invokeMethod("refreshSharedSecret", arguments: secret, result: nil)
+}
+
+func getBalance(completion: @escaping (Any?) -> Void) {
+    methodChannel.invokeMethod("getBalance", arguments: nil, result: completion)
 }
 
 func isWalletCreated() async throws -> Bool {
     return try await withCheckedThrowingContinuation { continuation in
         methodChannel.invokeMethod("isWalletCreated", arguments: nil) { result in
+            continuation.resume(returning: result as? Bool ?? false)
+        }
+    }
+}
+
+
+func kDebugMode() async throws -> Bool {
+    return try await withCheckedThrowingContinuation { continuation in
+        methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
             continuation.resume(returning: result as? Bool ?? false)
         }
     }
@@ -170,6 +181,12 @@ You need to implement the following functions in your KgSDKService:
 2. `fetchSharedSecret() -> String?`
    - Retrieve the shared secret from your secure storage.
 
+3. `clearSharedSecret() -> Bool`
+   - Delete the shared secret from your secure storage.
+
+4. `openVerifyPage() -> Bool`
+   - Open the verification page and do verification.
+
 Example implementation:
 
 ```swift
@@ -181,6 +198,16 @@ func updateSharedSecret(sharedSecret: String?) -> Bool {
 func fetchSharedSecret() -> String? {
     // Implement secure retrieval of sharedSecret
     // Return the stored sharedSecret or nil if not found
+}
+
+func clearSharedSecret() -> Bool {
+    // Implement secure deletion of sharedSecret
+    // Return true if successful, false otherwise
+}
+
+func openVerifyPage() -> Bool {
+    // Implement opening the verify page
+    // Return true if verification is successful, false otherwise
 }
 ```
 

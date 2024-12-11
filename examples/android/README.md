@@ -62,6 +62,8 @@ fun callKgSDK(funcName: String): String{
 | ------------------ | ------------------------------------- | --------------------------------------- |
 | updateSharedSecret | updateSharedSecret to your storage    | Copy<br>(sharedSecret: String?) -> Bool |
 | fetchSharedSecret  | get sharedSecret to from your storage | Copy<br>() -> String?                   |
+| clearSharedSecret  | delete sharedSecret from your storage | Copy<br>() -> Bool                   |
+| openVerifyPage  | open verify page and do verification | Copy<br>() -> Bool                   |
 ### Parameter should be update
 
 
@@ -132,6 +134,16 @@ class KgSDKService private constructor(private val context: Context) {
         // Return the shared secret from the shared preferences
         return sharedPreferences.getString("sharedSecret", null)
     }
+
+    fun clearSharedSecret(): Boolean {
+        // Implement secure deletion of sharedSecret
+        // Return true if successful, false otherwise
+    }
+
+    fun openVerifyPage(): Boolean {
+        // Implement opening the verify page
+        // Return true if verification is successful, false otherwise
+    }   
 
     fun updateSharedSecret(sharedSecret: String?): Boolean {
         // Get a reference to the shared preferences

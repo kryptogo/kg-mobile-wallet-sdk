@@ -72,7 +72,7 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
    | Parameter   | Type   | Description                                        |
    | ----------- | ------ | -------------------------------------------------- |
    | clientId    | String | Your application's client ID provided by KryptoGO  |
-   | clientToken | String | Your application's client token for authentication |
+   | clientToken | String | Your application's user token for authentication |
 
 ## SDK Methods
 
@@ -81,7 +81,7 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
 | Method Name         | Description                                                                                                                                                                                                                                                                                        | Parameters          | Return Value |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------ |
 | updateSharedSecret  | Updates the shared secret used in Shamir's Secret Sharing (SSS) scheme. You need ensure that the sharedSecret is saved in your own database. This is crucial for updating the user's private key fragment stored on the device. Return `true` if the save is successful, otherwise return `false`. | String sharedSecret | bool         |
-| clearSharedSecret   | Clears the stored shared secret (private key fragment) from the device. This might be used during logout or account reset procedures. Return `true` if the operation is successful, otherwise return `false`.                                                                                      | None                | bool         |
+| clearSharedSecret   | Clears the stored shared secret (private key fragment) from your own database. This might be used during account deletion or account reset procedures. Return `true` if the operation is successful, otherwise return `false`.                                                                                      | None                | bool         |
 | closeSdkView        | Closes the current SDK view.                                                                                                                                                                                                                                                                       | None                | void         |
 | openVerifyPage      | Opens a verification page, typically used when the SDK needs to verify the user's identity before performing sensitive operations related to SSS. Return true if verification is successful, otherwise return false.                                                                               | None                | bool         |
 | requestSharedSecret | SDK requests a shared secret (private key fragment) from the app. This is a critical part of the SSS scheme, allowing the SDK to reconstruct the full private key when needed.                                                                                                                     | None                | String       |
@@ -89,10 +89,10 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
 ### SDK Methods Available to Users
 | Method Name         | Description                                                                                                                                                                      | Parameters                 | Return Value |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------ |
-| goRoute             | Navigates to a specific route within the SDK's interface. Available routes include: "/receive_address", "/send_token/select_token", "/swap".                                     | String route               | None         |
-| initParams          | Initializes the client token and client id, which is used for authentication purposes. `clientId` and `clientToken` are required.                                                | Map<String, String> params | None         |
-| checkDevice         | Performs a compatibility check on the device to ensure it meets the SDK's requirements, including the ability to securely store SSS fragments.                                   | None                       | bool         |
-| isReady             | Verifies if the SDK is fully initialized and ready for use, including the setup of SSS components.                                                                               | None                       | bool         |
+| initParams          | Authenticate and initialize SDK data. clientId and clientToken are required.<br/> <font color=#FF6600>\*It is recommended to call this during application initialization.                                                | Map<String, String> params | None         |
+| isReady             | Verifies whether the SDK is fully initialized and ready for use, including the setup of SSS components.<br/> <font color=#FF0000>*This method should be called to check before starting the SDK.                                                                  | None                       | bool         |
+| checkDevice         | Performs user device verification to check if the current device is consistent.                     | None                       | bool         |
+| goRoute             | Navigates to a specific route within the SDK's interface. Available routes include: "/receive_address", "/send_token/select_token", "/swap".                                     | String route               | None         |                                | None                       | bool         |
 | getAccessToken      | Retrieves the current access token, which is typically used for authenticated API requests.                                                                                      | None                       | String       |
 | hasLocalShareKey    | Checks if a local share key (part of the SSS scheme) is stored on the SDK (device). This is crucial for determining if the device has a part of the user's private key.          | None                       | bool         |
 | isWalletCreated     | Verifies if a wallet has been created for the current user                                                                                                                       | None                       | bool         |
@@ -115,7 +115,18 @@ App->>SDK: isReady()
 SDK-->>App: true/false
 ```
 
-### 2. SSS Wallet Creation
+### 2. Check device consistency
+The app calls `checkDevice()` to verify if the current device is consistent.
+
+```mermaid
+sequenceDiagram
+participant App
+participant SDK
+App->>SDK: checkDevice()
+SDK-->>App: true/false
+```
+
+### 3. SSS Wallet Creation
 
 During wallet creation, the SDK calls `updateSharedSecret` to backup the private key fragment to the app's server.
 
@@ -127,7 +138,7 @@ SDK->>App: updateSharedSecret(secret)
 App-->>SDK: true/false
 ```
 
-### 3. SSS Key Fragment Retrieval
+### 4. SSS Key Fragment Retrieval
 
 If the local fragment is missing, the SDK calls `requestSharedSecret` to get the fragment from the app. After reconstructing the private key, it calls `updateSharedSecret` again to re-backup the fragment.
 
@@ -141,7 +152,7 @@ SDK->>App: updateSharedSecret(newSecret)
 App-->>SDK: true/false
 ```
 
-### 4. SSS Backup Failure Handling
+### 5. SSS Backup Failure Handling
 
 If backup fails, all fragments must be destroyed and re-backed up. The SDK calls `clearSharedSecret` to delete old backups in all environments.
 ```mermaid
@@ -152,7 +163,18 @@ SDK->>App: clearSharedSecret()
 App-->>SDK: true/false
 ```
 
-### 5. Transaction Verification
+### 6. SSS Backup refreshing
+The app can call refreshSharedSecret and pass the original backed up secret to request the SDK to refresh SSS key fragments and re-backup.
+```mermaid
+sequenceDiagram
+participant App
+participant SDK
+App->>SDK: refreshSharedSecret(secret)
+SDK->>App: updateSharedSecret(newSecret)
+App-->>SDK: true/false
+```
+
+### 7. Transaction Verification
 
 Before signing transactions, the SDK calls `openVerifyPage`. If the user successfully verifies in the app, it returns `true` to the SDK.
 ```mermaid
