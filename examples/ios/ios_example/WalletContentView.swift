@@ -16,40 +16,18 @@ class WalletCenterViewModel: ObservableObject {
 
     
     
-    func goRoute(route: String) {
+    func openView(route: String) {
         // Open KgSDK
         if let topViewController = UIApplication.shared.windows.first?.rootViewController {
             kgSDKService.showKgSDK(from: topViewController)
         }
         
         // Navigate to the specified route
-        kgSDKService.goRoute(route: route)
+        kgSDKService.openView(route: route)
         
     }
     
-    func kDebugMode() async {
-        // print
-        print("kDebugMode")
-        
-        do {
-            let isDebugModeActivated = try await kgSDKService.kDebugMode()
-            print("isDebugModeActivated", isDebugModeActivated)
-        } catch {
-            print("isDebugModeActivated error")
-        }
-    }
-    
-    func hasLocalShareKey() async {
-        do {
-            let hasLocalShareKey = try await kgSDKService.hasLocalShareKey()
-            self.hasLocalShareKey = hasLocalShareKey
-            print("hasLocalShareKey, ", hasLocalShareKey)
-            
-        } catch {
-            print("hasLocalShareKey error")
-        }
-    }
-    
+
     func isWalletCreated() async {
         do {
             let isWalletCreated = try await kgSDKService.isWalletCreated()
@@ -63,7 +41,6 @@ class WalletCenterViewModel: ObservableObject {
     
     @MainActor
     func checkWalletStatus() async {
-        await hasLocalShareKey()
         await isWalletCreated()
     }
     
@@ -128,52 +105,24 @@ struct WalletCenterView: View {
                     .cornerRadius(10)
             }
             
-            if viewModel.isWalletCreated && viewModel.hasLocalShareKey {
+            if viewModel.isWalletCreated {
                 List {
                     Button(action: {
-                        viewModel.goRoute(route: "/send_token/select_token")
+                        viewModel.openView(route: "/send_token/select_token")
                     }) {
                         Label("Send", systemImage: "paperplane")
                     }
                     Button(action: {
-                        viewModel.goRoute(route: "/swap")
+                        viewModel.openView(route: "/swap")
                     }) {
                         Label("Swap", systemImage: "arrow.triangle.2.circlepath")
                     }
                     Button(action: {
-                        viewModel.goRoute(route: "/receive_address")
+                        viewModel.openView(route: "/receive_address")
                     }) {
                         Label("Receive", systemImage: "tray.and.arrow.down")
                     }
                 }
-            } else if viewModel.isWalletCreated && !viewModel.hasLocalShareKey {
-                VStack {
-                    Image(systemName: "wallet.pass")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50, height: 50)
-                        .foregroundColor(.gray)
-                    
-                    Text("Wallet created, but no local share key")
-                        .foregroundColor(.gray)
-                    
-                    Button(action: {
-                        showPasswordAlert()
-                    }) {
-                        Text("Restore Wallet")
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.orange)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                    }
-                }
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.gray.opacity(0.3), lineWidth: 1)
-                )
-                .padding()
             } else {
                 VStack {
                     Image(systemName: "wallet.pass")
