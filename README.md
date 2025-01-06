@@ -142,12 +142,14 @@ It then checks if the SDK is ready using `isReady()`.
 ### 2. Check device consistency
 The app calls `checkDevice()` to verify if the current device is consistent.
 It will return `true` when success, or Error when failed.
+
 ![Check Device](/asseets/flow_check_device.png)
 
 
 ### 3. Check if wallet is created
 The app calls `isWalletCreated()` to check if the wallet is created.
 It will return `true` when success, or Error when failed.
+
 ![Check if wallet is created](/asseets/flow_is_wallet_created.png)
 
 ### 4. Get balance
@@ -159,18 +161,14 @@ It will return the balance of the wallet, or Error when failed.
 ### 5. SSS Backup refreshing
 The app can call refreshSharedSecret and pass the original backed up secret to request the SDK to refresh SSS key fragments and re-backup.
 It will return new version of secret when success, or Error when failed.
+
 ![SSS Backup Refreshing](/asseets/flow_refresh_shared_secret.png)
 
 ### 6. Transaction Verification
 
 Before signing transactions, the SDK calls `openVerifyPage` with transaction type. If the user successfully verifies in the app, it returns `true` to the SDK.
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-SDK->>App: openVerifyPage(type)
-App-->>SDK: True / False
-```
+
+![Transaction Verification](/asseets/flow_open_verify_page.png)
 
 
 
