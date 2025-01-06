@@ -74,6 +74,17 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
    | clientId    | String | Your application's client ID provided by KryptoGO  |
    | clientToken | String | Your application's user token for authentication |
 
+## The Format of the shared secret
+
+```
+timestamp:secret
+```
+
+The shared secret is a string which is combined by 2 parts:
+- The first part is the version, timestamp.
+- The second part is the secret.
+
+
 ## SDK Methods
 
 ### Methods to Handle SDK Requests
@@ -108,11 +119,12 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
 #### Initialization
  - CONFIG_ERROR: SDK initialization configuration error.
  - WALLET_STATUS_ERROR: Error occurred during the wallet status check.
- - WALLET_RESTORATION_ERROR: Error occurred during the wallet restoration process.
 
-#### Share Secret
+#### Share Secret / Wallet Restoration
  - SECRET_VERSION_ERROR: Shared secret version mismatch or error, leading to refresh or update failure.
  - SECRET_BACKUP_ERROR: Error occurred during the backup process of the shared secret, possibly due to cloud or local backup failure.
+ - WALLET_RESTORATION_ERROR: Error occurred during the wallet restoration process.
+
 
 
 ## SDK Flow Overview
@@ -120,66 +132,34 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
 The KryptoGO Mobile Wallet SDK interacts with your app through several key flows:
 
 ### 1. SDK Initialization
-The app calls `init` with the `clientId` and `clientToken`. The SDK will initiate the configuration and login process.
-It will call `requestSharedSecret` with reason if needed. or throw KgSdkInitException when failed.
+The app calls `init` with the `clientId` and `clientToken`. The SDK will initiate the configuration and wallet login process.
+It will return `{success: true}` when success, or `{success: false, reason: reason}` with reason or Error when failed.
 It then checks if the SDK is ready using `isReady()`.
 
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-App->>SDK: init(clientId, clientToken)
-App->>SDK: isReady()
-SDK-->>App: {success: true} or <br/>{<br/>success: false, <br/>reason: "INVALID_DEVICE" <br/>/ "NO_LOCAL_SECRET" <br/>/ "INVALID_LOCAL_SECRET"<br/>}
-```
+![SDK Initialization](/asseets/flow_init.png)
+
 
 ### 2. Check device consistency
 The app calls `checkDevice()` to verify if the current device is consistent.
+It will return `true` when success, or Error when failed.
+![Check Device](/asseets/flow_check_device.png)
 
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-App->>SDK: checkDevice()
-SDK-->>App: True / False
-```
 
-### 3. SSS Wallet Creation
+### 3. Check if wallet is created
+The app calls `isWalletCreated()` to check if the wallet is created.
+It will return `true` when success, or Error when failed.
+![Check if wallet is created](/asseets/flow_is_wallet_created.png)
 
-During wallet creation, the SDK calls `updateSharedSecret` to backup the private key fragment to the app's server.
+### 4. Get balance
+The app calls `getBalance()` to get the balance of the wallet.
+It will return the balance of the wallet, or Error when failed.
 
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-SDK->>App: updateSharedSecret(secret)
-App-->>SDK: True / False
-```
-
-### 4. SSS Key Fragment Retrieval
-
-If the local fragment is missing, the SDK calls `requestSharedSecret` to get the fragment from the app. After reconstructing the private key, it calls `updateSharedSecret` again to re-backup the fragment.
-
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-SDK->>App: requestSharedSecret(reason)
-App-->>SDK: sharedSecret
-SDK->>App: updateSharedSecret(newSecret)
-App-->>SDK: True / False
-```
+![Get Balance](/asseets/flow_get_balance.png)
 
 ### 5. SSS Backup refreshing
 The app can call refreshSharedSecret and pass the original backed up secret to request the SDK to refresh SSS key fragments and re-backup.
-```mermaid
-sequenceDiagram
-participant App
-participant SDK
-App->>SDK: refreshSharedSecret(secret)
-SDK->>App: updateSharedSecret(newSecret)
-App-->>SDK: True / False
-```
+It will return new version of secret when success, or Error when failed.
+![SSS Backup Refreshing](/asseets/flow_refresh_shared_secret.png)
 
 ### 6. Transaction Verification
 
