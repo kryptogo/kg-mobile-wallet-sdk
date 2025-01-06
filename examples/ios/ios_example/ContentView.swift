@@ -6,6 +6,7 @@ class ContentViewModel: ObservableObject {
     @Published var showWebView = false
     @Published var balance = ""
     @Published var initParamsInput: String
+    var errorMessage: String?
     
     let kgOauthToken = ""
     
@@ -24,28 +25,63 @@ class ContentViewModel: ObservableObject {
         isCheckingReady = true
         checkReadyStatus()
     }
+
     
     // Set the initialization parameters, clientToken is required
-    func setInitParams() {
+    func setInitParams() async throws {
         let clientToken = Constants.KgSDK.clientToken
-        kgSDKService.setInitParams(clientToken: clientToken)
+        do {
+             try await kgSDKService.initKgSDK(clientToken: clientToken)
+            print("Successfully set init params")
+        } catch {
+            
+            errorMessage = "Failed to set init params: \(error.localizedDescription)"
+            print(errorMessage!)
+            throw error
+        }
     }
 
-    func setCustomInitParams() {
+    func setCustomInitParams() async throws {
+        DispatchQueue.main.async {
+            self.isCheckingReady = true
+        }
         // Save the clientToken to UserDefaults
         UserDefaults.standard.set(initParamsInput, forKey: clientTokenKey)
         
-        kgSDKService.setInitParams(clientToken: initParamsInput)
+        do {
+            try await kgSDKService.initKgSDK(clientToken: initParamsInput)
+            print("Custom init params successfully set")
+        } catch {
+            errorMessage = "Failed to set custom init params: \(error.localizedDescription)"
+            print(errorMessage!)
+            throw error
+
+        }
     }
     
-    func setNewUserInitParams() {
+    func setNewUserInitParams() async throws {
         let clientToken = Constants.KgSDK.newUserclientToken
-        kgSDKService.setInitParams(clientToken: clientToken)
+        do {
+            try await kgSDKService.initKgSDK(clientToken: clientToken)
+            print("New user init params successfully set")
+        } catch {
+            errorMessage = "Failed to set new user init params: \(error.localizedDescription)"
+            print(errorMessage!)
+            throw error
+
+        }
     }
     
-    func setNoLocalInitParams() {
+    func setNoLocalInitParams() async throws {
         let clientToken = Constants.KgSDK.missingLocalClientToken
-        kgSDKService.setInitParams(clientToken: clientToken)
+        do {
+            try await kgSDKService.initKgSDK(clientToken: clientToken)
+            print("No local init params successfully set")
+        } catch {
+            errorMessage = "Failed to set no local init params: \(error.localizedDescription)"
+            print(errorMessage!)
+            throw error
+        }
     }
     
     private func checkReadyStatus() {
@@ -55,8 +91,14 @@ class ContentViewModel: ObservableObject {
                 if isReady {
                     self.isSDKReady = true
                     self.isCheckingReady = false
+                    self.errorMessage = nil
                     self.getBalance()
-                } else {
+                } else if errorMessage != nil {
+                    self.isCheckingReady = false
+
+                }
+                
+                else {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.checkReadyStatus()
                     }
@@ -75,6 +117,17 @@ class ContentViewModel: ObservableObject {
         }
     }
     
+    func refreshSharedSecret() async throws{
+        do {
+            try await kgSDKService.refreshSharedSecret()
+            print("Refresh shared secret successful")
+        } catch {
+            errorMessage = "Failed to refresh shared secret: \(error.localizedDescription)"
+            print(errorMessage!)
+            throw error
+
+        }
+    }
 }
 
 struct ContentView: View {

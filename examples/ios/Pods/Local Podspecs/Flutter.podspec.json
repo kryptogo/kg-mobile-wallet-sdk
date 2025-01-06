@@ -1,6 +1,6 @@
 {
   "name": "Flutter",
-  "version": "3.13.500",
+  "version": "3.22.300",
   "summary": "A UI toolkit for beautiful and fast apps.",
   "description": "Flutter is Google's UI toolkit for building beautiful, fast apps for mobile, web, desktop, and embedded devices from a single codebase.\nThis pod vends the iOS Flutter engine framework. It is compatible with application frameworks created with this version of the engine and tools.\nThe pod version matches Flutter version major.minor.(patch * 100) + hotfix.",
   "homepage": "https://flutter.dev",
@@ -12,11 +12,11 @@
     "Flutter Dev Team": "flutter-dev@googlegroups.com"
   },
   "source": {
-    "http": "https://storage.googleapis.com/flutter_infra_release/flutter/bd986c5ed20a62dc34b7718c50abc782beae4c33/ios-release/artifacts.zip"
+    "http": "https://storage.googleapis.com/flutter_infra_release/flutter/235db911ba279722f5e685f38b0ed30fa7e8570a/ios-release/artifacts.zip"
   },
   "documentation_url": "https://flutter.dev/docs",
   "platforms": {
-    "ios": "11.0"
+    "ios": "12.0"
   },
   "vendored_frameworks": "Flutter.xcframework"
 }

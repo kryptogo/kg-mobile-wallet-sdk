@@ -1,5 +1,5 @@
 PODS:
-  - Flutter (3.13.500)
+  - Flutter (3.22.300)
 
 DEPENDENCIES:
   - Flutter (from `../../sdk/ios/Release/Flutter.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :podspec: "../../sdk/ios/Release/Flutter.podspec"
 
 SPEC CHECKSUMS:
-  Flutter: 7d74140b3b86cf96f3ac1876f32a22fcf5a4aa7b
+  Flutter: eeb1e19722aaa0e49df2e57701650ff58ad8d2dc
 
 PODFILE CHECKSUM: afd9674180f1cd5f475da08f6ef4b2518b7bb0f0
 

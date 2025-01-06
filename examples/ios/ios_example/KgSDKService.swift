@@ -30,14 +30,61 @@ class KgSDKService: ObservableObject {
         setupMethodChannel()
     }
     
-    func setInitParams(clientToken: String) {
-        print("setInitParams--------")
+    func initKgSDK(clientToken: String) async throws -> Void {
+        print("init--------")
         
-        // Invoke method
-        methodChannel.invokeMethod("initParams", arguments: [
-            "clientToken": clientToken,
-            "clientId": "def3b0768f8f95ffa0be37d0f54e2064"
-        ])
+        return try await withCheckedThrowingContinuation { continuation in
+            methodChannel.invokeMethod("init", arguments: [
+                "clientToken": clientToken,
+                "clientId": "def3b0768f8f95ffa0be37d0f54e2064"
+            ]) { result in
+                
+                if let response = result as? [String: Any] {
+                    if let success = response["success"] as? Bool
+                    {
+                        if (!success) {
+                            let reason = response["reason"] as? String ?? "Unknown"
+                            let nsError = NSError(
+                                domain: "KgSDKService",
+                                code: 0,
+                                userInfo: [NSLocalizedDescriptionKey: reason])
+                            continuation.resume(throwing: nsError) // Resume with error
+                            
+                        } else {
+                            continuation.resume()
+                            
+                        }
+                        
+                    }else {
+                        let nsError = NSError(
+                            domain: "KgSDKService",
+                            code: 1,
+                            userInfo: [NSLocalizedDescriptionKey: "Unexpected result from Flutter method"]
+                        )
+                        continuation.resume(throwing: nsError) // Resume with error
+                    }
+                    
+                }else
+                
+                if let error = result as? FlutterError {
+                    
+                    let nsError = NSError(
+                        domain: "KgSDKService",
+                        code: 0,
+                        userInfo: [NSLocalizedDescriptionKey: error.message ?? "Unknown Flutter error"]
+                    )
+                    continuation.resume(throwing: nsError) // Resume with error
+                }   else {
+                    
+                    let nsError = NSError(
+                        domain: "KgSDKService",
+                        code: 1,
+                        userInfo: [NSLocalizedDescriptionKey: "Unexpected result from Flutter method"]
+                    )
+                    continuation.resume(throwing: nsError) // Resume with error
+                }
+            }
+        }
     }
     
     private func setupMethodChannel() {
@@ -48,7 +95,7 @@ class KgSDKService: ObservableObject {
             case "closeSdkView":
                 self.closeSdkView()
             case "openVerifyPage":
-                self.openVerifyPage(result: result)
+                self.openVerifyPage(call: call, result: result)
             case "updateSharedSecret":
                 self.handleUpdateSharedSecret(call: call, result: result)
             case "requestSharedSecret":
@@ -59,7 +106,7 @@ class KgSDKService: ObservableObject {
         }
     }
     
-    func showKgSDK(from viewController: UIViewController) {        
+    func showKgSDK(from viewController: UIViewController) {
         // 確保 Flutter 視圖已加載
         flutterViewController.view.layoutIfNeeded()
         
@@ -77,54 +124,15 @@ class KgSDKService: ObservableObject {
         }
     }
     
-    func deleteUser() async throws -> Bool {
-        return try await withCheckedThrowingContinuation { continuation in
-            methodChannel.invokeMethod("deleteUser", arguments: nil) { result in
-                switch result {
-                case let boolResult as Bool:
-                    continuation.resume(returning: boolResult)
-                case let error as FlutterError:
-                    continuation.resume(throwing: NSError(domain: "KgSDKService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Flutter Error"]))
-                default:
-                    continuation.resume(throwing: NSError(domain: "KgSDKService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Unexpected result type"]))
-                }
-            }
-        }
-    }
     
     func isReady(completion: @escaping (Any?) -> Void) {
         methodChannel.invokeMethod("isReady", arguments: nil, result: completion)
     }
     
-    func goRoute(route: String) {
-        methodChannel.invokeMethod("goRoute", arguments: route, result: nil)
+    func openView(route: String) {
+        methodChannel.invokeMethod("openView", arguments: route, result: nil)
     }
     
-    func kDebugMode() async throws -> Bool {
-        return try await withCheckedThrowingContinuation { continuation in
-            methodChannel.invokeMethod("kDebugMode", arguments: nil) { result in
-                switch result {
-                case let boolResult as Bool:
-                    continuation.resume(returning: boolResult)
-                default:
-                    continuation.resume(returning: false )
-                }
-            }
-        }
-    }
-    
-    func hasLocalShareKey() async throws -> Bool {
-        return try await withCheckedThrowingContinuation { continuation in
-            methodChannel.invokeMethod("hasLocalShareKey", arguments: nil) { result in
-                switch result {
-                case let boolResult as Bool:
-                    continuation.resume(returning: boolResult)
-                default:
-                    continuation.resume(returning: false)
-                }
-            }
-        }
-    }
     
     func isWalletCreated() async throws -> Bool {
         return try await withCheckedThrowingContinuation { continuation in
@@ -139,9 +147,6 @@ class KgSDKService: ObservableObject {
         }
     }
     
-    func getAccessToken(completion: @escaping (Any?) -> Void) {
-        methodChannel.invokeMethod("getAccessToken", arguments: nil, result: completion)
-    }
     
     func getBalance(completion: @escaping (Any?) -> Void) {
         methodChannel.invokeMethod("getBalance", arguments: nil, result: completion)
@@ -151,6 +156,49 @@ class KgSDKService: ObservableObject {
         methodChannel.invokeMethod("checkDevice", arguments: nil, result: completion)
     }
     
+    func refreshSharedSecret() async throws -> Void {
+        print("refreshSharedSecret--------")
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            let secret = UserDefaults.standard.string(forKey: "KgSDKSharedSecret")
+            methodChannel.invokeMethod("refreshSharedSecret", arguments: secret) { result in
+                
+                if let success = result as? Bool {
+                    if success {
+                        continuation.resume()
+                    }else {
+                        let nsError = NSError(
+                            domain: "KgSDKService",
+                            code: 1,
+                            userInfo: [NSLocalizedDescriptionKey: "Unexpected result from Flutter method"]
+                        )
+                        continuation.resume(throwing: nsError) // Resume with error
+                    }
+                    
+                }else
+                
+                if let error = result as? FlutterError {
+                    
+                    let nsError = NSError(
+                        domain: "KgSDKService",
+                        code: 0,
+                        userInfo: [NSLocalizedDescriptionKey: error.message ?? "Unknown Flutter error"]
+                    )
+                    continuation.resume(throwing: nsError) // Resume with error
+                }   else {
+                    
+                    let nsError = NSError(
+                        domain: "KgSDKService",
+                        code: 1,
+                        userInfo: [NSLocalizedDescriptionKey: "Unexpected result from Flutter method"]
+                    )
+                    continuation.resume(throwing: nsError) // Resume with error
+                }
+            }
+        }
+    }
+    
+    
     
     private func closeSdkView() {
         DispatchQueue.main.async { [weak self] in
@@ -159,7 +207,11 @@ class KgSDKService: ObservableObject {
     }
     
     
-    private func openVerifyPage(result: @escaping FlutterResult) {
+    private func openVerifyPage(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        guard let type = (call.arguments as? [String: String])?["type"] else {
+            result(false)
+            return
+        }
         DispatchQueue.main.async {
             guard let topViewController = UIApplication.shared.windows.first?.rootViewController?.topMostViewController() else {
                 result(FlutterError(code: "NO_VIEWCONTROLLER", message: "Unable to find a view controller to present from", details: nil))
@@ -198,21 +250,10 @@ class KgSDKService: ObservableObject {
             result(FlutterError(code: "INVALID_ARGUMENT", message: "Reason is required", details: nil))
             return
         }
-        
         print("requestSharedSecret: \(reason)")
-        openVerifyPage { verificationResult in
-            guard let isVerified = verificationResult as? Bool, isVerified else {
-                result(FlutterError(code: "VERIFICATION_FAILED", message: "User verification failed", details: nil))
-                return
-            }
-            print("------------------------")
-            print(isVerified)
-            
-            let sharedSecret = self.fetchSharedSecret()
-            print("------------------------", sharedSecret)
-            
-            result(sharedSecret)
-        }
+
+        let sharedSecret = self.fetchSharedSecret()
+        result(sharedSecret)
     }
     
     private func updateSharedSecret(sharedSecret: String) -> Bool {
