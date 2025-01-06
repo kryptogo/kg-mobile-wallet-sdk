@@ -101,12 +101,12 @@ The shared secret is a string which is combined by 2 parts:
 
 | Method Name | Description | Parameters | Return Value | Error Code |
 |-------------|-------------|------------|--------------|------------|
-| init | An asynchronous method that initializes SDK data and authenticates the KryptoGO wallet account.<br><font color=#FF0000>\*This method should be called first before other methods. | {<br>clientId: String,<br>clientToken: String<br>} | Success: {success: true}<br>Fail: {<br>success: false,<br>reason: INVALID_DEVICE / NO_LOCAL_SECRET / INVALID_LOCAL_SECRET<br>} | • ARGUMENT_ERROR<br>• CONFIG_ERROR<br>• NETWORK_ERROR<br>• API_ERROR<br>• WALLET_STATUS_ERROR<br>• WALLET_RESTORATION_ERROR<br>• UNKNOWN_ERROR |
+| init | An asynchronous method that initializes SDK data and authenticates the KryptoGO wallet account.<br><font color=#FF0000>\*This method should be called first before other methods. | {<br>clientId: String,<br>clientToken: String<br>} | Success: {success: true}<br>Fail: {<br>success: false,<br>reason: INVALID_DEVICE / NO_LOCAL_SECRET / INVALID_LOCAL_SECRET<br>} | • ARGUMENT_ERROR<br>• CONFIG_ERROR<br>• NETWORK_ERROR<br>• API_ERROR<br>• SECRET_VERSION_ERROR<br>• WALLET_STATUS_ERROR<br>• WALLET_RESTORATION_ERROR<br>• UNKNOWN_ERROR |
 | isReady | Verifies whether the SDK is fully initialized and ready for use, including the setup of SSS components.<br><font color=#FF0000>\*This method should be called to check before open the SDK view. | None | Bool | None |
 | checkDevice | Performs user device verification to check if the current device is consistent. | None | Bool | • NOT_READY<br>• NETWORK_ERROR<br>• API_ERROR<br>• UNKNOWN_ERROR |
 | isWalletCreated | Verifies if a wallet has been created for the current user | None | Bool | • NOT_READY<br>• UNKNOWN_ERROR |
 | getBalance | Retrieves the current balance of the user's wallet. | None | String | • NOT_READY<br>• NETWORK_ERROR<br>• API_ERROR<br>• UNKNOWN_ERROR |
-| refreshSharedSecret | Refreshes the shared secret (private key fragment) stored on the device. This might be done periodically for security reasons or when the user wants to update their key shares. | secret: String | Bool | • ARGUMENT_ERROR<br>• NETWORK_ERROR<br>• API_ERROR<br>• WALLET_RESTORATION_ERROR<br>• SECRET_BACKUP_ERROR<br>• UNKNOWN_ERROR |
+| refreshSharedSecret | Refreshes the shared secret (private key fragment) stored on the device. This might be done periodically for security reasons or when the user wants to update their key shares. | secret: String | Bool | • ARGUMENT_ERROR<br>• NETWORK_ERROR<br>• API_ERROR<br>• SECRET_VERSION_ERROR<br>• SECRET_BACKUP_ERROR<br>• WALLET_RESTORATION_ERROR<br>• UNKNOWN_ERROR |
 | openView | Navigates to a specific view within the SDK's interface. Available locations:<br>• "/receive_address"<br>• "/send_token/select_token"<br>• "/swap" | location: String | None | • ARGUMENT_ERROR<br>• NOT_READY<br>• UNKNOWN_ERROR |
 
 ### Error Code
