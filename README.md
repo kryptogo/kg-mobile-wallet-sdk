@@ -56,15 +56,133 @@ KryptoGO Mobile Wallet SDK allows native apps to integrate KryptoGO wallet funct
 
 ## Installing KryptoGO Mobile Wallet SDK
 
-1. Clone the SDK repository:
+### 1. Clone the repository
 
-   ```shell
-   git clone https://github.com/kryptogo/kg-mobile-wallet-sdk.git
-   ```
+```shell
+git clone https://github.com/kryptogo/kg-mobile-wallet-sdk.git
+```
 
-2. Place the KG_SDK directory into the root directory of your application.
+### 2. iOS Setup
 
-3. Follow the specific configuration documents for iOS and Android to complete the setup.
+**Prerequisites:** Xcode 15+, CocoaPods, iOS 14.0+ target
+
+#### a. Add Flutter pod
+
+In your app's `Podfile`, add the Flutter pod pointing to the SDK:
+
+```ruby
+pod 'Flutter', :podspec => '<path-to-sdk>/sdk/ios/Release/Flutter.podspec'
+```
+
+Then run:
+```bash
+pod install
+```
+
+#### b. Add SDK frameworks to Xcode project
+
+1. In Xcode, select your app target → **General** → **Frameworks, Libraries, and Embedded Content**
+2. Click **+** → **Add Other...** → **Add Files...**
+3. Navigate to `sdk/ios/Release/` (or `Debug/` for debug builds) and add ALL `.xcframework` files:
+   - `App.xcframework`
+   - `FlutterPluginRegistrant.xcframework`
+   - `flutter_secure_storage.xcframework`
+   - `sentry_flutter.xcframework`
+   - `package_info.xcframework`
+   - `package_info_plus.xcframework`
+   - ... (all other xcframeworks in the directory)
+4. Set each framework to **Embed & Sign**
+
+#### c. Configure Framework Search Paths
+
+In your target's **Build Settings** → **Framework Search Paths**, add:
+
+```
+$(PROJECT_DIR)/<relative-path-to-sdk>/sdk/ios/$(CONFIGURATION)/
+```
+
+`$(CONFIGURATION)` is an Xcode variable that automatically resolves to `Debug`, `Release`, or `Profile` based on your build scheme.
+
+#### d. Required Xcode build settings
+
+| Setting | Value | Reason |
+|---------|-------|--------|
+| ENABLE_USER_SCRIPT_SANDBOXING | NO | Required for Flutter framework build scripts |
+| Minimum Deployments | iOS 14.0+ | SDK minimum requirement |
+
+#### e. Open workspace (not project)
+
+After `pod install`, always open the `.xcworkspace` file, not `.xcodeproj`:
+
+```bash
+open YourApp.xcworkspace
+```
+
+### 3. Android Setup
+
+**Prerequisites:** Android Studio, Android SDK API 21+, Java 11, NDK
+
+#### a. Add Maven repositories
+
+In your root `settings.gradle.kts` (or `build.gradle`), add:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        // ... existing repos
+        maven(url = "https://storage.googleapis.com/download.flutter.io")
+        maven(url = "<path-to-sdk>/sdk/android/repo")
+    }
+}
+```
+
+#### b. Add SDK dependencies
+
+In your app's `build.gradle.kts`:
+
+```kotlin
+dependencies {
+    debugImplementation("com.kryptogo.kg_sdk:flutter_debug:1.0")
+    releaseImplementation("com.kryptogo.kg_sdk:flutter_release:1.0")
+    add("profileImplementation", "com.kryptogo.kg_sdk:flutter_profile:1.0")
+}
+```
+
+#### c. Configure build settings
+
+```kotlin
+android {
+    defaultConfig {
+        minSdk = 21  // or higher
+        ndk {
+            abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86_64"))
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+```
+
+### 4. Running the Example Apps
+
+#### iOS Example
+```bash
+cd examples/ios
+pod install
+open ios_example.xcworkspace
+# In Xcode: select simulator or device → Build & Run (Cmd+R)
+```
+
+#### Android Example
+```bash
+cd examples/android
+./gradlew installDebug
+# Or open in Android Studio and run
+```
+
+Both example apps include test credentials for the dev environment — no additional configuration needed.
 
 
 ## Configure initialization parameters:
