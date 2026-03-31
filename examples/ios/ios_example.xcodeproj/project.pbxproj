@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E25EF562F7B74A900CCF981 /* package_info.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E25EF552F7B74A900CCF981 /* package_info.xcframework */; };
+		2E25EF572F7B74A900CCF981 /* package_info.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E25EF552F7B74A900CCF981 /* package_info.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D0364E282E812DCADF73AF0 /* Pods_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AF9FC2BDD651404FA3F86B /* Pods_ios_example.framework */; };
 		4F361B06A22870EA75B5465C /* Pods_ios_example_ios_exampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3C1396087283C14ABE3B6 /* Pods_ios_example_ios_exampleUITests.framework */; };
 		7CCD690365E1213B1AFDB7BD /* Pods_ios_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363D4DDA060D7B6532073ED0 /* Pods_ios_exampleTests.framework */; };
@@ -107,6 +109,7 @@
 				D622ABD72D190E2900DD4C2C /* flutter_secure_storage.xcframework in Embed Frameworks */,
 				D622ABF52D190E3E00DD4C2C /* url_launcher_ios.xcframework in Embed Frameworks */,
 				D622ABF12D190E3B00DD4C2C /* shared_preferences_foundation.xcframework in Embed Frameworks */,
+				2E25EF572F7B74A900CCF981 /* package_info.xcframework in Embed Frameworks */,
 				D622ABE72D190E3500DD4C2C /* SAMKeychain.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -116,6 +119,7 @@
 
 /* Begin PBXFileReference section */
 		26E3C1396087283C14ABE3B6 /* Pods_ios_example_ios_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example_ios_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E25EF552F7B74A900CCF981 /* package_info.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info.xcframework; path = ../../sdk/ios/Debug/package_info.xcframework; sourceTree = "<group>"; };
 		363D4DDA060D7B6532073ED0 /* Pods_ios_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6550A45902E96B54B8DD7E7E /* Pods-ios_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_example.release.xcconfig"; path = "Target Support Files/Pods-ios_example/Pods-ios_example.release.xcconfig"; sourceTree = "<group>"; };
 		70A506BB337769AEB9314789 /* Pods-ios_example-ios_exampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_example-ios_exampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D622ABD62D190E2900DD4C2C /* flutter_secure_storage.xcframework in Frameworks */,
+				2E25EF562F7B74A900CCF981 /* package_info.xcframework in Frameworks */,
 				D622ABF02D190E3B00DD4C2C /* shared_preferences_foundation.xcframework in Frameworks */,
 				D622ABD82D190E2A00DD4C2C /* flutter_udid.xcframework in Frameworks */,
 				D622ABE22D190E3200DD4C2C /* photo_manager.xcframework in Frameworks */,
@@ -215,6 +220,7 @@
 		75F6C6CDCC870D3BF7E514F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E25EF552F7B74A900CCF981 /* package_info.xcframework */,
 				D622ABAE2D190E1F00DD4C2C /* App.xcframework */,
 				D622ABAD2D190E1F00DD4C2C /* device_info_plus.xcframework */,
 				D622ABB62D190E1F00DD4C2C /* flutter_secure_storage.xcframework */,
@@ -528,9 +534,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios_example-ios_exampleUITests/Pods-ios_example-ios_exampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -545,9 +555,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios_example/Pods-ios_example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -742,7 +756,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Flutter\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
-					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
+					"$(PROJECT_DIR)/../../sdk/ios/$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-example-Info-$(CONFIGURATION).plist";
@@ -786,7 +800,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Flutter\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
-					"$(PROJECT_DIR)/../sdk//$(CONFIGURATION)/",
+					"$(PROJECT_DIR)/../../sdk/ios/$(CONFIGURATION)/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-example-Info-$(CONFIGURATION).plist";
